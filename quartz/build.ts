@@ -49,6 +49,16 @@ type BuildData = {
   lastBuildMs: number
 }
 
+function matchesIgnorePattern(pathStr: string, pattern: string): boolean {
+  const normalizedPattern = toPosixPath(pattern).replace(/\/+$/, "")
+  return (
+    minimatch(pathStr, normalizedPattern) ||
+    minimatch(pathStr, `${normalizedPattern}/**`) ||
+    pathStr === normalizedPattern ||
+    pathStr.startsWith(`${normalizedPattern}/`)
+  )
+}
+
 async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   const ctx: BuildCtx = {
     buildId: randomIdNonSecure(),
@@ -145,7 +155,7 @@ async function startWatching(
       if (pathStr.startsWith(".git/")) return true
       if (gitIgnoredMatcher(pathStr)) return true
       for (const pattern of cfg.configuration.ignorePatterns) {
-        if (minimatch(pathStr, pattern)) {
+        if (matchesIgnorePattern(pathStr, pattern)) {
           return true
         }
       }
@@ -162,6 +172,7 @@ async function startWatching(
     persistent: true,
     cwd: argv.directory,
     ignoreInitial: true,
+    ignored: (fp) => buildData.ignored(fp),
   })
 
   const changes: ChangeEvent[] = []

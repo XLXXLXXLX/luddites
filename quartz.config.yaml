@@ -12,6 +12,9 @@ configuration:
     - private
     - templates
     - .obsidian
+    - content/ignored_source
+    - tmp
+    - tmp/**
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
