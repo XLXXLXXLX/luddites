@@ -1,3 +1,12 @@
+---
+title: The Strategy of Refusal
+draft: false
+tags:
+  - Tronti
+  - Italy
+  - Sabotage
+---
+
 If we accept his description of the working class as developing within the structures of capitalist production, but outside of, free from, its political initiative, then we have a test-bed for a radical critique of current forms of Marxist orthodoxy regarding organisation.
 
 The argument contained in this piece is developed still further - in the context of a new class composition - in Toni Negri1s concept of working class and proletarian "self-valorisation", contained in the article "Domination and Sabotage".
