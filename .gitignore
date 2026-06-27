@@ -14,3 +14,4 @@ quartz/cli/tui/dist/
 content/tmp
 tmp
 scripts/__pycache__
+content/ignored_source/
