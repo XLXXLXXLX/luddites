@@ -11,3 +11,6 @@ private/
 replit.nix
 .quartz/
 quartz/cli/tui/dist/
+content/tmp
+tmp
+scripts/__pycache__
