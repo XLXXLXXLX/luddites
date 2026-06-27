@@ -1,3 +1,22 @@
+---
+author: Mario Tronti
+language: zh
+related_cards:
+- '[[cards/文献/拒斥策略（特龙蒂）]]'
+- '[[cards/人物/马里奥·特龙蒂]]'
+- '[[cards/概念/拒斥策略]]'
+tags:
+- source
+- 意大利
+- 工人主义
+- 怠工
+title: 拒斥策略（中译本）
+type: source
+year: 1965
+---
+
+
+
 If we accept his description of the working class as developing within the structures of capitalist production, but outside of, free from, its political initiative, then we have a test-bed for a radical critique of current forms of Marxist orthodoxy regarding organisation.
 
 The argument contained in this piece is developed still further - in the context of a new class composition - in Toni Negri1s concept of working class and proletarian "self-valorisation", contained in the article "Domination and Sabotage".

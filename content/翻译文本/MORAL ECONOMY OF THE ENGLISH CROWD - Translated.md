@@ -1,3 +1,23 @@
+---
+author: E.P. Thompson
+language: zh
+related_cards:
+- '[[cards/文献/英国民众的道德经济学（汤普森）]]'
+- '[[cards/概念/道德经济学]]'
+- '[[cards/人物/EP汤普森]]'
+tags:
+- source
+- 道德经济学
+- 平民文化
+- EP汤普森
+- 卢德运动
+title: 英国民众的道德经济学（中译本）
+type: source
+year: 1971
+---
+
+
+
 # 18世纪英国民众的道德经济
 ### E.P. 汤普森 (E. P. Thompson) 著 / 机器翻译 (重排段落版)
 

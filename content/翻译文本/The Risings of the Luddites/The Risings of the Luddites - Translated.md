@@ -1,3 +1,21 @@
+---
+author: Frank Peel
+language: zh
+related_cards:
+- '[[cards/文献/卢德派宪章派与拔锅炉塞者的起义（皮尔）]]'
+- '[[cards/人物/弗兰克·皮尔]]'
+tags:
+- source
+- 卢德运动
+- 约克郡
+- 微观史
+- 弗兰克·皮尔
+title: 卢德派宪章派与拔锅炉塞者的起义（完整中译本）
+type: source
+year: 1880
+---
+
+
 # 卢德运动、宪章派与插头起义的兴起
 ### 弗兰克·皮尔 (Frank Peel) 著 / 机器翻译
 

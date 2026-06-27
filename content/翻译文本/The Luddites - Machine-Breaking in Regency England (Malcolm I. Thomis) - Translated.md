@@ -1,3 +1,21 @@
+---
+author: Malcolm I. Thomis
+language: zh
+related_cards:
+- '[[cards/文献/卢德派——摄政英格兰的机器破坏运动（托米斯）]]'
+- '[[cards/人物/马尔科姆·托米斯]]'
+tags:
+- source
+- 卢德运动
+- 劳工史
+- 英国
+title: 卢德派——摄政英格兰的机器破坏运动（中译本）
+type: source
+year: 1970
+---
+
+
+
 # 捣毁机器者：摄政期英格兰的卢德运动
 ### 麦克科姆·I·托马斯 (Malcolm I. Thomis) 著 / 机器翻译
 

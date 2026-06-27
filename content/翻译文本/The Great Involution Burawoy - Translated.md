@@ -1,3 +1,21 @@
+---
+author: Michael Burawoy
+language: zh
+related_cards:
+- '[[cards/文献/大退化（布洛威）]]'
+- '[[cards/人物/迈克尔·布洛威]]'
+tags:
+- source
+- 苏联
+- 转型
+- 政治经济学
+title: 大退化（中译本）
+type: source
+year: 2013
+---
+
+
+
 # 伟大的内卷：俄罗斯对市场的反应
 ### 迈克尔·布拉沃 (Michael Burawoy) 著 / 机器翻译
 
