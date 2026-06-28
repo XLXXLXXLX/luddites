@@ -7,7 +7,7 @@ title: 翻译文本
 ## 专著译文
 
 - [[MORAL ECONOMY OF THE ENGLISH CROWD - Translated|《英国民众的道德经济学》（E.P. 汤普森）]] — EP Thompson 关于十八世纪英国平民饥荒暴动的道德逻辑的奠基性论文
-- [[The Luddites - Machine-Breaking in Regency England (Malcolm I. Thomis) - Translated|《捣毁机器者》（Malcolm I. Thomis）]] — 摄政期英格兰卢德运动的历史学经典研究
+- [[The Luddites - Translated|《捣毁机器者》（Malcolm I. Thomis）]] — 摄政期英格兰卢德运动的历史学经典研究
 - [[The Great Involution Burawoy - Translated|《大退化》（Michael Burawoy）]] — 布劳威对苏东转型期劳动关系的比较分析
 - [[The strategy of refusal - Mario Tronti  libcom.org|《拒斥的策略》（Mario Tronti）]] — 意大利工人主义奠基文本，论工人"不工作"作为革命政治
 - [[Arguments Within English Marxism - Perry Anderson/index|《英国马克思主义内部的争论》（佩里·安德森）]] — 评估汤普森的历史与理论著作，围绕史学认识论、人类能动性、乌托邦与社会主义策略的系统性批判与辩论

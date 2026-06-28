@@ -1,6 +1,6 @@
-# The Luddites - Machine-Breaking in Regency England (Malcolm I. Thomis) - Translated.md
+# The Luddites - Malcolm Thomis - Translated.md
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The Luddites - Machine-Breaking in Regency England (Malcolm I. Thomis) - Translated.md`
+- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The Luddites - Malcolm Thomis - Translated.md`
 - Type: Markdown
 - Method: direct copy
 

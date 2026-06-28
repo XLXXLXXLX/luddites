@@ -1,6 +1,6 @@
-# The Luddites  machine-breaking in Regency England (Malcolm I. Thomis) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+# The Luddites - Malcolm Thomis.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The Luddites  machine-breaking in Regency England (Malcolm I. Thomis) (z-library.sk, 1lib.sk, z-lib.sk).pdf`
+- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The Luddites - Malcolm Thomis.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 195

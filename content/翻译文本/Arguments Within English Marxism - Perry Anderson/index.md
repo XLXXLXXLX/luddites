@@ -4,7 +4,7 @@
 
 ## 完整译文
 
-- [[Arguments Within English Marxism - Perry Anderson - Translated|《英国马克思主义内部的争论》完整中文译文]]
+- [[Arguments Within English Marxism - Translated|《英国马克思主义内部的争论》完整中文译文]]
 
 ## 分章节深度学术摘要 (各章约 5000 字)
 

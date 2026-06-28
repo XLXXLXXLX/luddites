@@ -1,6 +1,6 @@
-# Riotous assemblies  popular protest in Hanoverian England (Randall, Adrian) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+# Riotous assemblies.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Riotous assemblies  popular protest in Hanoverian England (Randall, Adrian) (z-library.sk, 1lib.sk, z-lib.sk).pdf`
+- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Riotous assemblies.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 380

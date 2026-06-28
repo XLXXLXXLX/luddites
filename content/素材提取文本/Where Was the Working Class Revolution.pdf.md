@@ -1,6 +1,6 @@
-# Where Was the Working Class Revolution in Eastern Germany (Linda Fuller) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+# Where Was the Working Class Revolution.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Where Was the Working Class Revolution in Eastern Germany (Linda Fuller) (z-library.sk, 1lib.sk, z-lib.sk).pdf`
+- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Where Was the Working Class Revolution.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 248

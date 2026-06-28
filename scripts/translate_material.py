@@ -66,7 +66,7 @@ def chunk_markdown(file_content, max_len=3000):
 
 def main():
     source_file = Path(r"c:\Users\xlx\Documents\antigravity\luddites-quartz\content\ignored_source\素材提取文本\Arguments Within English Marxism - Perry Anderson.md")
-    output_file = Path(r"c:\Users\xlx\Documents\antigravity\luddites-quartz\content\翻译文本\Arguments Within English Marxism - Perry Anderson - Translated.md")
+    output_file = Path(r"c:\Users\xlx\Documents\antigravity\luddites-quartz\content\翻译文本\Arguments Within English Marxism - Translated.md")
     checkpoint_file = Path(r"c:\Users\xlx\Documents\antigravity\luddites-quartz\scripts\translate_checkpoint.json")
     
     if not source_file.exists():

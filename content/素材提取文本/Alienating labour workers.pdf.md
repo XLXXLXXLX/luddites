@@ -1,6 +1,6 @@
-# Alienating labour workers on the road from socialism to capitalism in East Germany and Hungary (Barthazy Meier, Eszter Judit) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+# Alienating labour workers.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Alienating labour workers on the road from socialism to capitalism in East Germany and Hungary (Barthazy Meier, Eszter Judit) (z-library.sk, 1lib.sk, z-lib.sk).pdf`
+- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Alienating labour workers.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 372

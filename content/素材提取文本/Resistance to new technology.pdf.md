@@ -1,6 +1,6 @@
-# Resistance to new technology (Nuclear power information technology and biotechnology)  Reinterpreting ‘Luddism’ resistance… (Bauer, Martin) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+# Resistance to new technology.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Resistance to new technology (Nuclear power information technology and biotechnology)  Reinterpreting ‘Luddism’ resistance… (Bauer, Martin) (z-library.sk, 1lib.sk, z-lib.sk).pdf`
+- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Resistance to new technology.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 24
