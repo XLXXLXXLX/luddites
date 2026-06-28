@@ -82,6 +82,7 @@
     "@types/yargs": "^17.0.35",
     "esbuild": "^0.27.2",
     "prettier": "^3.8.1",
+    "reveal.js": "^6.0.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }

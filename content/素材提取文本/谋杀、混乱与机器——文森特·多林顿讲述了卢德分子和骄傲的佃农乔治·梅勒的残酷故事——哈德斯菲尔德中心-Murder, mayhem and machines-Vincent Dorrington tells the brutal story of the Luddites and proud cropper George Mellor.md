@@ -1,0 +1,228 @@
+# Murder, mayhem and machines – Vincent Dorrington tells the brutal story of the Luddites and proud cropper George Mellor
+
+**By Local Historian Vincent Dorrington  
+当地历史学家文森特·多林顿**
+
+In the early 1800s on the side of the River Colne in Longbridge resided the unassuming one storey cropping shop of John Wood.  
+19 世纪初，在朗布里奇的科尔内河畔，坐落着约翰·伍德那不起眼的一层农作物加工厂。
+
+Few people would have heard of it or suspected that it was the centre of Luddite radicalism in Huddersfield. It was the workplace of George Mellor.  
+很少有人听说过这个地方，更没有人会想到它竟然是哈德斯菲尔德卢德运动的激进中心。那里是乔治·梅勒的工作场所。
+
+George Mellor was proud to be a cropper. Croppers were the most skilled and highly paid of textile workers but Mellor’s world was under threat with the coming of shearing frames.  
+乔治·梅勒以身为一名剪羊毛工人而自豪。剪羊毛工人是纺织工人中技术最娴熟、收入最高的群体，但随着剪羊毛机的出现，梅勒的职业生涯受到了威胁。
+
+This new technology, at best, threatened to diminish his wages and standard of living. At worst such machines would make his skills obsolete and see his job disappear.  
+这项新技术，往好了说，会降低他的工资和生活水平；往坏了说，这类机器会使他的技能过时，导致他失业。
+
+Mellor reasoned the time was right to smash the new machines to pieces by becoming a Luddite.  
+梅勒认为，现在是时候成为一名卢德分子，把这些新机器砸成碎片了。
+
+Mill owners saw Luddites as violent thugs who stood in the way of modernity and technological innovation – they had to be stopped.  
+工厂主们将卢德分子视为阻碍现代化和技术创新的暴力暴徒——他们必须被制止。
+
+By 1812 Luddite secret cells had started to spread from Nottinghamshire and Lancashire to Yorkshire. George Mellor was only 22 years old when he decided to form a Luddite cell in Huddersfield and to be its first captain.  
+到1812年，卢德分子秘密小组开始从诺丁汉郡和兰开夏郡蔓延到约克郡。乔治·梅勒当时只有22岁，他决定在哈德斯菲尔德成立一个卢德分子小组，并担任第一任领导人。
+
+![](https://huddersfieldhub.co.uk/wp-content/uploads/2022/04/Luddites.jpg)
+
+Mellor was a bearded strong man who stood 6ft tall – he was a very imposing figure. Fellow Luddites never knew him to back down.  
+梅勒是个身材魁梧、留着胡子的男人，身高六英尺——他气势逼人。他的卢德主义同伴们从没见过他退缩过。
+
+Yes, Mellor had a temper that intimidated others but, by and large, he controlled it and he had a strong sense of social justice.  
+是的，梅勒脾气暴躁，令其他人感到害怕，但总的来说，他能够控制自己的脾气，而且他有强烈的社会正义感。
+
+Unlike many of his fellow workers, Mellor was literate and fully aware of radical concepts that came out of the French and American Revolutions.  
+与他的许多同事不同，梅勒识字，并且充分了解法国大革命和美国革命中出现的激进思想。
+
+What set him apart from other Luddites was his hatred of mill owners, like William Cartwright and William Horsfall, who were eager supporters of the new machinery that put so many people out of work.  
+他与其他卢德分子不同的地方在于，他憎恨像威廉·卡特赖特和威廉·霍斯福尔这样的工厂主，这些人热衷于推广新机器，而这些新机器却让很多人失业。
+
+Mellor spoke of not only breaking the new machines but of killing the masters who bought them. He was true to his word but, in the end, this would cost him his life.  
+梅勒不仅扬言要摧毁这些新机器，还要杀死购买这些机器的主人。他言出必行，但最终也为此付出了生命的代价。
+
+Mr Joseph Radcliffe of Milnsbridge was an established landowner, J P and sworn enemy of the Luddites.  
+米尔恩斯布里奇的约瑟夫·拉德克利夫先生是一位资深的土地所有者、太平绅士，也是卢德分子的死敌。
+
+He was aware of the growing Luddite threat in early 1812 as letters were anonymously delivered to local mill owners, warning them not to use any machinery that would take away workers’ jobs.  
+1812 年初，他意识到卢德运动的威胁日益加剧，因为有人匿名向当地工厂主寄送信件，警告他们不要使用任何会抢走工人工作的机器。
+
+Reports came to Radcliffe that Luddites were arming themselves and drilling on the moors of Hartshead. Little did he know that Mellor had organised this.  
+拉德克利夫收到报告，说卢德分子正在哈茨黑德的荒原上武装自己并进行操练。他万万没想到，这一切都是梅勒组织的。
+
+![](https://huddersfieldhub.co.uk/wp-content/uploads/2025/10/Milnsbridge-House-today.jpg)
+
+Spies and agents were sent by Radcliffe to suspected Luddite inns and taverns, but with little success at first.  
+拉德克利夫派间谍和特工前往疑似卢德分子的旅馆和酒馆，但起初收效甚微。
+
+The Luddite pact made it impossible for the authorities to make inroads. Nothing was written down by Mellor or his supporters – orders and instructions were carried out by word of mouth.  
+卢德运动的协议使得当局寸步难行。梅勒及其支持者不留下任何书面文件——命令和指示都是口口相传的。
+
+Luddites called each other by number and not name. There were secret handshakes and signals but, above all, there was no written evidence to incriminate them.  
+卢德分子之间用编号而非姓名互相称呼。他们有秘密的握手和暗号，但最重要的是，没有任何书面证据可以指控他们。
+
+Rawfold’s Mill in Liversedge, belonging to William Cartwright, was a focus for Mellor and Luddite attention.  
+位于利弗塞奇的罗福德磨坊属于威廉·卡特赖特所有，是梅勒和卢德分子关注的焦点。
+
+In February 1812 they had smashed shearing frames on Hartshead Moor that were being delivered there from Marsden. Cartwright refused to be intimidated and continued to use shearing frames.  
+1812年2月，他们砸毁了从马斯登运到哈茨黑德荒原的剪羊毛机。卡特赖特拒绝被吓倒，继续使用剪羊毛机。
+
+In the dark of night on 11th April 1812 some 150 Luddites gathered at the edge of Hartshead Moor.  
+1812 年 4 月 11 日夜幕降临，约 150 名卢德分子聚集在哈茨黑德荒原边缘。
+
+They were led by George Mellor and his trusty second in command, William Thorpe. In silence they marched some three miles towards Rawfold’s Mill.  
+他们由乔治·梅勒和他忠实的副手威廉·索普带领。他们默默地向罗福德磨坊方向行进了大约三英里。
+
+Mellor’s men were met by armed force and after 20 minutes were driven back. The failure to smash the shearing frames at Cartwright’s Mill was a major blow for Mellor and the prestige of the Huddersfield Luddites.  
+梅勒的手下遭到武装力量阻拦，20分钟后被击退。破坏卡特赖特磨坊剪羊毛机的行动失败，对梅勒本人以及哈德斯菲尔德卢德分子的声望都是一次重大打击。
+
+Mellor was particularly aggrieved by the shooting of his close friend John Booth – a master must pay. Cartwright must pay!  
+梅勒对他的挚友约翰·布斯被枪杀一事尤其感到愤慨——主人必须付出代价。卡特赖特必须付出代价！
+
+On 18<sup>th</sup> April Mellor sought revenge. William Cartwright was returning from Huddersfield when Mellor and his accomplice Thorpe ambushed him in Bradley Wood. Mellor opened fire and missed, Cartwright galloped off to safety.  
+4月18日，梅勒展开报复。威廉·卡特赖特从哈德斯菲尔德返回途中，在布拉德利伍德遭到梅勒及其同伙索普的伏击。梅勒开枪但未击中，卡特赖特策马逃走。
+
+William Horsfall, a mill owner from Marsden, proved to be a far easier target. On 28th April he was murdered (in the prime of his life) by Mellor and his gang at Crosland Moor as he was returning from the Cloth Hall market in Huddersfield.  
+来自马斯登的磨坊主威廉·霍斯福尔则成了更容易下手的目标。4月28日，正值壮年的他从哈德斯菲尔德的布料市场返回途中，在克罗斯兰荒原被梅勒及其团伙谋杀。
+
+Horsfall hated the Luddites and made it known to all, despite warnings from his associates to show caution in what he said.  
+霍斯福尔憎恨卢德分子，并向所有人宣扬这一点，尽管他的同伴警告他说话要谨慎。
+
+At one time he claimed that he would ride in Luddite blood up to his saddle before the Luddite matter was settled.  
+他曾声称，在卢德运动问题解决之前，他会带着卢德分子的血液骑马上马。
+
+Like Cartwright he expected the Luddites to attack his mill at Ottiwells in Marsden. He even built a redoubt in front of it, turning his mill into a fort.  
+和卡特赖特一样，他也预料到卢德分子会袭击他在马斯登奥蒂韦尔斯的磨坊。他甚至在磨坊前修建了一座堡垒，把磨坊变成了一座堡垒。
+
+Horsfall knew Mellor to be a Luddite and was said to have struck him a blow with his gloves during an altercation in Milnsbridge.  
+霍斯福尔知道梅勒是卢德分子，据说在米尔恩斯布里奇的一次争执中，霍斯福尔用手套打了梅勒一拳。
+
+Mellor would remember this insult and not let it go. It seems that everyone knew Horsfall to be stubborn and bombastic.  
+梅勒会记住这番侮辱，并且不会轻易罢休。似乎人人都知道霍斯福尔固执又爱吹牛。
+
+Even children were known to tease him, while he was mounted, laughing that General Ludd was coming to get him and then running off.  
+甚至有孩子在他骑马的时候取笑他，说卢德将军要来抓他了，然后就跑开了。
+
+It must be said, however, that Horsfall was known to be generous and was generally liked by his 400 or so workers.  
+不过必须指出的是，霍斯福尔为人慷慨，深受他手下约 400 名工人的喜爱。
+
+Huddersfield was in a state of shock – supporting the Luddites smashing machines was one thing but cold-blooded murder was another.  
+哈德斯菲尔德陷入了震惊之中——支持卢德分子砸毁机器是一回事，但冷血谋杀又是另一回事。
+
+Joseph Radcliffe went into overdrive. Appeals were made to the Home Office and over 1,000 soldiers were sent to the Huddersfield area.  
+约瑟夫·拉德克利夫立即全力以赴。他向内政部提出请求，并向哈德斯菲尔德地区派遣了1000多名士兵。
+
+A huge number of arrests took place as Radcliffe’s secret agents and spies went about their investigations.  
+拉德克利夫的秘密特工和间谍展开调查，逮捕了大量嫌疑人。
+
+For nearly six months no charges were brought against Luddites involved in the Horsfall murder or Luddite attacks.  
+近六个月来，没有对参与霍斯福尔谋杀案或卢德分子袭击的卢德分子提出任何指控。
+
+Were the people of the area terrified of George Mellor and feared his vengeance if they informed on him?  
+当地居民是否害怕乔治·梅勒，担心如果告发他就会遭到他的报复？
+
+Some thought the silence came about because they sympathised with the Luddite cause – the truth probably rests with both viewpoints.  
+有人认为，这种沉默是因为他们同情卢德运动——真相可能兼而有之。
+
+Finally, an informer came forward – none other than the cousin of George Mellor, Joseph Mellor.  
+最后，一名告密者站了出来——他不是别人，正是乔治·梅勒的表弟约瑟夫·梅勒。
+
+Like many he had been kept in the Milnsbridge cellars of Radcliffe before he broke. When this became widely known Luddite ranks finally spoke – others informed on George Mellor and his gang, especially Benjamin Walker.  
+和许多人一样，他在崩溃之前一直被关押在拉德克利夫的米尔恩斯布里奇地下室。当这件事广为人知后，卢德分子终于发声——其他人也告发了乔治·梅勒及其团伙，尤其是本杰明·沃克。
+
+The reward of £2,000 for informing on the Luddites certainly helped loosen some tongues.  
+举报卢德分子可获得 2000 英镑的奖励，这无疑有助于让一些人开口说话。
+
+![](https://huddersfieldhub.co.uk/wp-content/uploads/2025/10/York-Assizes-Luddite-hangings.jpg)
+
+The Luddites were tried at the York assizes, the jury were made from the rich and the landed gentry – including none other than Joseph Radcliffe.  
+卢德分子在约克巡回法庭受审，陪审团由富人和地主乡绅组成——其中就包括约瑟夫·拉德克利夫。
+
+He had obtained the information for the prosecution counsel at Milnsbridge House. Local people from Milnsbridge accused him of getting this information through violent interrogation and even torture.  
+他为米尔恩斯布里奇府的检方律师获取了这些信息。米尔恩斯布里奇当地居民指控他通过暴力审讯甚至酷刑获取了这些信息。
+
+Mellor, Thorpe and Smith, who were all in their early 20s, never confessed to the murder of William Horsfall but the evidence given by Benjamin Walker was enough to convict them. It took the jury just 25 minutes to find them guilty.  
+梅勒、索普和史密斯当时都只有二十出头，他们从未承认谋杀威廉·霍斯福尔，但本杰明·沃克提供的证据足以定罪。陪审团仅用了25分钟就裁定他们有罪。
+
+The defence presented strong evidence that Mellor was seen in Huddersfield at the time of the shooting, especially around the Market Place and at the White Hart inn.  
+辩方提供了强有力的证据，证明梅勒在枪击案发生时出现在哈德斯菲尔德，尤其是在市场广场附近和白鹿旅馆附近。
+
+At least two men, one on his deathbed, claimed to be Horsfall’s murderer many years later.  
+多年后，至少有两名男子，其中一人在临终前，声称自己是霍斯福尔的凶手。
+
+The judge and jury regarded Mellor’s alibis as little more than desperate Luddite attempts to save Mellor. It was, of course, a show trial and Mellor was found guilty with his comrades.  
+法官和陪审团认为梅勒的不在场证明不过是卢德分子为了自保而做出的绝望尝试。这当然是一场作秀审判，梅勒和他的同伙都被判有罪。
+
+Benjamin Walker was pardoned for turning the King’s evidence, but the jury’s attempt to offer Thomas Smith clemency was rejected.  
+本杰明·沃克因出卖国王而获得赦免，但陪审团试图赦免托马斯·史密斯的请求被驳回。
+
+It should be noted that though he was at the scene of the shooting, he did not fire his gun like Walker.  
+值得注意的是，虽然他当时在枪击现场，但他并没有像沃克那样开枪。
+
+On a grey winter morning of Friday 8th January 1813 George Mellor, William Thorpe and Thomas Smith stood on the gallows at York Castle walls.  
+1813 年 1 月 8 日星期五，一个阴沉的冬日早晨，乔治·梅勒、威廉·索普和托马斯·史密斯站在约克城堡城墙的绞刑架上。
+
+A huge silent and forlorn crowd watched from St George’s Field. Two troops of cavalry and armed soldiers were on guard in case Luddites rushed the gallows. They never did.  
+圣乔治广场上，一大群沉默而悲伤的人群注视着行刑。两队骑兵和全副武装的士兵严阵以待，以防卢德分子冲向绞刑架。但他们最终没有这样做。
+
+All the prisoners prayed but made no confession of murder – Mellor even forgave his enemies. When it came time to address the crowd Mellor’s strong voice could be heard most clearly.  
+所有囚犯都做了祷告，但没有承认谋杀罪行——梅勒甚至原谅了他的敌人。轮到他向众人讲话时，梅勒洪亮的声音清晰可闻。
+
+The night before had seen him fall into a pit of despair and despondency, but he had collected himself on the gallows.  
+前一天晚上，他陷入了绝望和沮丧的深渊，但在绞刑架上，他振作了起来。
+
+Witnesses were struck by the way he collected himself – he made a telling final speech. In the cold morning air Mellor proclaimed that though he was in a terrible predicament on the gallows, he would rather be in his own shoes, with a clear conscience, than those of Benjamin Walker.  
+目击者们都对他镇定自若的神态印象深刻——他发表了一番意味深长的临终遗言。在寒冷的清晨，梅勒宣称，尽管他身处绞刑架上，处境极其危险，但他宁愿自己身处绞刑架，问心无愧，也不愿像本杰明·沃克那样。
+
+All three men were shackled together as the trap door was opened – they worked together as croppers, agitated together as Luddites and died together.  
+当活板门打开时，这三个人被铐在一起——他们一起当过农夫，一起当过卢德分子，一起死去。
+
+![](https://huddersfieldhub.co.uk/wp-content/uploads/2025/10/Luddite-memorial-at-Liversedge.jpg)
+
+Joseph Radcliffe watched on – his work was done. Many Luddites who undertook a two day walk from Huddersfield to support Mellor in his trial could not bear to witness his execution and returned home immediately after the verdict.  
+约瑟夫·拉德克利夫在一旁观看——他的任务完成了。许多卢德分子从哈德斯菲尔德徒步两天前来声援梅勒的审判，但他们不忍目睹他的死刑，在判决后立即返回了家。
+
+Even in death Mellor was feared. His body and those of William Thorpe and Thomas Smith were handed over to York Infirmary for dissection. No Christian burial for a Luddite in case his grave was turned into a shrine. No grave for George Mellor!  
+即使在死后，梅勒依然令人畏惧。他的遗体以及威廉·索普和托马斯·史密斯的遗体都被送往约克郡医院进行解剖。为了防止卢德分子的坟墓被改造成圣地，他们没有为卢德分子举行基督教葬礼。乔治·梅勒没有坟墓！
+
+Plenty more people were awaiting trial less than a week after Mellor’s execution. Some were charged for their involvement in the Luddite attack on Rawfold’s Mill. Other defendants were charged for separate serious criminal offences.  
+梅勒被处决不到一周，还有许多人等待审判。其中一些人被控参与卢德分子袭击罗福德磨坊的事件。其他被告则被控犯有其他严重的刑事罪行。
+
+In total 17 people were sentenced to death at York’s Bloody Assize of 1813 – a record. Six others were later transported, seven were acquitted of involvement in Luddite attacks, one was reprieved and 33 discharged.  
+1813年约克郡血腥巡回审判中，共有17人被判处死刑，创下纪录。另有6人后来被流放，7人被判无罪释放，1人被缓刑，33人被释放。
+
+The judiciary decided that the lesson had been learned, so adjourned the cases. As a result of the executions 14 wives were made widows and 57 children became fatherless.  
+司法部门认为已经吸取了教训，因此休庭审理此案。由于这些处决，14名妻子成了寡妇，57名儿童失去了父亲。
+
+To all intent and purposes the Luddite movement was broken after the Luddite executions in York, but resentment remained tangible.  
+从各方面来看，约克郡卢德分子被处决后，卢德运动就被彻底瓦解了，但人们的怨恨依然存在。
+
+Two shots were fired into Milnsbridge House after the Luddite executions. After that Joseph Radcliffe spent hardly any time in the Huddersfield area before he left for Bristol.  
+卢德分子被处决后，米尔恩斯布里奇大厦遭到了两声枪响。此后，约瑟夫·拉德克利夫在前往布里斯托尔之前，几乎没有在哈德斯菲尔德地区停留。
+
+Radcliffe was made a Sir and granted £3,000 by the government for putting down Luddites in his area, but he lived in fear and did not want to become another victim like William Horsfall.
+
+Radcliffe’s main informer on Mellor (Benjamin Walker) also failed to live down his involvement.
+
+People shunned him and he ended his life on parish relief – he never saw a penny of the £2,000 reward that Radcliffe promised would be given to Luddite informers.
+
+Mellor’s execution seemed to bring an end to Luddite activity in Huddersfield.
+
+The show trial at York with its executions and transportations brought fear into the hearts of all Luddite supporters.
+
+A free pardon was given in January 1813 to all who went before the JP at Woodsome Hall and took an Oath of Allegiance to the Crown and confessed to their crimes.
+
+This amnesty did the trick as local Luddites untwisted their Luddite oath. Mellor would have turned in his grave. If he’d had one…
+
+**Vincent Dorrington is hosting an illustrated talk: ‘The Luddites are Coming’ at Mount Methodist Church in Moorlands Road, Huddersfield, HD3 3UQ, on Wednesday October 22 (7.30pm). Admission is £2.**
+
+> [Skulduggery, incompetence or sheer bad luck: The enduring mystery of the ghost mill of Scammonden  
+> 阴谋诡计、无能之辈还是纯粹的厄运：斯卡蒙登幽灵磨坊的永恒谜团](https://huddersfieldhub.co.uk/skulduggery-incompetence-or-sheer-bad-luck-the-enduring-mystery-of-the-ghost-mill-of-scammonden/)
+
+[![](https://huddersfieldhub.co.uk/wp-content/uploads/2020/12/23_09_FM_Huddersfield-Hub-compressed-V3.gif)](https://www.fantasticmedia.co.uk/)
+
+[![](https://huddersfieldhub.co.uk/wp-content/uploads/2026/05/Kirklees-College-banner-May-2026.gif)](https://www.kirkleescollege.ac.uk/)
+
+[![](https://huddersfieldhub.co.uk/wp-content/uploads/2026/04/WhitegatesHuddsGIF.gif)](https://www.whitegates.co.uk/estate-agents-and-letting-agents/branch/huddersfield)
+
+[![](https://huddersfieldhub.co.uk/wp-content/uploads/2023/08/Huddersfield-BID.gif)](https://huddersfieldbid.co.uk/)

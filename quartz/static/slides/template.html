@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Reveal.js 幻灯片模板</title>
+    <!-- 引入 Reset & Reveal.js CSS -->
+    <link rel="stylesheet" href="/static/revealjs/reset.css">
+    <link rel="stylesheet" href="/static/revealjs/reveal.css">
+    <!-- 选择主题（例如 black.css, white.css, dracula.css） -->
+    <link rel="stylesheet" href="/static/revealjs/theme/black.css" id="theme">
+    <!-- 代码高亮主题 -->
+    <link rel="stylesheet" href="/static/revealjs/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- 支持直接在 HTML 中编写 Markdown -->
+        <section data-markdown>
+          <textarea data-template>
+            # Luddites Share
+            ### 卢德运动与历史分享会
+            
+            ---
+            
+            ## 会议大纲
+            - 卢德运动的起因与历史背景
+            - 机器与工匠：技术变迁的张力
+            - 历史档案与翻译文本展示
+            - 卢德主义态度与现代思考
+            
+            ---
+            
+            ## 核心观点
+            
+            > "我们要反抗的不是机器，而是使用机器剥夺我们生存权利的机制。"
+            
+            ---
+            
+            ## 代码块语法高亮示例
+            ```javascript
+            // 这是一个简单的 JavaScript 例子
+            const speakLuddite = () => {
+              console.log("Rage against the machine!");
+            };
+            speakLuddite();
+            ```
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <!-- 引入 RevealJS 核心与插件 -->
+    <script src="/static/revealjs/reveal.js"></script>
+    <script src="/static/revealjs/plugin/markdown.js"></script>
+    <script src="/static/revealjs/plugin/highlight.js"></script>
+    <script src="/static/revealjs/plugin/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
