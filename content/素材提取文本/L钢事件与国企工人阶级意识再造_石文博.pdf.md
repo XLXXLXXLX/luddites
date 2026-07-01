@@ -1,6 +1,6 @@
 # L钢事件与国企工人阶级意识再造_石文博.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/L钢事件与国企工人阶级意识再造_石文博.pdf`
+- Source: `~/Documents/antigravity/luddites-quartz/content/素材/L钢事件与国企工人阶级意识再造_石文博.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 23

@@ -1,6 +1,6 @@
 # MORAL ECONOMY OF THE ENGLISH CROWD.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/MORAL ECONOMY OF THE ENGLISH CROWD.pdf`
+- Source: `~/Documents/antigravity/luddites-quartz/content/素材/MORAL ECONOMY OF THE ENGLISH CROWD.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 61

@@ -1,6 +1,6 @@
 # 农民工的阶级形成与阶级意识研究 (刘建洲) (Z-Library).pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/农民工的阶级形成与阶级意识研究 (刘建洲) (Z-Library).pdf`
+- Source: `~/luddites-quartz/content/素材/农民工的阶级形成与阶级意识研究 (刘建洲) (Z-Library).pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 346

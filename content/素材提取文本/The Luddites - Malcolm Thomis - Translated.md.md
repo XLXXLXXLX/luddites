@@ -1,6 +1,6 @@
 # The Luddites - Malcolm Thomis - Translated.md
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The Luddites - Malcolm Thomis - Translated.md`
+- Source: `~antigravity/luddites-quartz/content/素材/The Luddites - Malcolm Thomis - Translated.md`
 - Type: Markdown
 - Method: direct copy
 

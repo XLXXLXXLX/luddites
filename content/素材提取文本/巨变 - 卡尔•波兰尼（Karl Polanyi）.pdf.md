@@ -1,6 +1,6 @@
 # 巨变 - 卡尔•波兰尼（Karl Polanyi）.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/巨变 - 卡尔•波兰尼（Karl Polanyi）.pdf`
+- Source: `~/luddites-quartz/content/素材/巨变 - 卡尔•波兰尼（Karl Polanyi）.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 314

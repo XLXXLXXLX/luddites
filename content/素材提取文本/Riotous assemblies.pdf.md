@@ -1,6 +1,6 @@
 # Riotous assemblies.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Riotous assemblies.pdf`
+- Source: `~/luddites-quartz/content/素材/Riotous assemblies.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 380

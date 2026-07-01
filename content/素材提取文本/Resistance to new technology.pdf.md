@@ -1,6 +1,6 @@
 # Resistance to new technology.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Resistance to new technology.pdf`
+- Source: `~/Documents/antigravity/luddites-quartz/content/素材/Resistance to new technology.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 24

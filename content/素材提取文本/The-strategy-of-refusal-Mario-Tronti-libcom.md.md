@@ -1,6 +1,6 @@
 # The-strategy-of-refusal-Mario-Tronti-libcom.md
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The-strategy-of-refusal-Mario-Tronti-libcom.md`
+- Source: `~/Documents/antigravity/luddites-quartz/content/素材/The-strategy-of-refusal-Mario-Tronti-libcom.md`
 - Type: Markdown
 - Method: direct copy
 

@@ -1,6 +1,6 @@
 # Alienating labour workers.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Alienating labour workers.pdf`
+- Source: `~/Documents/antigravity/luddites-quartz/content/素材/Alienating labour workers.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 372

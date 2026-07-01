@@ -1,6 +1,6 @@
 # The Great Involution Burawoy.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The Great Involution Burawoy.pdf`
+- Source: `~/Documents/antigravity/luddites-quartz/content/素材/The Great Involution Burawoy.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 22

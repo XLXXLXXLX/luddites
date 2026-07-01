@@ -1,6 +1,6 @@
 # The Risings of the Luddites.epub
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/The Risings of the Luddites.epub`
+- Source: `~/luddites-quartz/content/素材/The Risings of the Luddites.epub`
 - Type: EPUB
 - Method: spine-ordered HTML text extraction
 - Sections: 53

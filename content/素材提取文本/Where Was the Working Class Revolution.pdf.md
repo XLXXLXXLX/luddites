@@ -1,6 +1,6 @@
 # Where Was the Working Class Revolution.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Where Was the Working Class Revolution.pdf`
+- Source: `~antigravity/luddites-quartz/content/素材/Where Was the Working Class Revolution.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 248

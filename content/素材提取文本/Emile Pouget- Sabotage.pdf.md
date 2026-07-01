@@ -1,6 +1,6 @@
 # Emile Pouget- Sabotage.pdf
 
-- Source: `C:/Users/xlx/Documents/antigravity/luddites-quartz/content/素材/Emile Pouget- Sabotage.pdf`
+- Source: `~/Documents/antigravity/luddites-quartz/content/素材/Emile Pouget- Sabotage.pdf`
 - Type: PDF
 - Method: direct text with OCR fallback
 - Pages: 117
