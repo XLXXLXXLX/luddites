@@ -1,28 +1,27 @@
 ---
-title: Reveal.js 幻灯片嵌入示例
+title: 砸机器的人和怠工的谱系——分享会幻灯片
 tags:
   - slide
   - revealjs
+  - 卢德主义
+  - AI劳动
 ---
 
-这是一个在 Quartz 笔记中嵌入 **Reveal.js** 幻灯片的示例。
+这是根据 [[讲稿与大纲/分享会讲稿_理论整合版]] 设计的 **Reveal.js** 分享会幻灯片。
 
-### 嵌入效果
+### 幻灯片
 
-<iframe 
-  src="/static/slides/template.html" 
-  style="width: 100%; height: 500px; border: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" 
+<iframe
+  src="/static/slides/luddism-ai.html"
+  style="width: 100%; aspect-ratio: 16 / 9; min-height: 560px; border: none; border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,0.22);"
   allowfullscreen>
 </iframe>
 
 ---
 
-### 使用说明
+### 播放与编辑
 
-1. **全屏播放**：点击幻灯片内部，然后按键盘上的 **F** 键即可进入全屏展示模式。
-2. **如何定制**：
-   - 幻灯片源码文件位于：[template.html](file:///~/Documents/antigravity/luddites-quartz/quartz/static/slides/template.html)
-   - 你可以直接在该文件的 `<textarea data-template>` 中使用 Markdown 编写你自己的幻灯片。
-   - 使用 `---` 来分隔不同的幻灯片页面，使用 `--` 来进行垂直幻灯片切页。
-3. **其他打开方式**：
-   - 你也可以 <a href="/static/slides/template.html" target="_blank" rel="external">在新标签页中独立打开幻灯片</a>。
+1. 点击幻灯片后按 **F** 进入全屏，按 **Esc** 查看总览，按 **S** 打开演讲者视图。
+2. <a href="/static/slides/luddism-ai.html" target="_blank" rel="external">在新标签页中独立播放</a>。
+3. 幻灯片使用开放许可图片；来源和许可集中列于最后一页。
+4. 两份国家档案馆文书保留了展示位、档号、来源链接和建议裁切范围，可在取得合适图像后替换。

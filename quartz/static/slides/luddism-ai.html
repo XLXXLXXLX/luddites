@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>砸机器的人和怠工的谱系——从卢德运动到 AI 时代</title>
+  <link rel="stylesheet" href="/static/revealjs/reset.css">
+  <link rel="stylesheet" href="/static/revealjs/reveal.css">
+  <link rel="stylesheet" href="/static/revealjs/theme/black.css" id="theme">
+  <style>
+    :root {
+      --coal: #0d0e0e;
+      --ink: #171816;
+      --paper: #e9e0ce;
+      --paper-dim: #b9ad98;
+      --rust: #d35d3b;
+      --rust-dark: #873722;
+      --signal: #b8e067;
+      --cyan: #6fd3d8;
+      --white: #f5f1e8;
+      --muted: #9b9c97;
+      --line: rgba(233, 224, 206, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    .reveal {
+      background:
+        radial-gradient(circle at 85% 15%, rgba(211,93,59,.10), transparent 29%),
+        linear-gradient(135deg, #111210 0%, #090a0a 100%);
+      color: var(--white);
+      font-family: "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+    }
+
+    .reveal .slides { text-align: left; }
+    .reveal .slides section { padding: 34px 54px; }
+    .reveal h1, .reveal h2, .reveal h3 { margin: 0; text-transform: none; letter-spacing: -.02em; }
+    .reveal h1 { font-size: 84px; line-height: 1.08; font-weight: 800; }
+    .reveal h2 { font-size: 54px; line-height: 1.14; font-weight: 760; }
+    .reveal h3 { font-size: 34px; line-height: 1.25; color: var(--paper-dim); font-weight: 550; }
+    .reveal p, .reveal li { font-size: 29px; line-height: 1.5; }
+    .reveal strong { color: var(--paper); }
+    .reveal a { color: inherit; text-decoration-color: rgba(255,255,255,.35); }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 22px;
+      color: var(--rust);
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .lede { max-width: 1120px; margin-top: 28px; color: var(--paper-dim); font-size: 32px !important; }
+    .big-question { max-width: 1320px; font-size: 62px !important; line-height: 1.22 !important; font-weight: 750; }
+    .accent { color: var(--rust); }
+    .signal { color: var(--signal); }
+    .cyan { color: var(--cyan); }
+    .muted { color: var(--muted); }
+    .paper { color: var(--paper); }
+
+    .rule { width: 100%; height: 1px; margin: 32px 0; background: var(--line); }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; min-height: 700px; }
+    .split.wide-left { grid-template-columns: 1.2fr .8fr; }
+    .split.wide-right { grid-template-columns: .8fr 1.2fr; }
+
+    .cover-image {
+      width: 100%; height: 680px; object-fit: cover; border-radius: 4px;
+      filter: grayscale(100%) contrast(1.05) sepia(.12);
+      box-shadow: 0 24px 70px rgba(0,0,0,.45);
+    }
+    .cover-image.warm { filter: grayscale(35%) contrast(1.07) sepia(.20); }
+    .cover-image.cool { filter: grayscale(45%) contrast(1.10) hue-rotate(135deg) saturate(.75); }
+
+    .image-frame { position: relative; }
+    .image-frame::after {
+      content: ""; position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.18); pointer-events: none;
+    }
+    .caption { margin-top: 10px; color: var(--muted); font-size: 16px; line-height: 1.35; }
+
+    .section-number {
+      position: absolute; right: 60px; top: 18px; color: rgba(233,224,206,.07);
+      font-family: Georgia, serif; font-size: 250px; line-height: 1; font-weight: 700;
+    }
+    .section-slide { display: flex !important; flex-direction: column; justify-content: center; min-height: 820px; }
+    .section-slide h2 { max-width: 1100px; font-size: 72px; }
+
+    .spectrum {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin-top: 64px;
+      border-top: 2px solid var(--paper); border-bottom: 1px solid var(--line);
+    }
+    .spectrum > div { min-height: 290px; padding: 30px 22px; border-right: 1px solid var(--line); }
+    .spectrum > div:last-child { border-right: 0; }
+    .spectrum .num { color: var(--rust); font-family: Georgia, serif; font-size: 28px; }
+    .spectrum h3 { margin: 14px 0 20px; color: var(--white); font-size: 28px; }
+    .spectrum p { color: var(--paper-dim); font-size: 20px; line-height: 1.45; }
+
+    .question-list { margin: 50px 0 0; padding: 0; list-style: none; counter-reset: q; }
+    .question-list li {
+      counter-increment: q; display: grid; grid-template-columns: 70px 1fr; gap: 18px;
+      padding: 20px 0; border-top: 1px solid var(--line); font-size: 31px;
+    }
+    .question-list li::before { content: "0" counter(q); color: var(--rust); font-family: Georgia, serif; }
+
+    .task-chain { margin-top: 54px; }
+    .chain-row { display: grid; grid-template-columns: 185px repeat(5, 1fr); align-items: stretch; }
+    .chain-row > div { padding: 20px 15px; border-top: 1px solid var(--line); border-right: 1px solid var(--line); font-size: 22px; }
+    .chain-row > div:first-child { color: var(--muted); font-weight: 700; }
+    .chain-row .human { color: var(--paper); background: rgba(233,224,206,.06); }
+    .chain-row .ai { color: var(--cyan); background: rgba(111,211,216,.09); }
+    .chain-row .risk { color: var(--rust); }
+
+    .date-line { display: grid; grid-template-columns: 190px 1fr; gap: 28px; margin-top: 36px; }
+    .date-line .year { color: var(--rust); font-family: Georgia, serif; font-size: 48px; }
+    .date-line .event { padding-top: 10px; border-top: 1px solid var(--line); font-size: 25px; color: var(--paper-dim); }
+
+    .geo { margin-top: 46px; }
+    .geo-row { display: grid; grid-template-columns: 260px 1fr 1fr; gap: 28px; padding: 20px 0; border-top: 1px solid var(--line); }
+    .geo-row strong { font-size: 30px; }
+    .geo-row span { font-size: 23px; color: var(--paper-dim); }
+
+    .archive-placeholder {
+      display: grid; place-items: center; min-height: 525px; padding: 40px;
+      border: 2px dashed rgba(233,224,206,.38);
+      background: linear-gradient(135deg, rgba(233,224,206,.06), rgba(211,93,59,.04));
+      text-align: center;
+    }
+    .archive-placeholder .doc-title { color: var(--paper); font-family: Georgia, "Songti SC", serif; font-size: 42px; }
+    .archive-placeholder .doc-meta { margin-top: 16px; color: var(--muted); font-size: 20px; }
+    .archive-placeholder .replace-note { margin-top: 42px; color: var(--rust); font-size: 18px; letter-spacing: .08em; }
+
+    .versus { display: grid; grid-template-columns: 1fr 90px 1fr; gap: 28px; align-items: stretch; margin-top: 44px; }
+    .versus .side { padding: 36px; border-top: 3px solid var(--paper); background: rgba(255,255,255,.035); }
+    .versus .side.right { border-color: var(--cyan); }
+    .versus .vs { align-self: center; text-align: center; color: var(--rust); font-family: Georgia, serif; font-size: 28px; }
+    .versus h3 { color: var(--white); font-size: 31px; }
+    .versus p { color: var(--paper-dim); font-size: 24px; }
+
+    .four-lenses { display: grid; grid-template-columns: 1fr 1fr; margin-top: 44px; border-top: 1px solid var(--line); }
+    .lens { min-height: 240px; padding: 28px 34px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .lens:nth-child(even) { border-right: 0; }
+    .lens .q { color: var(--rust); font-size: 25px; font-weight: 800; }
+    .lens h3 { margin-top: 12px; color: var(--white); font-size: 29px; }
+    .lens p { color: var(--paper-dim); font-size: 21px; }
+
+    .theory-line { margin-top: 52px; border-left: 6px solid var(--rust); padding-left: 34px; }
+    .theory-line p { max-width: 1180px; font-size: 38px; line-height: 1.45; }
+    .theory-keywords { margin-top: 45px; display: flex; gap: 22px; flex-wrap: wrap; }
+    .theory-keywords span { padding: 10px 18px; border: 1px solid var(--line); color: var(--paper-dim); font-size: 21px; }
+
+    .double-table { width: 100%; border-collapse: collapse; margin-top: 35px; }
+    .double-table th { padding: 16px 22px; color: var(--paper-dim); font-size: 20px; text-align: left; border-bottom: 2px solid var(--paper); }
+    .double-table td { padding: 18px 22px; font-size: 22px; line-height: 1.35; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .double-table td:first-child { color: var(--paper); font-weight: 700; }
+    .double-table .good { color: var(--signal); }
+    .double-table .risk { color: #ee9e87; }
+
+    .steps { margin-top: 38px; counter-reset: step; }
+    .steps > div { counter-increment: step; display: grid; grid-template-columns: 74px 1fr; gap: 22px; padding: 17px 0; border-top: 1px solid var(--line); }
+    .steps > div::before { content: counter(step); color: var(--rust); font-family: Georgia, serif; font-size: 36px; }
+    .steps p { margin: 3px 0 0; font-size: 26px; }
+
+    .pressure { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; margin-top: 70px; }
+    .pressure > div { position: relative; min-height: 300px; padding-top: 32px; border-top: 4px solid var(--paper); }
+    .pressure > div:nth-child(2) { border-color: var(--rust); }
+    .pressure > div:nth-child(3) { border-color: var(--signal); }
+    .pressure h3 { color: var(--white); font-size: 31px; }
+    .pressure p { color: var(--paper-dim); font-size: 23px; }
+    .pressure .coexist { position: absolute; bottom: 0; color: var(--muted); font-size: 18px; }
+
+    .six-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 50px; margin-top: 36px; }
+    .six-grid > div { padding: 18px 0; border-top: 1px solid var(--line); }
+    .six-grid h3 { color: var(--cyan); font-size: 25px; }
+    .six-grid p { margin: 6px 0 0; color: var(--paper-dim); font-size: 21px; }
+
+    .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 62px; margin-top: 40px; counter-reset: check; }
+    .checks > div { counter-increment: check; display: grid; grid-template-columns: 52px 1fr; gap: 14px; padding: 18px 0; border-top: 1px solid var(--line); }
+    .checks > div::before { content: "0" counter(check); color: var(--cyan); font-family: Georgia, serif; font-size: 24px; }
+    .checks p { margin: 0; font-size: 23px; }
+
+    .conclusions { margin-top: 34px; }
+    .conclusion { display: grid; grid-template-columns: 110px 1fr; gap: 28px; padding: 22px 0; border-top: 1px solid var(--line); }
+    .conclusion .n { color: var(--rust); font-family: Georgia, serif; font-size: 42px; }
+    .conclusion p { margin: 0; font-size: 27px; }
+
+    .quote-slide { display: flex !important; flex-direction: column; justify-content: center; min-height: 820px; }
+    .quote-slide blockquote { max-width: 1320px; margin: 0; padding: 0; border: 0; box-shadow: none; background: none; font-size: 58px; line-height: 1.35; font-style: normal; font-weight: 750; }
+
+    .sources { columns: 2; column-gap: 70px; margin-top: 28px; }
+    .sources p { break-inside: avoid; margin: 0 0 18px; color: var(--paper-dim); font-size: 18px; line-height: 1.45; }
+    .sources strong { color: var(--white); }
+
+    .footer {
+      position: absolute; left: 54px; right: 54px; bottom: 20px;
+      display: flex; justify-content: space-between; gap: 30px;
+      color: #72746f; font-size: 14px; line-height: 1.3;
+    }
+    .footer a { color: #858781; }
+
+    @media (max-width: 900px) {
+      .split, .split.wide-left, .split.wide-right { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel='stylesheet' href='/static/slides/luddism-ai-theme.css'>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <section>
+      <div class="split wide-left">
+        <div>
+          <span class="eyebrow">劳动 · 技术 · 集体行动</span>
+          <h1>砸机器的人<br>和怠工的谱系</h1>
+          <h3 style="margin-top:26px;">从卢德运动到 AI 时代</h3>
+        </div>
+        <div class="image-frame">
+          <img class="cover-image" src="/static/slides/assets/luddism-ai/luddite.jpg" alt="1812年《卢德派领袖》讽刺版画">
+          <div class="caption">《The Leader of the Luddites》，1812，公版；图像本身也是当时对卢德派的政治塑造。</div>
+        </div>
+      </div>
+      <div class="footer"><span>卢德主义态度分享会</span><a href="https://commons.wikimedia.org/wiki/File:Luddite.jpg">图像：Wikimedia Commons / Public Domain</a></div>
+    </section>
+
+    <section class="quote-slide">
+      <span class="eyebrow">我们从一个小问题开始</span>
+      <blockquote>同一种“不充分合作”，<br>为什么有时只是个人喘息，<br>有时却能形成<span class="accent">共同力量</span>？</blockquote>
+    </section>
+
+    <section>
+      <span class="eyebrow">01 · 先把“怠工”拆开</span>
+      <h2>行为看起来越激烈，<br>政治意义不一定越大</h2>
+      <div class="spectrum">
+        <div><span class="num">01</span><h3>暂时离开</h3><p>恢复精力<br>也可能只是默认缓冲</p></div>
+        <div><span class="num">02</span><h3>故意放慢</h3><p>降低强度<br>也可能把负担转给同事</p></div>
+        <div><span class="num">03</span><h3>按章工作</h3><p>暴露流程<br>依赖多少非正式合作</p></div>
+        <div><span class="num">04</span><h3>集体停工</h3><p>形成压力<br>也面临替代与惩罚</p></div>
+        <div><span class="num">05</span><h3>破坏流程</h3><p>提高对手成本<br>也可能伤及公众与盟友</p></div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">判断行动，不看姿态</span>
+      <p class="big-question">它打断了什么？<br>依赖什么关系？<br><span class="accent">成本最终由谁承担？</span></p>
+      <p class="lede">请从自己熟悉的工作场所选一个例子：摸鱼、绕规则、拒绝加班、集体下线……它改变了什么？</p>
+    </section>
+
+    <section>
+      <div class="split wide-right">
+        <div class="image-frame">
+          <img class="cover-image cool" src="/static/slides/assets/luddism-ai/programmer.jpg" alt="程序员在电脑前工作">
+          <div class="caption">现代程序员工作场景，CC0。</div>
+        </div>
+        <div>
+          <span class="eyebrow" style="color:var(--cyan);">AI 不是结论，而是问题</span>
+          <h2>岗位不一定消失，<br>任务和责任已经移动</h2>
+          <div class="task-chain">
+            <div class="chain-row"><div>任务链</div><div>需求</div><div>设计</div><div>实现</div><div>验证</div><div>责任</div></div>
+            <div class="chain-row"><div>AI 介入</div><div class="human">人</div><div class="human">人＋AI</div><div class="ai">AI 加速</div><div class="risk">人追赶</div><div class="risk">人承担</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><span>不是普遍规律，而是一项劳动过程假说</span><a href="https://commons.wikimedia.org/wiki/File:ComputerProgrammer.jpg">图像：Free-Photos / CC0</a></div>
+    </section>
+
+    <section>
+      <span class="eyebrow" style="color:var(--cyan);">真正需要观察的变化</span>
+      <h2>谁理解整体？谁规定节奏？<br>谁为系统结果背书？</h2>
+      <ul class="question-list">
+        <li>技术节省的时间，成为劳动者的自由时间，还是新的任务定额？</li>
+        <li>劳动者获得更强工具，还是只负责处理模型输出的例外？</li>
+        <li>自动生成的错误、偏见和事故，最终落到谁身上？</li>
+      </ul>
+    </section>
+
+    <section class="section-slide" data-background-image="/static/slides/assets/luddism-ai/power-loom.jpg" data-background-opacity="0.22">
+      <span class="section-number">02</span>
+      <span class="eyebrow">回到 1811</span>
+      <h2>卢德运动争夺的不是抽象技术，<br>而是<span class="accent">正当生产的规则</span></h2>
+      <div class="footer"><span>1835年动力织机车间</span><a href="https://commons.wikimedia.org/wiki/File:Power_loom_weaving._Wellcome_L0011293.jpg">Wellcome Collection / CC BY 4.0</a></div>
+    </section>
+
+    <section>
+      <span class="eyebrow">最低限度的历史概况</span>
+      <h2>“卢德运动”覆盖了三个不同产业区域</h2>
+      <div class="geo">
+        <div class="geo-row"><strong>诺丁汉周边</strong><span>袜机与针织业</span><span>1811 年末首先集中爆发</span></div>
+        <div class="geo-row"><strong>约克郡西区</strong><span>剪绒与毛纺业</span><span>设备、技能与雇佣方式的冲突</span></div>
+        <div class="geo-row"><strong>兰开夏一带</strong><span>棉纺织业</span><span>工厂化、工资与政治激进主义交织</span></div>
+      </div>
+      <p class="lede">没有可靠证据证明它们服从一个全国统一指挥中心；“General Ludd”更像多种匿名文本借用的权威署名。</p>
+    </section>
+
+    <section>
+      <span class="eyebrow">先移走一个误解</span>
+      <h2>许多劳动者反对的不是“所有机器”</h2>
+      <div class="rule"></div>
+      <p class="big-question" style="font-size:49px!important;">冲突集中在同<span class="accent">低工价、劣质产品、非学徒劳动、行业规则改变</span>相联系的特定设备与雇佣方式。</p>
+      <p class="lede">所以问题应当从“他们是否喜欢技术”改写为：谁有权规定合格产品、合理报酬与正当技术应用？</p>
+    </section>
+
+    <section>
+      <div class="split wide-right">
+        <div>
+          <span class="eyebrow">材料一 · 工价与“足价”</span>
+          <h2>同一张悬赏海报，<br>为什么还要证明机器支付了“足价”？</h2>
+          <p class="lede">雇主方的辩护反过来承认：机器是否嵌入正当工价制度，是当时无法绕开的争点。</p>
+        </div>
+        <div class="archive-placeholder">
+          <div>
+            <div class="doc-title">FULL PRICE</div>
+            <div class="doc-meta">1812年1月25日 · HO 42/119 f.135<br>George Ball 机器毁坏悬赏海报</div>
+            <div class="replace-note">档案原件展示位 · 建议突出工价表、FULL PRICE 与 £200 悬赏</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><span>影像未嵌入；保留档号与替换构图</span><a href="https://www.nationalarchives.gov.uk/education/resources/why-did-the-luddites-protest/why-did-the-luddites-protest-source-2/">The National Archives · Source 2</a></div>
+    </section>
+
+    <section>
+      <span class="eyebrow">材料二 · 国家怎样制造治理对象</span>
+      <h2>档案不是透明窗口：<br>先分清“看到什么”与“据此推断什么”</h2>
+      <div class="versus">
+        <div class="side"><h3>较强证据</h3><p>报告直接转录的誓词、威胁信、人员证词与查获文书。</p></div>
+        <div class="vs">≠</div>
+        <div class="side right"><h3>国家判断</h3><p>关于全国性阴谋、统一委员会和组织规模的归纳与推断。</p></div>
+      </div>
+      <p class="lede">国家报告既记录行动，也在界定行动的性质、规模和应对方式。</p>
+      <div class="footer"><span>1812年议会秘密委员会报告 · 建议现场按证据强度对读</span><a href="https://hansard.parliament.uk/Lords/1812-07-14/debates/ae8fae91-aae9-4d37-af80-2ed3460013ae/LordsChamber">UK Parliament / Hansard</a></div>
+    </section>
+
+    <section>
+      <span class="eyebrow">材料三 · 工人内部也有技术分歧</span>
+      <h2>“公共利益”从来不是自动统一的</h2>
+      <div class="versus">
+        <div class="side">
+          <h3>工价、质量与行业规制</h3>
+          <p>具体家庭的收入、技能、工作时间与地方生计。</p>
+        </div>
+        <div class="vs">VS</div>
+        <div class="side right">
+          <h3>廉价商品与总体就业</h3>
+          <p>《Fellow Weavers!》以价格、市场扩张和消费者利益为机器辩护。</p>
+        </div>
+      </div>
+      <div class="footer"><span>1812年3月 · Manchester · HO 40/1/1, f.108</span><a href="https://www.nationalarchives.gov.uk/education/resources/why-did-the-luddites-protest/why-did-the-luddites-protest-source-4/">The National Archives · Source 4</a></div>
+    </section>
+
+    <section>
+      <p class="big-question">当技术降低商品价格，却破坏部分劳动者的技能与生活，<br><span class="accent">谁有资格代表“公共利益”？</span></p>
+      <p class="lede">廉价商品、就业保障、劳动自主与长期创新，应该由谁比较，又用什么尺度比较？</p>
+    </section>
+
+    <section>
+      <span class="eyebrow">四个层次，不是四选一</span>
+      <h2>卢德运动需要四个互补问题</h2>
+      <div class="four-lenses">
+        <div class="lens"><span class="q">目标</span><h3>为什么攻击这一台机器？</h3><p>机器如何成为劳资冲突中的施压节点。</p></div>
+        <div class="lens"><span class="q">正当性</span><h3>为什么行动者认为自己有理？</h3><p>损失如何被翻译为公平、权利和尊严。</p></div>
+        <div class="lens"><span class="q">控制</span><h3>技术改变了谁的支配能力？</h3><p>知识、节奏、质量与责任怎样重新分配。</p></div>
+        <div class="lens"><span class="q">转型</span><h3>为什么局部冲突成为社会问题？</h3><p>市场扩张如何引发保护性反应与联盟。</p></div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">霍布斯鲍姆 · 目标</span>
+      <h2>机器也可能是一种<br><span class="accent">“集体协商的压力点”</span></h2>
+      <div class="theory-line"><p>当公开结社与正式谈判受限，损坏财产或威胁损坏财产，可能被用来迫使雇主改变工价和雇佣决定。</p></div>
+      <div class="theory-keywords"><span>不是证明所有行动都理性计算</span><span>不是自动正当化暴力</span><span>继续追问：希望谁改变什么？</span></div>
+    </section>
+
+    <section>
+      <span class="eyebrow">汤普森 · 正当性</span>
+      <h2>损失不会自动成为<br><span class="accent">“这不应当”</span></h2>
+      <div class="theory-line"><p>工资、技能与生计上的损失，需要借助公平价格、习惯权利、职业尊严和互惠义务，才能从私人不幸转化为公共不义。</p></div>
+      <div class="theory-keywords"><span>旧规范可以动员</span><span>旧规范也会排斥</span><span>问：保护谁？排除谁？</span></div>
+    </section>
+
+    <section>
+      <span class="eyebrow">劳动过程理论 · 控制</span>
+      <h2>技术不只替代岗位，<br>也重新划分<span class="accent">判断权</span></h2>
+      <ul class="question-list">
+        <li>谁理解整体，谁只执行被分解的局部任务？</li>
+        <li>谁规定工作节奏、质量标准与可接受风险？</li>
+        <li>谁更容易被替代，谁承担系统失灵的责任？</li>
+      </ul>
+      <p class="lede">相同设备，在不同所有权、管理制度和组织力量下，可以产生不同后果。</p>
+    </section>
+
+    <section>
+      <span class="eyebrow">波兰尼 · 转型</span>
+      <h2>把人的生计完全交给市场，<br>会不断激起<span class="accent">保护性反应</span></h2>
+      <div class="theory-line"><p>劳动不是为出售而生产的普通商品。工资以外，住房、粮食、福利、社区与社会资格也会成为冲突场所。</p></div>
+      <p class="lede">但“保护社会”没有预定方向：它可以走向劳动权利，也可能走向行业排斥、父权秩序或民族主义。</p>
+    </section>
+
+    <section class="section-slide" data-background-image="/static/slides/assets/luddism-ai/punch-clock.jpg" data-background-opacity="0.17">
+      <span class="section-number">03</span>
+      <span class="eyebrow">从日常不合作到集体力量</span>
+      <h2>真正困难的，不是说“不”，<br>而是形成新的<span class="accent">“我们”</span></h2>
+      <div class="footer"><span>旧式打卡钟</span><a href="https://commons.wikimedia.org/wiki/File:LM_Ericsson_tidkontroll_-_old_punch_clock_1.jpg">W.carter / CC0</a></div>
+    </section>
+
+    <section>
+      <span class="eyebrow">斯科特 × 布洛维</span>
+      <h2>日常劳动同时生产抵抗与同意</h2>
+      <table class="double-table">
+        <thead><tr><th>日常行为</th><th>可能包含的抵抗</th><th>可能包含的再生产</th></tr></thead>
+        <tbody>
+          <tr><td>降低速度</td><td class="good">保护身体，拒绝不合理定额</td><td class="risk">把额外工作转移给同事</td></tr>
+          <tr><td>绕开规则</td><td class="good">保存自主空间</td><td class="risk">帮助有缺陷的流程继续运转</td></tr>
+          <tr><td>争取排名</td><td class="good">积累技能、收入与自信</td><td class="risk">接受管理者规定的成功标准</td></tr>
+          <tr><td>私下抱怨</td><td class="good">形成隐藏的共同判断</td><td class="risk">用情绪释放代替公开主张</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <span class="eyebrow">蒂利 · 不满怎样获得公共形式</span>
+      <h2>私人经验成为公共政治，<br>中间至少有五道门</h2>
+      <div class="steps">
+        <div><p>交流：发现这不是个人失败。</p></div>
+        <div><p>对象：把不满指向可以辨认、可以回应的关系。</p></div>
+        <div><p>语言：把经验说成别人能够理解的共同主张。</p></div>
+        <div><p>形式：让团结、人数与持续投入变得公开可见。</p></div>
+        <div><p>回应：迫使对手、盟友与公众作出选择。</p></div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">皮文与克洛沃德 · 扰乱性力量</span>
+      <h2>弱者的力量来自：<br>制度依赖他们继续扮演日常角色</h2>
+      <div class="theory-line"><p>工人准时生产、服务者维持流程、租户交租、消费者按预期行动——当足够多人集体拒绝，制度才承受经济、行政或合法性成本。</p></div>
+      <p class="lede">这种力量不是永久资源。它取决于可替代性、扩散能力、对手分裂，以及参与者能否承受反制。</p>
+    </section>
+
+    <section>
+      <span class="eyebrow">从物件到关系</span>
+      <h2>三种施压对象可以并存、往返与组合</h2>
+      <div class="pressure">
+        <div><h3>单台机器／财产</h3><p>提高特定雇主采用某种制度的成本。</p><span class="coexist">1811—1812 卢德行动</span></div>
+        <div><h3>动力与生产流程</h3><p>控制系统的关键协作与动力节点。</p><span class="coexist">1842 插塞行动等</span></div>
+        <div><h3>劳动力的集体撤回</h3><p>让生产对日常合作的依赖公开显现。</p><span class="coexist">罢工、集体下线、拒绝加班</span></div>
+      </div>
+      <p class="lede">这不是一条从“落后”到“先进”的进化箭头。</p>
+    </section>
+
+    <section>
+      <span class="eyebrow">组织化的两面</span>
+      <h2>组织能保存力量，<br>也可能替代行动者</h2>
+      <div class="versus">
+        <div class="side"><h3>保存与延续</h3><p>互助、经验、代表、谈判、跨事件记忆。</p></div>
+        <div class="vs">⇄</div>
+        <div class="side right"><h3>缩窄与替代</h3><p>为合法地位、资金和常规参与缩小要求，让成员只剩“被代表”。</p></div>
+      </div>
+      <p class="lede">问题不是“运动还是组织”，而是组织能否保护参与者，同时保留横向关系与行动能力。</p>
+    </section>
+
+    <section class="section-slide">
+      <span class="section-number" style="color:rgba(111,211,216,.07);">04</span>
+      <span class="eyebrow" style="color:var(--cyan);">回到 AI</span>
+      <h2>新的不是“机器敌人”，<br>而是新的<span class="cyan">劳动关系</span></h2>
+    </section>
+
+    <section>
+      <span class="eyebrow" style="color:var(--cyan);">不要只问岗位替代</span>
+      <h2>即使岗位数量不变，<br>六种关系也可能被重组</h2>
+      <div class="six-grid">
+        <div><h3>任务</h3><p>哪些被自动化？哪些验证、协调和照护工作增加？</p></div>
+        <div><h3>知识</h3><p>劳动者理解整体，还是只处理模型输出的例外？</p></div>
+        <div><h3>节奏</h3><p>AI 节省的时间由谁支配？</p></div>
+        <div><h3>评价</h3><p>谁定义“好工作”，谁能修改指标？</p></div>
+        <div><h3>责任</h3><p>错误、偏见与事故最终由谁承担？</p></div>
+        <div><h3>组织</h3><p>工具加强协作，还是把劳动拆成可评分节点？</p></div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow" style="color:var(--cyan);">AI 劳动中的“旧规范”</span>
+      <h2>规范可以打开联盟，也会制造排斥</h2>
+      <table class="double-table">
+        <thead><tr><th>可调用的规范</th><th>可能打开的联盟</th><th>可能造成的排斥</th></tr></thead>
+        <tbody>
+          <tr><td>专业自主</td><td class="good">共同质疑不合理指标</td><td class="risk">排除“非专业”劳动者</td></tr>
+          <tr><td>质量与安全</td><td class="good">联结劳动者、用户与公众</td><td class="risk">变成额外无偿责任</td></tr>
+          <tr><td>作者与知识权利</td><td class="good">联结创作者、研究者、开发者</td><td class="risk">强化产权与行业壁垒</td></tr>
+        </tbody>
+      </table>
+      <p class="lede">真正的问题是：旧规范能否被改写成更广泛的责任关系，而不只保护最有发言权的人。</p>
+    </section>
+
+    <section>
+      <div class="split wide-left">
+        <div>
+          <span class="eyebrow" style="color:var(--cyan);">平台与日常数字规避</span>
+          <h2>绕开指标、共享经验、暂时下线……<br>不自动等于“数字运动”</h2>
+          <p class="lede">行为可以保护个人，也可能形成网络；可以触及平台依赖，也可能把风险重新推回每个账户。</p>
+        </div>
+        <div class="image-frame">
+          <img class="cover-image warm" src="/static/slides/assets/luddism-ai/deliveroo-cyclist.jpg" alt="伦敦的Deliveroo外卖骑手">
+          <div class="caption">伦敦外卖骑手，2016，CC BY 2.0。</div>
+        </div>
+      </div>
+      <div class="footer"><span>平台劳动：集中治理与分散劳动同时发生</span><a href="https://commons.wikimedia.org/wiki/File:A_Deliveroo_cyclist_in_London,_UK.jpg">Môsieur J. / CC BY 2.0</a></div>
+    </section>
+
+    <section>
+      <span class="eyebrow" style="color:var(--cyan);">判断“数字抵抗”的五项检查</span>
+      <h2>不要寻找数字时代的铁锤，<br>先检查它形成了什么关系</h2>
+      <div class="checks">
+        <div><p>它具体打断哪一种控制关系？</p></div>
+        <div><p>它是个人规避，还是形成相互承诺？</p></div>
+        <div><p>行动者怎样说明自己，而不是被谁命名？</p></div>
+        <div><p>它是否触及企业或制度真正依赖的环节？</p></div>
+        <div><p>它扩大共同谈判能力，还是把风险推回个体？</p></div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">四个结论</span>
+      <h2>卢德主义留下的是一种观察方法</h2>
+      <div class="conclusions">
+        <div class="conclusion"><span class="n">01</span><p>技术变迁不只改变生产率，也改变知识、节奏、标准与责任。</p></div>
+        <div class="conclusion"><span class="n">02</span><p>利益不会自动成为政治；它需要道德语言说明“这不应当”。</p></div>
+        <div class="conclusion"><span class="n">03</span><p>日常不合作不等于集体力量；中间需要关系、语言、形式与承诺。</p></div>
+        <div class="conclusion"><span class="n">04</span><p>弱者的力量来自制度对合作的依赖；扰乱与组织都没有自动的进步结果。</p></div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">留给讨论</span>
+      <ul class="question-list">
+        <li>什么条件让摸鱼和规避形成横向关系，而不是退回个人化生存？</li>
+        <li>职业伦理、习惯权利与公共安全，怎样被改写为更广泛的主张？</li>
+        <li>AI 重组知识、节奏和责任时，哪些问题必须成为公共决定？</li>
+      </ul>
+    </section>
+
+    <section class="quote-slide">
+      <span class="eyebrow">最后的问题</span>
+      <blockquote>当劳动者说“不”，<br>重要的不是这个“不”看起来多激烈，<br>而是它能否形成新的<span class="accent">“我们”</span>，<br>并让人们共同规定工作与生活。</blockquote>
+    </section>
+
+    <section>
+      <span class="eyebrow">资料与图像许可</span>
+      <h2>开放素材与核心史料</h2>
+      <div class="sources">
+        <p><strong>《The Leader of the Luddites》</strong><br>1812，作者不详，Public Domain；Wikimedia Commons。</p>
+        <p><strong>Power loom weaving</strong><br>Wellcome Collection，CC BY 4.0；源自 Edward Baines，1835。</p>
+        <p><strong>ComputerProgrammer.jpg</strong><br>Free-Photos / Pixabay，CC0；经 Wikimedia Commons。</p>
+        <p><strong>A Deliveroo cyclist in London</strong><br>Môsieur J.，CC BY 2.0；经 Wikimedia Commons。</p>
+        <p><strong>LM Ericsson old punch clock</strong><br>W.carter，CC0；Wikimedia Commons。</p>
+        <p><strong>1812 “FULL PRICE” 悬赏海报</strong><br>The National Archives，HO 42/119 f.135；幻灯片仅保留展示位和链接。</p>
+        <p><strong>1812 “Fellow Weavers!”</strong><br>The National Archives，HO 40/1/1 f.108；幻灯片使用内容概述和链接。</p>
+        <p><strong>1812 议会秘密委员会报告</strong><br>UK Parliament / Hansard，1812-07-14。</p>
+      </div>
+      <div class="footer"><span>按 S 查看演讲者视图 · 按 F 全屏 · 按 Esc 查看总览</span><span>Reveal.js</span></div>
+    </section>
+
+  </div>
+</div>
+
+<script src="/static/revealjs/reveal.js"></script>
+<script src="/static/revealjs/plugin/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    center: false,
+    width: 1600,
+    height: 900,
+    margin: 0.025,
+    transition: 'fade',
+    backgroundTransition: 'fade',
+    plugins: [RevealNotes]
+  });
+</script>
+</body>
+</html>

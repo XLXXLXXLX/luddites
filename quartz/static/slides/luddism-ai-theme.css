@@ -1,0 +1,315 @@
+/* Visual narrative: handcraft -> steam -> movement -> computation */
+.reveal .slides section {
+  position: absolute;
+  isolation: isolate;
+  overflow: hidden;
+  border-top: 9px solid transparent;
+}
+.reveal .slides section > * { position: relative; z-index: 2; }
+.reveal .slides section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .72;
+}
+.reveal .slides section::after {
+  position: absolute;
+  z-index: 3;
+  right: 18px;
+  top: 105px;
+  writing-mode: vertical-rl;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  letter-spacing: .32em;
+  opacity: .42;
+  pointer-events: none;
+}
+
+/* 01: thread, hand, workshop */
+.reveal .slides section:nth-child(-n+6) {
+  border-top-color: #b74b32;
+  background-color: #11100d;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(233,224,206,.018) 0 2px, transparent 2px 7px),
+    repeating-linear-gradient(90deg, rgba(211,93,59,.022) 0 1px, transparent 1px 9px);
+}
+.reveal .slides section:nth-child(-n+6)::before {
+  background:
+    linear-gradient(90deg, transparent 0 67%, rgba(184,224,103,.035) 67% 67.25%, transparent 67.25%),
+    radial-gradient(circle at 8% 88%, rgba(211,93,59,.16), transparent 26%);
+}
+.reveal .slides section:nth-child(-n+6)::after {
+  content: "THREAD / HAND / WORK";
+  color: var(--paper);
+}
+.reveal .slides section:nth-child(-n+6) h1,
+.reveal .slides section:nth-child(-n+6) h2,
+.reveal .slides section:nth-child(-n+6) blockquote {
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", Georgia, serif;
+}
+.reveal .slides section:nth-child(1) .split::before {
+  content: "";
+  position: absolute;
+  left: -54px;
+  top: -100px;
+  bottom: -100px;
+  width: 14px;
+  background: var(--rust);
+  box-shadow: 24px 0 0 rgba(211,93,59,.18);
+}
+.reveal .slides section:nth-child(1) h1 {
+  font-size: 88px;
+  letter-spacing: -.055em;
+  text-shadow: 4px 4px 0 #3d1d15;
+}
+.reveal .slides section:nth-child(1) .image-frame {
+  transform: rotate(.7deg);
+  padding: 13px;
+  background: #d7c9ad;
+  box-shadow: 14px 18px 0 rgba(94,45,30,.46), 0 30px 70px rgba(0,0,0,.45);
+}
+.reveal .slides section:nth-child(1) .cover-image {
+  height: 646px;
+  border-radius: 0;
+  filter: grayscale(100%) contrast(1.28) sepia(.38);
+  box-shadow: none;
+}
+.reveal .slides section:nth-child(2) blockquote::before {
+  content: "“";
+  position: absolute;
+  left: -20px;
+  top: -145px;
+  color: rgba(211,93,59,.22);
+  font-family: Georgia, serif;
+  font-size: 260px;
+  line-height: 1;
+}
+.reveal .slides section:nth-child(3) .spectrum {
+  border-top: 5px solid var(--rust);
+  box-shadow: 0 -7px 0 rgba(233,224,206,.14);
+}
+.reveal .slides section:nth-child(3) .spectrum > div:nth-child(odd) {
+  background: rgba(233,224,206,.035);
+}
+
+/* 02: coal, iron, machine drawing */
+.reveal .slides section:nth-child(n+7):nth-child(-n+18) {
+  border-top-color: #7f3325;
+  background-color: #100e0c;
+  background-image:
+    linear-gradient(90deg, transparent 49.85%, rgba(229,211,180,.055) 50%, transparent 50.15%),
+    linear-gradient(0deg, transparent 49.85%, rgba(229,211,180,.04) 50%, transparent 50.15%);
+  background-size: 84px 84px;
+}
+.reveal .slides section:nth-child(n+7):nth-child(-n+18)::before {
+  background:
+    linear-gradient(115deg, transparent 0 72%, rgba(126,51,37,.14) 72% 73%, transparent 73%),
+    radial-gradient(circle at 88% 10%, rgba(209,145,76,.12), transparent 28%),
+    linear-gradient(90deg, rgba(0,0,0,.14), transparent 35%, rgba(0,0,0,.30));
+}
+.reveal .slides section:nth-child(n+7):nth-child(-n+18)::after {
+  content: "COAL / IRON / POWER";
+  color: #c7ab83;
+}
+.reveal .slides section:nth-child(n+7):nth-child(-n+18) h2 {
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", Georgia, serif;
+  letter-spacing: -.045em;
+}
+.reveal .slides section:nth-child(n+7):nth-child(-n+18) .eyebrow::before {
+  content: "✦";
+  margin-right: 12px;
+  color: #c99b62;
+}
+.archive-placeholder {
+  position: relative;
+  min-height: 540px;
+  border: 8px double #6e604d;
+  color: #211d17;
+  background:
+    repeating-linear-gradient(0deg, rgba(64,51,37,.035) 0 1px, transparent 1px 6px),
+    #d9ccb0;
+  box-shadow: 16px 18px 0 rgba(0,0,0,.26);
+  transform: rotate(-.45deg);
+}
+.archive-placeholder::before {
+  content: "ARCHIVE COPY";
+  position: absolute;
+  right: 28px;
+  top: 26px;
+  padding: 7px 12px;
+  border: 3px solid rgba(135,55,34,.62);
+  color: rgba(135,55,34,.72);
+  font-family: "Courier New", monospace;
+  font-size: 17px;
+  letter-spacing: .12em;
+  transform: rotate(4deg);
+}
+.archive-placeholder .doc-title { color: #292219; }
+.archive-placeholder .doc-meta { color: #665947; }
+.archive-placeholder .replace-note { color: #873722; }
+.theory-keywords span {
+  padding: 6px 2px;
+  border: 0;
+  border-bottom: 2px solid rgba(211,93,59,.55);
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+}
+
+/* 03: broadside, leaflet, collective voice */
+.reveal .slides section:nth-child(19) {
+  border-top-color: #d6c7a8;
+  background-color: #151311;
+}
+.reveal .slides section:nth-child(19)::after {
+  content: "SHIFT / SOLIDARITY";
+  color: var(--paper);
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) {
+  border-top-color: #a83225;
+  color: #181612;
+  background-color: #d8ccb2;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(55,42,28,.028) 0 1px, transparent 1px 5px),
+    linear-gradient(112deg, transparent 0 76%, rgba(168,50,37,.08) 76% 76.5%, transparent 76.5%);
+  box-shadow: inset 0 0 110px rgba(68,48,25,.18);
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24)::before {
+  background:
+    radial-gradient(circle at 94% 8%, rgba(168,50,37,.13), transparent 22%),
+    linear-gradient(90deg, rgba(255,255,255,.10), transparent 45%, rgba(67,46,24,.08));
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24)::after {
+  content: "LEAFLET / CROWD / STRIKE";
+  color: #6b2d24;
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) h2 {
+  color: #16130f;
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", Georgia, serif;
+  text-shadow: 1px 1px 0 rgba(255,255,255,.25);
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) h3,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) p,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) strong {
+  color: #262118;
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .eyebrow,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .accent {
+  color: #a83225;
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .muted,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .pressure p,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .double-table th,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .double-table td {
+  color: #544a3a;
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .double-table td:first-child,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .pressure h3 {
+  color: #1b1812;
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .double-table .good { color: #49621e; }
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .double-table .risk { color: #9a2f24; }
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .rule,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .steps > div,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .double-table td {
+  border-color: rgba(47,39,28,.28);
+}
+.reveal .slides section:nth-child(20) .double-table {
+  transform: rotate(-.25deg);
+  box-shadow: 10px 12px 0 rgba(79,54,29,.10);
+}
+.reveal .slides section:nth-child(21) .steps > div::before {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #a83225;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+}
+.reveal .slides section:nth-child(24) .versus .side {
+  background: rgba(255,255,255,.16);
+  border-top-width: 7px;
+  box-shadow: 9px 10px 0 rgba(62,43,24,.11);
+}
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .footer,
+.reveal .slides section:nth-child(n+20):nth-child(-n+24) .footer a {
+  color: #72644e;
+}
+
+/* 04: model, metric, algorithmic management */
+.reveal .slides section:nth-child(n+25):nth-child(-n+29) {
+  border-top-color: #52cbd1;
+  background-color: #071116;
+  background-image:
+    linear-gradient(rgba(111,211,216,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111,211,216,.055) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+.reveal .slides section:nth-child(n+25):nth-child(-n+29)::before {
+  background:
+    linear-gradient(90deg, transparent 0 74%, rgba(111,211,216,.16) 74% 74.15%, transparent 74.15%),
+    radial-gradient(circle at 82% 14%, rgba(66,185,198,.20), transparent 27%),
+    repeating-linear-gradient(0deg, transparent 0 8px, rgba(111,211,216,.018) 8px 9px);
+}
+.reveal .slides section:nth-child(n+25):nth-child(-n+29)::after {
+  content: "MODEL / METRIC / CONTROL";
+  color: var(--cyan);
+}
+.reveal .slides section:nth-child(n+25):nth-child(-n+29) .eyebrow {
+  font-family: "Courier New", monospace;
+  color: var(--cyan);
+}
+.reveal .slides section:nth-child(n+25):nth-child(-n+29) h2 {
+  letter-spacing: -.045em;
+  text-shadow: 0 0 24px rgba(111,211,216,.09);
+}
+.reveal .slides section:nth-child(26) .six-grid > div,
+.reveal .slides section:nth-child(29) .checks > div {
+  border-top-color: rgba(111,211,216,.30);
+}
+.reveal .slides section:nth-child(28) .image-frame {
+  padding: 7px;
+  background: rgba(111,211,216,.14);
+  box-shadow: 12px 12px 0 rgba(111,211,216,.08);
+}
+.reveal .slides section:nth-child(28) .cover-image {
+  border-radius: 0;
+  filter: grayscale(35%) contrast(1.12) hue-rotate(135deg) saturate(.72);
+}
+
+/* 05: the historical languages overlap */
+.reveal .slides section:nth-child(n+30) {
+  border-top: 5px solid;
+  border-image: linear-gradient(90deg, var(--rust) 0 48%, var(--paper) 48% 52%, var(--cyan) 52% 100%) 1;
+  background-color: #0c0e0e;
+  background-image:
+    linear-gradient(90deg, rgba(211,93,59,.035) 1px, transparent 1px),
+    linear-gradient(rgba(111,211,216,.026) 1px, transparent 1px);
+  background-size: 68px 68px;
+}
+.reveal .slides section:nth-child(n+30)::before {
+  background:
+    radial-gradient(circle at 10% 85%, rgba(211,93,59,.13), transparent 26%),
+    radial-gradient(circle at 88% 12%, rgba(111,211,216,.11), transparent 24%);
+}
+.reveal .slides section:nth-child(n+30)::after {
+  content: "MEMORY / RELATION / FUTURE";
+  color: var(--paper);
+}
+.reveal .slides section:nth-child(32) blockquote {
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", Georgia, serif;
+  text-shadow: 3px 3px 0 rgba(211,93,59,.16);
+}
+.reveal .slides section:nth-child(33) {
+  background-color: #17140f;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(233,224,206,.025) 0 1px, transparent 1px 6px);
+}
+
+/* Keep Reveal image-backed section dividers visible. */
+.reveal .slides section:nth-child(7),
+.reveal .slides section:nth-child(19) {
+  background-color: transparent !important;
+  background-image: none !important;
+}
