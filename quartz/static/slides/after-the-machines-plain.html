@@ -12,54 +12,166 @@
       --r-background-color: #fff;
       --r-main-color: #000;
       --r-heading-color: #000;
-      --r-main-font: sans-serif;
-      --r-heading-font: sans-serif;
+      --r-main-font: system-ui, -apple-system, "Segoe UI", sans-serif;
+      --r-heading-font: system-ui, -apple-system, "Segoe UI", sans-serif;
       --r-link-color: #000;
       --r-link-color-hover: #000;
     }
     .reveal {
       background: #fff;
       color: #000;
-      font-family: sans-serif;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     }
-    .reveal .slides section {
+    .reveal .slides > section {
       box-sizing: border-box;
-      padding: 18px 28px;
+      height: 100%;
+      padding: 46px 80px;
       text-align: left;
-      font-size: 26px;
-      line-height: 1.35;
+      font-size: 32px;
+      line-height: 1.32;
+    }
+    .reveal .slides > section.present {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .reveal .slide-body {
+      min-width: 0;
+    }
+    .reveal .slide-body > :first-child {
+      margin-top: 0;
+    }
+    .reveal .slide-body > :last-child {
+      margin-bottom: 0;
     }
     .reveal h1,
     .reveal h2,
     .reveal h3,
     .reveal h4 {
       color: #000;
-      font-family: sans-serif;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
       text-transform: none;
       letter-spacing: normal;
     }
-    .reveal h1 { font-size: 1.55em; }
-    .reveal h2 { font-size: 1.25em; }
-    .reveal h3 { font-size: 1.08em; }
+    .reveal h1 {
+      margin: 0 0 0.56em;
+      font-size: 1.42em;
+      line-height: 1.16;
+    }
+    .reveal h2 { font-size: 1.18em; }
+    .reveal h3 { font-size: 1.05em; }
+    .reveal p,
+    .reveal ul,
+    .reveal ol {
+      margin-top: 0.34em;
+      margin-bottom: 0.34em;
+    }
+    .reveal ul,
+    .reveal ol {
+      padding-left: 1.15em;
+    }
+    .reveal li + li {
+      margin-top: 0.12em;
+    }
     .reveal table {
       width: 100%;
-      font-size: 0.86em;
+      margin: 0.22em 0 0.38em;
+      font-size: 0.84em;
+      line-height: 1.22;
+    }
+    .reveal th,
+    .reveal td {
+      padding: 0.22em 0.32em;
+      vertical-align: top;
     }
     .reveal blockquote {
-      width: auto;
-      margin-left: 0;
-      margin-right: 0;
+      width: 100%;
+      margin: 0.34em 0;
+      padding: 0;
+      font-size: 1.01em;
+      line-height: 1.32;
       box-shadow: none;
     }
     .reveal img {
       display: block;
-      max-height: 430px;
+      max-width: 100%;
+      max-height: 540px;
       margin-left: auto;
       margin-right: auto;
+      object-fit: contain;
     }
     .reveal a {
       color: #000;
       text-decoration: underline;
+      overflow-wrap: anywhere;
+    }
+    .reveal .source-line {
+      margin-top: 0.62em;
+      font-size: 0.7em;
+      line-height: 1.26;
+    }
+    .reveal .slides > section.size-roomy {
+      font-size: 35px;
+    }
+    .reveal .slides > section.size-dense {
+      font-size: 29px;
+    }
+    .reveal .slides > section.size-compact {
+      padding-top: 34px;
+      padding-bottom: 34px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    .reveal .size-compact h1 {
+      margin-bottom: 0.42em;
+    }
+    .reveal .size-compact p,
+    .reveal .size-compact ul,
+    .reveal .size-compact ol {
+      margin-top: 0.24em;
+      margin-bottom: 0.24em;
+    }
+    .reveal .slides > section.title-slide {
+      font-size: 39px;
+    }
+    .reveal .title-slide h1 {
+      font-size: 1.65em;
+    }
+    .reveal .cluster-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.15em;
+      align-items: start;
+    }
+    .reveal .cluster-grid > div {
+      min-width: 0;
+    }
+    .reveal .cluster-grid > div > :first-child {
+      margin-top: 0;
+    }
+    .reveal .cluster-grid > div > :last-child {
+      margin-bottom: 0;
+    }
+    .reveal .cluster-tail {
+      margin-top: 0.62em;
+    }
+    .reveal .image-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+      gap: 0.52em 1.2em;
+      align-items: start;
+    }
+    .reveal .image-grid > div,
+    .reveal .image-grid > p {
+      min-width: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .reveal .image-grid .image-tail {
+      grid-column: 1 / -1;
+    }
+    .reveal .image-grid img {
+      max-height: 390px;
     }
   </style>
 </head>
@@ -1490,12 +1602,72 @@ S. Simpson 从诺丁汉写给 Dumfries 同行的信，把工价冲突和组织�
       center: false,
       width: 1600,
       height: 900,
-      margin: 0.025,
+      margin: 0.035,
       transition: "none",
       backgroundTransition: "none",
       navigationMode: "linear",
       markdown: { smartypants: false },
       plugins: [RevealMarkdown, RevealNotes]
+    }).then(() => {
+      const slides = Array.from(document.querySelectorAll(".reveal .slides > section"));
+      const roomyPages = new Set([1, 2, 7, 17, 26, 31, 33, 54, 56, 57, 61, 73, 74, 75, 76, 77]);
+      const densePages = new Set([13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 34, 35, 36, 38, 39, 40, 41, 42, 43, 46, 48, 49, 50, 51, 52, 53, 55, 59, 60, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72]);
+      const compactPages = new Set([20, 21, 23, 24, 30, 42, 52, 60, 66, 67, 71, 72]);
+      slides.forEach((slide, index) => {
+        const page = index + 1;
+        slide.classList.add('page-' + page);
+        if (roomyPages.has(page)) slide.classList.add("size-roomy");
+        if (densePages.has(page)) slide.classList.add("size-dense");
+        if (compactPages.has(page)) slide.classList.add("size-compact");
+        if (page === 1 || page === 61) slide.classList.add("title-slide");
+        const heading = slide.querySelector(":scope > h1, :scope > h2");
+        if (!heading) return;
+        const body = document.createElement("div");
+        body.className = "slide-body";
+        Array.from(slide.childNodes).forEach((node) => {
+          if (node !== heading && !(node.nodeType === 1 && node.matches("aside.notes"))) body.appendChild(node);
+        });
+        slide.appendChild(body);
+        body.querySelectorAll("p").forEach((paragraph) => {
+          if (/^来源[：:]/.test(paragraph.textContent.trim())) paragraph.classList.add("source-line");
+        });
+      });
+      function makeThreeColumnPairs(page, pairCount = 3) {
+        const body = slides[page - 1]?.querySelector(":scope > .slide-body");
+        if (!body) return;
+        const nodes = Array.from(body.children);
+        if (nodes.length < pairCount * 2) return;
+        const grid = document.createElement("div");
+        grid.className = "cluster-grid";
+        for (let index = 0; index < pairCount; index += 1) {
+          const group = document.createElement("div");
+          group.append(nodes[index * 2], nodes[index * 2 + 1]);
+          grid.appendChild(group);
+        }
+        const tail = document.createElement("div");
+        tail.className = "cluster-tail";
+        nodes.slice(pairCount * 2).forEach((node) => tail.appendChild(node));
+        body.replaceChildren(grid);
+        if (tail.childNodes.length) body.appendChild(tail);
+      }
+      [8, 35, 50, 78].forEach((page) => makeThreeColumnPairs(page));
+      const imageBody = slides[29]?.querySelector(":scope > .slide-body");
+      if (imageBody) {
+        const nodes = Array.from(imageBody.children);
+        if (nodes.length >= 6) {
+          const grid = document.createElement("div");
+          grid.className = "image-grid";
+          const lead = document.createElement("div");
+          lead.append(nodes[0], nodes[1]);
+          grid.append(lead, nodes[2]);
+          const tail = document.createElement("div");
+          tail.className = "image-tail";
+          nodes.slice(3).forEach((node) => tail.appendChild(node));
+          grid.appendChild(tail);
+          imageBody.replaceChildren(grid);
+        }
+      }
+      requestAnimationFrame(() => Reveal.layout());
     });
   </script>
 </body>
