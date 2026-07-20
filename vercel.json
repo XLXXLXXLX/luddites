@@ -1,3 +1,6 @@
 {
-  "cleanUrls": true
+    "$schema":  "https://openapi.vercel.sh/vercel.json",
+    "buildCommand":  "npx quartz plugin install --clean --concurrency=1 \u0026\u0026 npx quartz build",
+    "outputDirectory":  "public",
+    "cleanUrls":  true
 }
