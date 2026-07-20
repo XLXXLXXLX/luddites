@@ -44,6 +44,19 @@
       margin-right: 0;
       text-align: left;
     }
+    .reveal .slides > section.present > h1,
+    .reveal .slides > section.present > .slide-body {
+      width: 100%;
+      align-self: stretch;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: left !important;
+    }
+    .reveal .slide-body > * {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: left !important;
+    }
     .reveal .slide-body > :first-child {
       margin-top: 0;
     }
@@ -1693,6 +1706,12 @@ S. Simpson 从诺丁汉写给 Dumfries 同行的信，把工价冲突和组织�
           if (/^来源[：:]/.test(paragraph.textContent.trim())) paragraph.classList.add("source-line");
         });
       });
+      slides.forEach((slide, index) => {
+        slide.querySelectorAll("img").forEach((image) => {
+          image.loading = index === 0 ? "eager" : "lazy";
+          image.decoding = "async";
+        });
+      });
       function makeThreeColumnPairs(page, pairCount = 3) {
         const body = slides[page - 1]?.querySelector(":scope > .slide-body");
         if (!body) return;
@@ -1728,13 +1747,14 @@ S. Simpson 从诺丁汉写给 Dumfries 同行的信，把工价冲突和组织�
           imageBody.replaceChildren(grid);
         }
       }
-      function makeSlideFigure(item) {
+      function makeSlideFigure(item, page) {
         const figure = document.createElement("figure");
         figure.className = "slide-figure";
         const image = document.createElement("img");
-        image.src = item.src + "?v=20260720-2";
+        image.src = item.src + "?v=20260720-3";
         image.alt = item.alt;
-        image.loading = "eager";
+        image.loading = page === 1 ? "eager" : "lazy";
+        if (page === 1) image.fetchPriority = "high";
         image.decoding = "async";
         figure.appendChild(image);
         const caption = document.createElement("figcaption");
@@ -1750,7 +1770,7 @@ S. Simpson 从诺丁汉写给 Dumfries 同行的信，把工价冲突和组织�
         Array.from(body.childNodes).forEach((node) => copy.appendChild(node));
         const visual = document.createElement("div");
         visual.className = "visual-stack";
-        items.forEach((item) => visual.appendChild(makeSlideFigure(item)));
+        items.forEach((item) => visual.appendChild(makeSlideFigure(item, page)));
         body.classList.add("with-visual");
         if (side === "left") {
           body.classList.add("visual-left");
