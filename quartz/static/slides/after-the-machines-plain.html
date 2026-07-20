@@ -173,6 +173,61 @@
     .reveal .image-grid img {
       max-height: 390px;
     }
+    .reveal .slide-body.with-visual {
+      display: grid;
+      grid-template-columns: minmax(0, 1.48fr) minmax(330px, 0.72fr);
+      gap: 1em;
+      align-items: center;
+    }
+    .reveal .slide-body.with-visual.visual-left {
+      grid-template-columns: minmax(330px, 0.72fr) minmax(0, 1.48fr);
+    }
+    .reveal .visual-copy,
+    .reveal .visual-stack,
+    .reveal .slide-figure {
+      min-width: 0;
+    }
+    .reveal .visual-copy > :first-child,
+    .reveal .slide-figure > :first-child {
+      margin-top: 0;
+    }
+    .reveal .visual-copy > :last-child,
+    .reveal .slide-figure > :last-child {
+      margin-bottom: 0;
+    }
+    .reveal .slide-figure {
+      margin: 0;
+    }
+    .reveal .slide-figure img {
+      width: 100%;
+      max-height: 470px;
+      margin: 0 auto;
+      border: 1px solid #aaa;
+      background: #fff;
+      object-fit: contain;
+    }
+    .reveal .visual-stack {
+      display: grid;
+      gap: 0.48em;
+      align-content: center;
+    }
+    .reveal .visual-stack .slide-figure img {
+      max-height: 225px;
+    }
+    .reveal .slide-figure figcaption {
+      margin-top: 0.32em;
+      color: #000;
+      font-size: 0.43em;
+      line-height: 1.2;
+      text-align: left;
+    }
+    .reveal .slide-figure figcaption a {
+      color: #000;
+      text-decoration: underline;
+    }
+    .reveal .title-slide .slide-figure img {
+      max-height: 535px;
+    }
   </style>
 </head>
 <body>
@@ -1667,6 +1722,130 @@ S. Simpson 从诺丁汉写给 Dumfries 同行的信，把工价冲突和组织�
           imageBody.replaceChildren(grid);
         }
       }
+      function makeSlideFigure(item) {
+        const figure = document.createElement("figure");
+        figure.className = "slide-figure";
+        const image = document.createElement("img");
+        image.src = item.src;
+        image.alt = item.alt;
+        image.loading = "eager";
+        image.decoding = "async";
+        figure.appendChild(image);
+        const caption = document.createElement("figcaption");
+        caption.innerHTML = item.caption;
+        figure.appendChild(caption);
+        return figure;
+      }
+      function addVisual(page, items, side = "right") {
+        const body = slides[page - 1]?.querySelector(":scope > .slide-body");
+        if (!body || body.classList.contains("with-visual")) return;
+        const copy = document.createElement("div");
+        copy.className = "visual-copy";
+        Array.from(body.childNodes).forEach((node) => copy.appendChild(node));
+        const visual = document.createElement("div");
+        visual.className = "visual-stack";
+        items.forEach((item) => visual.appendChild(makeSlideFigure(item)));
+        body.classList.add("with-visual");
+        if (side === "left") {
+          body.classList.add("visual-left");
+          body.replaceChildren(visual, copy);
+        } else {
+          body.replaceChildren(copy, visual);
+        }
+      }
+      const assetRoot = "/static/slides/assets/after-machines-plain/";
+
+      addVisual(1, [{
+        src: assetRoot + "02-leader-of-the-luddites-1812.webp",
+        alt: "1812 年出版的《卢德派领袖》版画",
+        caption: "《卢德派领袖》，1812 年 5 月。公共领域，<a href=\"https://commons.wikimedia.org/wiki/File:Luddite.jpg\">Wikimedia Commons</a>。这是公共形象，不是写实肖像。"
+      }]);
+      addVisual(3, [{
+        src: assetRoot + "01-uk-and-ireland-1812-map.svg",
+        alt: "1812 年英爱联合王国在欧洲的位置图",
+        caption: "现代绘制的 1812 年英爱联合王国位置图，<a href=\"https://commons.wikimedia.org/wiki/File:United_Kingdom_of_Great_Britain_and_Ireland_1812.svg\">CC BY-SA 4.0</a>。原图不标示三个纺织区。"
+      }]);
+      addVisual(5, [{
+        src: assetRoot + "06-spinning-and-carding-wool-yorkshire-1814.webp",
+        alt: "1814 年《约克郡服饰》中的纺毛与梳毛场景",
+        caption: "纺毛与梳毛，《The Costume of Yorkshire》，1814。British Library / <a href=\"https://commons.wikimedia.org/wiki/File:Spinning_and_carding_wool_-_The_costume_of_Yorkshire_(1814),_plate_XXIX,_opposite_69_-_BL.jpg\">CC0</a>。"
+      }, {
+        src: assetRoot + "05-hand-loom-weaver.webp",
+        alt: "坐在手织机前工作的织工绘画",
+        caption: "手织机织工，F. W. Jackson，年代未注明。Manchester Art Gallery / <a href=\"https://commons.wikimedia.org/wiki/File:Hand_Loom_Weaver.jpeg\">CC BY-SA 3.0</a>；不是特定年份的现场记录。"
+      }], "left");
+      addVisual(11, [{
+        src: assetRoot + "03-stocking-frame-apparatus-1763.webp",
+        alt: "1763 年针织架及附属装置技术图",
+        caption: "针织架及附属装置，1763。原作公版；扫描件 <a href=\"https://commons.wikimedia.org/wiki/File:A_new_and_complete_dictionary_of_arts_and_sciences,_1763_%22The_Stocking-Frame_and_other_Apparatus_used_in_the_Manufactory%22_(22199153751).jpg\">CC BY 2.0</a>。"
+      }]);
+      addVisual(12, [{
+        src: assetRoot + "04-lees-knitting-frame-diagram.webp",
+        alt: "Lee 针织架的后世技术结构图",
+        caption: "Lee 针织架技术图，Felkin，1867。<a href=\"https://commons.wikimedia.org/wiki/File:Lee%27s_knitting_frame.jpg\">CC0</a>；用于解释结构，不是 1811 年原始材料。"
+      }], "left");
+      addVisual(18, [{
+        src: assetRoot + "07-cloth-dresser-cropper-yorkshire-1814.webp",
+        alt: "1814 年图像中的约克郡剪绒工",
+        caption: "剪绒工，George Walker，1814；现代数字修复。Rawpixel / <a href=\"https://commons.wikimedia.org/wiki/File:Illustration_from_The_Costume_of_Yorkshire_by_George_Walker,_digitally_enhanced_by_rawpixel-com_7.jpg\">CC BY-SA 4.0</a>。"
+      }, {
+        src: assetRoot + "08-cloth-shearing-machine-1914.webp",
+        alt: "1914 年百科全书中的剪绒机器技术图",
+        caption: "剪绒机器，1914 年后出技术图，仅用于解释结构。<a href=\"https://commons.wikimedia.org/wiki/File:NSRW_Story_of_Wool_-_shearing_machine.jpg\">PD-US</a>。"
+      }]);
+      addVisual(26, [{
+        src: assetRoot + "09-dumb-steeple-rawfolds-meeting-site.webp",
+        alt: "卢德工人在 Rawfolds 袭击前集结地点 Dumb Steeple 的现代照片",
+        caption: "Dumb Steeple：1812 年 Rawfolds 袭击前的集结地点。2009 年遗址照，Tim Green / <a href=\"https://commons.wikimedia.org/wiki/File:Dumb_Steeple,_Mirfield_(3398893509).jpg\">CC BY 2.0</a>。"
+      }], "left");
+      addVisual(51, [{
+        src: assetRoot + "12-peterloo-massacre-1819.webp",
+        alt: "描绘 1819 年彼得卢事件的同期政治版画",
+        caption: "Peterloo，1819 年同期政治版画。<a href=\"https://commons.wikimedia.org/wiki/File:Peterloo_Massacre.png\">公共领域</a>；应同时作为有立场的政治表述来读。"
+      }, {
+        src: assetRoot + "13-chartist-meeting-kennington-1848.webp",
+        alt: "1848 年 Kennington Common 宪章派群众集会照片",
+        caption: "Kennington Common 宪章派集会，1848。William Edward Kilburn / <a href=\"https://commons.wikimedia.org/wiki/File:Chartist_meeting_on_Kennington_Common_by_William_Edward_Kilburn_1848_-_restoration1.jpg\">公共领域</a>。"
+      }]);
+      addVisual(54, [{
+        src: assetRoot + "16-datacenter-server-racks-pexels.webp",
+        alt: "数据中心中的服务器机架和网络线缆",
+        caption: "数据中心机架与线缆。Brett Sayles / <a href=\"https://www.pexels.com/photo/server-racks-on-data-center-5480781/\">Pexels License</a>；不对应特定模型或公司。"
+      }, {
+        src: assetRoot + "17-clean-room-nasa.webp",
+        alt: "1994 年 NASA Goddard 高洁净室",
+        caption: "NASA Goddard 高洁净室，1994。Credit: NASA；这是航天洁净室，不是芯片制造厂。"
+      }], "left");
+      addVisual(56, [{
+        src: assetRoot + "19-warehouse-worker-scanner-pexels.webp",
+        alt: "仓储劳动者使用扫描器和平板管理库存",
+        caption: "仓储扫描与库存管理的图库场景。Tiger Lily / <a href=\"https://www.pexels.com/photo/worker-in-a-warehouse-4483941/\">Pexels License</a>；用于示意数字追踪。"
+      }]);
+      addVisual(57, [{
+        src: assetRoot + "18-call-centre-workers-pexels.webp",
+        alt: "佩戴耳机并使用电脑工作的呼叫中心劳动者",
+        caption: "呼叫中心劳动场景。Mikhail Nilov / <a href=\"https://www.pexels.com/photo/people-working-in-a-call-center-7682358/\">Pexels License</a>；不是数据标注现场。"
+      }], "left");
+      addVisual(58, [{
+        src: assetRoot + "20-office-workers-pexels.webp",
+        alt: "共享办公桌前使用笔记本电脑的劳动者",
+        caption: "办公室劳动场景。Kindel Media / <a href=\"https://www.pexels.com/photo/people-working-at-the-office-7651630/\">Pexels License</a>；不对应真实案例机构。"
+      }]);
+      addVisual(61, [{
+        src: assetRoot + "15-trade-union-banners-peoples-history-museum.webp",
+        alt: "曼彻斯特人民历史博物馆中的工会旗帜陈列",
+        caption: "工会旗帜，People’s History Museum，现代陈列照。David Dixon / <a href=\"https://commons.wikimedia.org/wiki/File:Trade_Union_Banners,_People%E2%80%99s_History_Museum_-_geograph.org.uk_-_7373892.jpg\">CC BY-SA 2.0</a>。"
+      }]);
+      addVisual(69, [{
+        src: assetRoot + "11-york-castle-1830.webp",
+        alt: "1830 年约克城堡版画",
+        caption: "York Castle，1830 年版画。<a href=\"https://commons.wikimedia.org/wiki/File:York_Castle_in_1830.jpg\">公共领域</a>；晚于 1813 年特别巡回法庭约十七年。"
+      }], "left");
+      addVisual(70, [{
+        src: assetRoot + "10-westhoughton-mill-plaque.webp",
+        alt: "纪念 Westhoughton 磨坊事件的现代蓝色纪念牌",
+        caption: "Westhoughton 磨坊事件纪念牌，现代遗址记忆。<a href=\"https://commons.wikimedia.org/wiki/File:Westhoughton_Mill.jpg\">CC0</a>；不是 1812 年现场图。"
+      }]);
       requestAnimationFrame(() => Reveal.layout());
     });
   </script>
