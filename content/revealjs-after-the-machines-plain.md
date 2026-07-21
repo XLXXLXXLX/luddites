@@ -1,5 +1,6 @@
 ---
 title: 砸机器之后：观众版逐页内容（无样式 Reveal.js）
+slug: after-machines/slides
 tags:
   - slide
   - revealjs

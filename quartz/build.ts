@@ -2,14 +2,14 @@ import sourceMapSupport from "source-map-support"
 sourceMapSupport.install(options)
 import path from "path"
 import { PerfTimer } from "./util/perf"
-import { rm } from "fs/promises"
+import { readFile, rm } from "fs/promises"
 import { GlobbyFilterFunction, isGitIgnored } from "globby"
 import { styleText } from "util"
 import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
 import cfg from "../quartz"
-import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
+import { FilePath, FullSlug, joinSegments, slugifyFilePath } from "./util/path"
 import { detectSlugCollisions, formatCollisionWarning } from "./util/slugCollisions"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
@@ -22,6 +22,41 @@ import { getStaticResourcesFromPlugins } from "./plugins"
 import { randomIdNonSecure } from "./util/random"
 import { ChangeEvent } from "./plugins/types"
 import { minimatch } from "minimatch"
+import { getFrontmatterSlug } from "./util/frontmatterSlug"
+
+async function buildFrontmatterSlugMap(
+  directory: string,
+  markdownPaths: FilePath[],
+): Promise<Record<string, FullSlug>> {
+  const entries = await Promise.all(
+    markdownPaths.map(async (relativePath) => {
+      const sourceSlug = slugifyFilePath(relativePath)
+      try {
+        const source = await readFile(joinSegments(directory, relativePath), "utf8")
+        const canonicalSlug = getFrontmatterSlug(source)
+        if (canonicalSlug && canonicalSlug !== sourceSlug) {
+          return [sourceSlug, canonicalSlug] as const
+        }
+      } catch {
+        // The regular parser reports unreadable files with fuller context.
+      }
+      return undefined
+    }),
+  )
+
+  return Object.fromEntries(entries.filter((entry) => entry !== undefined))
+}
+
+function collectAllSlugs(allFiles: FilePath[], slugMap: Record<string, FullSlug>): FullSlug[] {
+  const slugs = new Set<FullSlug>()
+  for (const filePath of allFiles) {
+    const sourceSlug = slugifyFilePath(filePath)
+    slugs.add(sourceSlug)
+    const canonicalSlug = slugMap[sourceSlug]
+    if (canonicalSlug) slugs.add(canonicalSlug)
+  }
+  return [...slugs]
+}
 
 function reportSlugCollisions(content: ProcessedContent[]): void {
   const collisions = detectSlugCollisions(content)
@@ -66,6 +101,7 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
     cfg,
     allSlugs: [],
     allFiles: [],
+    slugMap: {},
     incremental: false,
     virtualPages: [],
   }
@@ -91,14 +127,15 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   perf.addEvent("glob")
   const allFiles = await glob("**/*.*", argv.directory, cfg.configuration.ignorePatterns)
-  const markdownPaths = allFiles.filter((fp) => fp.endsWith(".md")).sort()
+  const markdownPaths = allFiles.filter((fp) => fp.endsWith(".md")).sort() as FilePath[]
   console.log(
     `Found ${markdownPaths.length} input files from \`${argv.directory}\` in ${perf.timeSince("glob")}`,
   )
 
   const filePaths = markdownPaths.map((fp) => joinSegments(argv.directory, fp) as FilePath)
   ctx.allFiles = allFiles
-  ctx.allSlugs = allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+  ctx.slugMap = await buildFrontmatterSlugMap(argv.directory, markdownPaths)
+  ctx.allSlugs = collectAllSlugs(ctx.allFiles, ctx.slugMap)
 
   const parsedFiles = await parseMarkdown(ctx, filePaths)
   reportSlugCollisions(parsedFiles)
@@ -238,11 +275,29 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
     const staticResources = getStaticResourcesFromPlugins(ctx)
     const pathsToParse: FilePath[] = []
     for (const [fp, type] of Object.entries(changesSinceLastBuild)) {
-      if (type === "delete" || path.extname(fp) !== ".md") continue
+      if (path.extname(fp) !== ".md") continue
+      const sourceSlug = slugifyFilePath(fp as FilePath)
+      if (type === "delete") {
+        delete ctx.slugMap[sourceSlug]
+        continue
+      }
+
       const fullPath = joinSegments(argv.directory, toPosixPath(fp)) as FilePath
+      try {
+        const source = await readFile(fullPath, "utf8")
+        const canonicalSlug = getFrontmatterSlug(source)
+        if (canonicalSlug && canonicalSlug !== sourceSlug) {
+          ctx.slugMap[sourceSlug] = canonicalSlug
+        } else {
+          delete ctx.slugMap[sourceSlug]
+        }
+      } catch {
+        delete ctx.slugMap[sourceSlug]
+      }
       pathsToParse.push(fullPath)
     }
 
+    ctx.allSlugs = collectAllSlugs(Array.from(contentMap.keys()), ctx.slugMap)
     const parsed = await parseMarkdown(ctx, pathsToParse)
     for (const content of parsed) {
       const relPath = content[1].data.relativePath
@@ -294,7 +349,7 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
 
     // update allFiles and then allSlugs with the consistent view of content map
     ctx.allFiles = Array.from(contentMap.keys())
-    ctx.allSlugs = ctx.allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+    ctx.allSlugs = collectAllSlugs(ctx.allFiles, ctx.slugMap)
 
     const markdownContent = Array.from(contentMap.values())
       .filter((file) => file.type === "markdown")

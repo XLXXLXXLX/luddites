@@ -3,17 +3,108 @@ import remarkParse from "remark-parse"
 import remarkRehype from "remark-rehype"
 import { Processor, unified } from "unified"
 import { Root as MDRoot } from "remark-parse/lib"
-import { Root as HTMLRoot } from "hast"
+import { Element, Root as HTMLRoot } from "hast"
 import { MarkdownContent, ProcessedContent } from "../plugins/vfile"
 import { PerfTimer } from "../util/perf"
 import { read } from "to-vfile"
-import { FilePath, QUARTZ, slugifyFilePath } from "../util/path"
+import {
+  FilePath,
+  FullSlug,
+  QUARTZ,
+  RelativeURL,
+  resolveRelative,
+  simplifySlug,
+  slugifyFilePath,
+  stripSlashes,
+} from "../util/path"
 import path from "path"
 import workerpool, { Promise as WorkerPromise } from "workerpool"
 import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx, WorkerSerializableBuildCtx } from "../util/ctx"
 import { styleText } from "util"
+import { visit } from "unist-util-visit"
+
+function isExternalOrAnchor(url: string): boolean {
+  return url.startsWith("#") || url.startsWith("//") || /^[a-zA-Z][a-zA-Z\d+.-]*:/.test(url)
+}
+
+function resolveTargetFromUrl(
+  url: string,
+  sourceSlug: FullSlug,
+): { slug: FullSlug; suffix: string } {
+  const sourceBase = stripSlashes(simplifySlug(sourceSlug), true)
+  const parsed = new URL(url, `https://base.invalid/${sourceBase}`)
+  let target = decodeURIComponent(stripSlashes(parsed.pathname, true))
+  if (target.endsWith("/")) target += "index"
+  return { slug: target as FullSlug, suffix: parsed.search + parsed.hash }
+}
+
+function canonicalTarget(slugMap: Record<string, FullSlug>, slug: FullSlug): FullSlug {
+  return slugMap[slug] ?? slug
+}
+
+function rebaseInternalUrl(
+  url: string,
+  sourceSlug: FullSlug,
+  pageSlug: FullSlug,
+  slugMap: Record<string, FullSlug>,
+  knownTarget?: FullSlug,
+): { url: RelativeURL; target: FullSlug } | undefined {
+  if (isExternalOrAnchor(url)) return undefined
+  const resolved = resolveTargetFromUrl(url, sourceSlug)
+  const target = canonicalTarget(slugMap, knownTarget ?? resolved.slug)
+  return {
+    url: (resolveRelative(pageSlug, simplifySlug(target)) + resolved.suffix) as RelativeURL,
+    target,
+  }
+}
+
+function applyCanonicalSlug(
+  tree: HTMLRoot,
+  file: MarkdownContent[1],
+  sourceSlug: FullSlug,
+  pageSlug: FullSlug,
+  slugMap: Record<string, FullSlug>,
+) {
+  visit(tree, "element", (node: Element) => {
+    const properties = node.properties
+    if (!properties) return
+
+    if (node.tagName === "a" && typeof properties.href === "string") {
+      const knownTarget =
+        typeof properties["data-slug"] === "string"
+          ? (properties["data-slug"] as FullSlug)
+          : undefined
+      const rebased = rebaseInternalUrl(properties.href, sourceSlug, pageSlug, slugMap, knownTarget)
+      if (rebased) {
+        properties.href = rebased.url
+        properties["data-slug"] = rebased.target
+      }
+    }
+
+    for (const property of ["src", "data"] as const) {
+      if (typeof properties[property] !== "string") continue
+      const rebased = rebaseInternalUrl(properties[property], sourceSlug, pageSlug, slugMap)
+      if (rebased) properties[property] = rebased.url
+    }
+  })
+
+  const links = file.data.links
+  if (Array.isArray(links)) {
+    file.data.links = links.map((link) => {
+      if (typeof link !== "string") return link
+      return simplifySlug(canonicalTarget(slugMap, link as unknown as FullSlug))
+    })
+  }
+
+  if (pageSlug !== sourceSlug) {
+    const aliases = new Set<FullSlug>(((file.data.aliases as FullSlug[] | undefined) ?? []).flat())
+    aliases.add(sourceSlug)
+    file.data.aliases = [...aliases]
+    file.data.slug = pageSlug
+  }
+}
 
 export type QuartzMdProcessor = Processor<MDRoot, MDRoot, MDRoot>
 export type QuartzHtmlProcessor = Processor<undefined, MDRoot, HTMLRoot>
@@ -127,7 +218,10 @@ export function createMarkdownParser(ctx: BuildCtx, mdContent: MarkdownContent[]
       try {
         const perf = new PerfTimer()
 
+        const sourceSlug = file.data.slug as FullSlug
         const newAst = await processor.run(ast as MDRoot, file)
+        const pageSlug = ctx.slugMap[sourceSlug] ?? sourceSlug
+        applyCanonicalSlug(newAst, file, sourceSlug, pageSlug, ctx.slugMap)
         res.push([newAst, file])
 
         if (ctx.argv.verbose) {
@@ -176,6 +270,7 @@ export async function parseMarkdown(ctx: BuildCtx, fps: FilePath[]): Promise<Pro
       argv: ctx.argv,
       allSlugs: ctx.allSlugs,
       allFiles: ctx.allFiles,
+      slugMap: ctx.slugMap,
       incremental: ctx.incremental,
       virtualPages: [],
     }
