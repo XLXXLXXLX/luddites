@@ -9,10 +9,10 @@ tags:
 
 这份 Reveal.js 幻灯片直接转换自 [[讲稿与大纲/砸机器之后_观众版逐页内容_重构版]]。共 78 页，其中前 60 页为连续放映主体，后 18 页为问答备用材料。
 
-[手机端在新标签页中独立播放](/static/slides/after-the-machines-plain-v4.html)
+[手机端在新标签页中独立播放](/static/slides/after-the-machines-plain-v5.html)
 
 <iframe
-  src="/static/slides/after-the-machines-plain-v4.html"
+  src="/static/slides/after-the-machines-plain-v5.html"
   style="display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; min-height: 0; border: none; background: white;"
   allowfullscreen>
 </iframe>
