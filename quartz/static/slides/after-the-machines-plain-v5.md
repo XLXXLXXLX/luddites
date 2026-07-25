@@ -21,8 +21,6 @@
 
 **反机器、失业、砸工厂、技术恐惧、拒绝进步……**
 
-请给出一两个词。这里不急着判断对错；这些词将在历史材料、史学争论和当代技术冲突中反复接受检验。
-
 
 
 ---
@@ -31,7 +29,7 @@
 
 # 先给出最低限度的定义：1811—1813 年发生了什么？
 
-英格兰三个纺织地区的劳动者借用 **“Ludd”或“General Ludd”** 的名义，破坏织机、剪绒设备和工厂设施。
+英格兰三个纺织地区的劳动者借用 <strong>“Ludd”或<span class="term-explainer" data-term-key="general-ludd">“General Ludd”</span></strong> 的名义，破坏织机、剪绒设备和工厂设施。
 
 同一时期还发生了：
 
@@ -58,11 +56,11 @@
 
 | 时间 | 地点与事件 | 变化 |
 |---|---|---|
-| 1811 年春 | 诺丁汉郡出现集中毁架 | 工价、产品规格和行业资格成为冲突对象 |
+| 1811 年春 | <span class="term-explainer" data-term-key="place-nottinghamshire">诺丁汉郡</span>出现集中毁架 | 工价、产品规格和行业资格成为冲突对象 |
 | 1811 年秋冬 | “Ludd”名义扩散 | 共享署名与威慑出现，但没有已证实的全国总部 |
-| 1812 年春 | 约克郡 Rawfolds、兰开夏 Westhoughton 等冲突 | 行动延伸到武装攻厂、纵火和城市生计危机 |
+| 1812 年春 | <span class="term-explainer" data-term-key="place-yorkshire">约克郡</span> <span class="term-explainer" data-term-key="place-rawfolds">Rawfolds</span>、<span class="term-explainer" data-term-key="place-lancashire">兰开夏</span> <span class="term-explainer" data-term-key="place-westhoughton">Westhoughton</span> 等冲突 | 行动延伸到武装攻厂、纵火和城市生计危机 |
 | 1812 年中后期 | 驻军、间谍、悬赏和死刑立法加强 | 工业冲突被更强的军事与司法体系包围 |
-| 1813 年 | 约克特别巡回法庭与集中处决 | 共同危机被拆成谋杀、盗窃、暴动等个体案件 |
+| 1813 年 | <span class="term-explainer" data-term-key="place-york">约克</span>特别巡回法庭与集中处决 | 共同危机被拆成谋杀、盗窃、暴动等个体案件 |
 
 集中行动随后衰退，但工价、组织和政治代表问题没有消失。
 
@@ -180,8 +178,8 @@
 
 | 地区 | 劳动制度与首要冲突 | 最突出的政治能力 |
 |---|---|---|
-| 诺丁汉与东米德兰 | 针织架、商人转包、工价与产品规格 | 调查、代表、谈判和准监管 |
-| 约克郡西区 | 熟练剪绒工序、集中化磨坊和武装防卫 | 秘密纪律、定点毁坏和武装协调 |
+| 诺丁汉与<span class="term-explainer" data-term-key="place-east-midlands">东米德兰</span> | 针织架、商人转包、工价与产品规格 | 调查、代表、谈判和准监管 |
+| <span class="term-explainer" data-term-key="place-west-riding">约克郡西区</span> | 熟练剪绒工序、集中化磨坊和武装防卫 | 秘密纪律、定点毁坏和武装协调 |
 | 兰开夏与西北 | 动力生产、手织业、粮价、工资和政治改革 | 把行业冲突扩展为城市生计危机 |
 
 地区差异不是背景细节。劳动怎样组织，会改变谁能联结、什么目标最脆弱，以及行动如何遭遇国家。
@@ -194,7 +192,7 @@
 
 # 诺丁汉的冲突围绕一整套分散生产制度展开
 
-框架针织主要在家庭和小作坊中完成。袜商控制订单、原料、信用和市场，织工往往承担机架租金、工价下降、订单波动和产品规格改变的风险。
+<span class="term-explainer" data-term-key="framework-knitter">框架针织工</span>主要在家庭和小作坊中工作。袜商控制订单、原料、信用和市场，织工往往承担机架租金、工价下降、订单波动和产品规格改变的风险。
 
 宽幅织机可以先织成大片织物，再裁剪缝合成袜子；没有完成传统学徒训练的人也能进入部分生产。争议因此同时涉及：
 
@@ -245,13 +243,13 @@
 # 同一个月里，威胁、加价、请愿和和平秩序同时出现
 
 > **1811 年 11 月 8 日，Ned Lud 信（原信残损）：**  
-> “pull don the Frames … my Companey will [visit yr machines for execution]”
+> <span class="term-explainer source-excerpt" data-term-key="source-ned-lud-letter">“pull don the Frames … my Companey will [visit yr machines for execution]”</span>
 >
 > **11 月 27 日，公开感谢书：**  
-> 52 家袜商同意为黑丝袜每双加价六便士。
+> <span class="term-explainer source-excerpt" data-term-key="source-crump-address">52 家袜商同意为黑丝袜每双加价六便士。</span>
 >
 > **11 月 28 日，框架针织工公开信：**  
-> 要求 “better Regulation of our Trade”，并希望行动 “peaceably and in good order”。
+> <span class="term-explainer source-excerpt" data-term-key="source-framework-address">要求 “better Regulation of our Trade”，并希望行动 “peaceably and in good order”。</span>
 
 三份文本未必出自同一批人，却足以证明公开协商与匿名强制并非两个先后替代的阶段。
 
@@ -271,9 +269,9 @@
 
 1812 年，Gravener Henson 呼吁周边城镇和村庄：
 
-> “send Two credible Persons”
+> <span class="term-explainer source-excerpt" data-term-key="source-henson-advert">“send Two credible Persons”</span>
 
-每地派出两名可信人士，会议集中 “the best Intelligence”，再由代表向议员说明骚乱的原因。后来的总会自称有 106 名代表，其中 76 名来自诺丁汉周边十六英里以内。
+每地派出两名可信人士，会议集中 <span class="term-explainer source-excerpt" data-term-key="source-henson-advert">“the best Intelligence”</span>，再由代表向议员说明骚乱的原因。后来的总会自称有 106 名代表，其中 76 名来自诺丁汉周边十六英里以内。
 
 这不是一个全国工人议会，却显示出三项重要能力：
 
@@ -295,9 +293,9 @@
 
 # 诺丁汉工人提出的不是情绪宣言，而是一套生产规制方案
 
-联合委员会要求按机架与针数规定产品和计件价格，反对裁剪件、低质产品和实物工资。决议中的制度语言包括：
+联合委员会要求按机架与针数规定产品和计件价格，反对裁剪件、低质产品和<span class="term-explainer" data-term-key="truck-system">实物工资</span>。决议中的制度语言包括：
 
-> **“by the Rack, or Count”**
+> <strong><span class="term-explainer source-excerpt" data-term-key="source-joint-committee">“by the Rack, or Count”</span></strong>
 
 也就是让工价与可以检查的生产单位相连接，而不是由袜商单方面决定。
 
@@ -322,9 +320,9 @@
 
 # “以骚乱谈判”解释了压力，却没有穷尽生产政治
 
-霍布斯鲍姆把毁机理解为一种集体谈判：
+霍布斯鲍姆把毁机理解为一种<span class="term-explainer" data-term-key="collective-bargaining-by-riot">“以骚乱进行集体谈判”</span>：
 
-> “这种‘借由暴动来集体协商’的盛行已经被研究者充分地证实。”
+> <span class="term-explainer source-excerpt" data-term-key="source-hobsbawm-machine-breakers">“这种‘借由暴动来集体协商’的盛行已经被研究者充分地证实。”</span>
 
 这个解释恢复了行动的工具理性：公开代表提出工价与协议，夜间毁架则让拒绝协议的袜商付出成本。
 
@@ -367,7 +365,7 @@ Randall 的修正更进一步。诺丁汉的冲突不只是临时加薪，也涉
 
 # 约克郡的核心冲突发生在熟练整理工序与集中化磨坊之间
 
-剪绒工负责把毛织品表面整理平整。工作依赖长期训练、手工判断和对质量的控制，也是熟练身份与工资地位的来源。
+<span class="term-explainer" data-term-key="cropper">剪绒工</span>负责把毛织品表面整理平整。工作依赖长期训练、手工判断和对质量的控制，也是熟练身份与工资地位的来源。
 
 刷毛机、剪绒机和集中化磨坊改变的不只是效率：
 
@@ -395,11 +393,11 @@ Randall 的修正更进一步。诺丁汉的冲突不只是临时加薪，也涉
 
 # Sykes 的证词让一次夜间毁机进入家庭与工场的边界
 
-1812 年 3 月 6 日，Linthwaite 的 John Sykes 在治安法官面前宣誓：凌晨一至二点，一群伪装者要求进入主人 William Cotton 的住宅。
+1812 年 3 月 6 日，<span class="term-explainer" data-term-key="place-linthwaite">Linthwaite</span> 的 John Sykes 在治安法官面前宣誓：凌晨一至二点，一群伪装者要求进入主人 William Cotton 的住宅。
 
 据他陈述，进入者询问枪支、弹药和主人去向，控制家人，随后毁坏：
 
-> **十副剪刀和一台刷毛机**
+> <strong><span class="term-explainer source-excerpt" data-term-key="source-sykes-deposition">十副剪刀和一台刷毛机</span></strong>
 
 一名似乎负责指挥的人还威胁，如果下次机器仍在，就将炸毁房舍。
 
@@ -425,7 +423,7 @@ Randall 的修正更进一步。诺丁汉的冲突不只是临时加薪，也涉
 | 在短时间内进入并破坏生产设施 | 把机器财产权连接到地方治安与后续审判 |
 | 依靠熟人网络和社区沉默撤离 | 依靠证人、悬赏和国家资源追查个人 |
 
-同期控罪把行动概括为开始 “demolish and pull down” 这座磨坊。这里被攻击的已不只是一台机器，而是一座设防生产空间。
+同期控罪把行动概括为开始 <span class="term-explainer source-excerpt" data-term-key="source-rawfolds-indictment">“demolish and pull down”</span> 这座磨坊。这里被攻击的已不只是一台机器，而是一座设防生产空间。
 
 **Rawfolds 证明了全国起义，还是证明行业冲突已被双方军事化？**
 
@@ -441,16 +439,16 @@ Randall 的修正更进一步。诺丁汉的冲突不只是临时加薪，也涉
 
 # Horsfall 遇刺标志着冲突从生产设施转向具体的人
 
-William Horsfall 是 Ottiwells Mill 厂主，也是地方反卢德派治理和志愿军事体系中的显要人物。1812 年 4 月 28 日，他从 Huddersfield 市场返程时中枪，两天后死亡。
+William Horsfall 是 <span class="term-explainer" data-term-key="place-ottiwells-mill">Ottiwells Mill</span> 厂主，也是地方反卢德派治理和志愿军事体系中的显要人物。1812 年 4 月 28 日，他从 <span class="term-explainer" data-term-key="place-huddersfield">Huddersfield</span> 市场返程时中枪，两天后死亡。
 
 同期材料能够确认：
 
 - 报纸报道了袭击和伤情；
 - 外科陈述记录了伤口；
-- 验尸结论是 “Wilful Murder by a person or persons unknown”；
+- 验尸结论是 <span class="term-explainer source-excerpt" data-term-key="source-horsfall-inquest">“Wilful Murder by a person or persons unknown”</span>；
 - 1813 年特别法庭把案件作为谋杀审理，而非单一毁机案。
 
-后来的地方史说他曾夸口要骑进卢德派鲜血直到马鞍肚带。这句话形成了鲜明的阶级寓言，却只能追到 Frank Peel 1880 年的地方叙事，不能当作 1812 年逐字原话或刺杀的单一动机。
+后来的地方史说他曾<span class="term-explainer source-excerpt" data-term-key="source-horsfall-peel-memory">夸口要骑进卢德派鲜血直到马鞍肚带</span>。这句话形成了鲜明的阶级寓言，却只能追到 Frank Peel 1880 年的地方叙事，不能当作 1812 年逐字原话或刺杀的单一动机。
 
 来源：*Leeds Mercury*, 2 May 1812；TNA HO 42/122；Frank Peel，*The Risings…*，1880。
 
@@ -488,7 +486,7 @@ William Horsfall 是 Ottiwells Mill 厂主，也是地方反卢德派治理和�
 
 # 约克特别法庭没有审理一种统一的“砸机罪”
 
-1813 年 1 月，66 名被告进入约克特别巡回法庭的审理名单，18 人被判资本刑，其中 17 人被处决。处决所依据的案件并不属于同一类别：
+1813 年 1 月，66 名被告进入<span class="term-explainer" data-term-key="york-special-assize">约克特别巡回法庭</span>的审理名单，18 人被判资本刑，其中 17 人被处决。处决所依据的案件并不属于同一类别：
 
 | 案件类型 | 结果 |
 |---|---|
@@ -517,7 +515,7 @@ William Horsfall 是 Ottiwells Mill 厂主，也是地方反卢德派治理和�
 
 Rawfolds 袭击后 Booth 受伤并死亡。《Leeds Mercury》报道他与 Samuel Hartley：
 
-> “without making any confession of their accomplices”
+> <span class="term-explainer source-excerpt" data-term-key="source-booth-news">“without making any confession of their accomplices”</span>
 
 这支持“没有供出同伴”的基本轮廓，却没有保存后来流传的完整对白。
 
@@ -589,7 +587,7 @@ Thomis 等修正主义研究则提醒：
 
 # 兰开夏的危机把机器、工资、面包和政治改革缠在一起
 
-兰开夏与曼彻斯特周边最不适合被缩成“手织工反对动力织机”。
+兰开夏与<span class="term-explainer" data-term-key="place-manchester">曼彻斯特</span>周边最不适合被缩成“手织工反对动力织机”。
 
 动力生产、手织业衰退、工资下降、失业、粮价、战争和出口萎缩同时发生。参与者包括手织工、工厂劳动者、城市与乡村群众；行动也包括：
 
@@ -612,7 +610,7 @@ Thomis 等修正主义研究则提醒：
 
 起诉书使用的语言是：
 
-> “wilfully and maliciously set on fire and burnt a Weaving Mill, Warehouse and Loom Shop”
+> <span class="term-explainer source-excerpt" data-term-key="source-westhoughton-indictment">“wilfully and maliciously set on fire and burnt a Weaving Mill, Warehouse and Loom Shop”</span>
 
 检方把群众中的在场、言语、破窗、取燃料、持有工具和纵火连接成资本罪。陪审团又对不同被告作出有罪与无罪的区别裁断。
 
@@ -632,7 +630,7 @@ Thomis 等修正主义研究则提醒：
 
 兰开夏一封匿名纺纱工信件把男性就业、家庭供养和儿童缺少面包连接起来，要求厂主停止雇用女性，并以一句威胁结尾：
 
-> **“Reform or Death.”**
+> <strong><span class="term-explainer source-excerpt" data-term-key="source-reform-or-death">“Reform or Death.”</span></strong>
 
 这不是一段可以自动归入“工人团结”的材料。它同时包含：
 
@@ -657,7 +655,7 @@ Thomis 等修正主义研究则提醒：
 
 1812 年 3 月，一份署名 “An Old Weaver” 的传单为机械化辩护。它把机器、廉价商品、市场扩大和总体就业连接起来，并反问：
 
-> “What right has any man to prevent thousands from buying their goods cheap?”  
+> <span class="term-explainer source-excerpt" data-term-key="source-fellow-weavers">“What right has any man to prevent thousands from buying their goods cheap?”</span>  
 > 一个人有什么权利阻止成千上万人购买更便宜的商品？
 
 ![1812 年《Fellow Weavers!》原件及国家档案馆转录](/assets/luddite-evidence/national-archives-fellow-weavers-11.png)
@@ -798,7 +796,7 @@ Navickas 说明 “General Ludd” 的神话可以组织情感、身份和威慑
 
 共同处境可能产生竞争，共同规范可能排斥他人，共同名称可能没有实体协调，组织可能替代成员，行动也可能只留下刑事惩罚。
 
-> “工人阶级并不像太阳那样在预定的时间升起，它出现在它自身的形成中。”
+> <span class="term-explainer source-excerpt" data-term-key="source-thompson-making">“工人阶级并不像太阳那样在预定的时间升起，它出现在它自身的形成中。”</span>
 
 来源：E. P. Thompson，*The Making of the English Working Class*，序言。
 
@@ -892,13 +890,13 @@ Navickas 说明 “General Ludd” 的神话可以组织情感、身份和威慑
 
 工资下降、工作消失和技能贬值不会自己开口。汤普森的贡献，是把阶级理解为在经验、冲突、组织和文化中形成的历史关系。
 
-“道德经济”不是群众拥有朴素美德，而是利益通过公平价格、习惯权利、职业尊严和公共义务被说成：
+<span class="term-explainer" data-term-key="moral-economy">“道德经济”</span>不是群众拥有朴素美德，而是利益通过公平价格、习惯权利、职业尊严和公共义务被说成：
 
 > 这不只是对我不利，而是某种不应发生的事。
 
 汤普森在研究粮食骚动时写道：
 
-> “An outrage to these moral assumptions, quite as much as actual deprivation, was the usual occasion for direct action.”  
+> <span class="term-explainer source-excerpt" data-term-key="source-thompson-moral-economy">“An outrage to these moral assumptions, quite as much as actual deprivation, was the usual occasion for direct action.”</span>  
 > 对道德假设的冒犯，与现实剥夺本身一样，通常成为直接行动的契机。
 
 它解释直接行动的正当性来源，却不能单独说明组织尺度、现实杠杆和国家镇压。
@@ -1114,9 +1112,9 @@ Przeworski 进一步把阶级政治写成组织、解组与重组。工会组织
 
 **1814 年的停工与分会**
 
-一封从诺丁汉寄往 Dumfries 的信记录：约 300 名平丝针织工已经停工六周以上，要求每双加价 2d；写信人又说：
+一封从诺丁汉寄往 <span class="term-explainer" data-term-key="place-dumfries">Dumfries</span> 的信记录：约 300 名平丝针织工已经停工六周以上，要求每双加价 2d；写信人又说：
 
-> “Hosiers have formed a powerful Combination against us.”
+> <span class="term-explainer source-excerpt" data-term-key="source-dumfries-letter">“Hosiers have formed a powerful Combination against us.”</span>
 
 同一封信寄出章程和凭状，邀请建立分会。匿名威慑之外，会费、停工、文件和跨地区互助开始保存关系与记忆。
 
@@ -1390,17 +1388,17 @@ AI 系统仍可能依赖劳动者：
 
 **匿名威胁｜11 月 8 日**
 
-> “pull don the Frames … my Companey will [visit yr machines for execution]”
+> <span class="term-explainer source-excerpt" data-term-key="source-ned-lud-letter">“pull don the Frames … my Companey will [visit yr machines for execution]”</span>
 
 机器、支付安排与 “execution” 的拟司法语言被写进同一个条件句。
 
 **具名谈判｜11 月 27 日**
 
-> William Crump 代表平丝袜工，感谢 52 家袜商同意黑丝袜每双加价六便士。
+> <span class="term-explainer source-excerpt" data-term-key="source-crump-address">William Crump 代表平丝袜工，感谢 52 家袜商同意黑丝袜每双加价六便士。</span>
 
 **共同请愿｜11 月 28 日**
 
-> “better Regulation of our Trade” · “peaceably and in good order”
+> <span class="term-explainer source-excerpt" data-term-key="source-framework-address">“better Regulation of our Trade” · “peaceably and in good order”</span>
 
 三份材料不能证明作者相同，却直接否定了“协商彻底失败以后才出现暴力”的整齐顺序。
 
@@ -1418,14 +1416,14 @@ AI 系统仍可能依赖劳动者：
 
 **Henson 的会议广告**
 
-> “send Two credible Persons”  
-> “the best Intelligence”
+> <span class="term-explainer source-excerpt" data-term-key="source-henson-advert">“send Two credible Persons”</span>  
+> <span class="term-explainer source-excerpt" data-term-key="source-henson-advert">“the best Intelligence”</span>
 
 城镇和村庄派出可信人士，把分散信息整理后交给议员，说明骚乱的原因。
 
 **联合委员会的规制语言**
 
-> “by the Rack, or Count”
+> <span class="term-explainer source-excerpt" data-term-key="source-joint-committee">“by the Rack, or Count”</span>
 
 工价与可检查的机架、针数和产品单位连接；决议还涉及产品标识、裁剪件、低质产品和实物工资。
 
@@ -1445,13 +1443,13 @@ AI 系统仍可能依赖劳动者：
 
 **M39 圆函**
 
-> 雇主企图拖垮工人的 “fortitude and finances”；通信者要求维持既有的 “steady line of conduct”，并在读后销毁信件。
+> <span class="term-explainer source-excerpt" data-term-key="source-nottingham-circular">雇主企图拖垮工人的 “fortitude and finances”；通信者要求维持既有的 “steady line of conduct”，并在读后销毁信件。</span>
 
 **M40 遮字信**
 
-> 表层：“The Committee for the relief of the Poor meet on Wednesday night at 8 o’clock …”
+> <span class="term-explainer source-excerpt" data-term-key="source-bullwell-coded-letter">表层：“The Committee for the relief of the Poor meet on Wednesday night at 8 o’clock …”</span>
 >
-> 解码：“The Committee / meet on Wednesday night at 8 o’clock / on Bullwell Common.”
+> <span class="term-explainer source-excerpt" data-term-key="source-bullwell-coded-letter">解码：“The Committee / meet on Wednesday night at 8 o’clock / on Bullwell Common.”</span>
 
 这些材料属于米德兰地区，证明具体的协调、保密和信息销毁技术存在；它们没有提供固定成员名单、共同议程或全国命令链。
 
@@ -1502,7 +1500,7 @@ AI 系统仍可能依赖劳动者：
 | 辩护与交叉询问 | 不在场材料、能见度、识别和证词矛盾 | 整体无罪的自动证明 |
 | 陪审团裁断 | 五项有罪、三项无罪 | 对所有史实争议的最终解决 |
 
-同期概述使用 “began to demolish and pull down” the mill。不同材料层必须分别标明，不能把控方叙事、判决结果和历史事实压成一句话。
+同期概述使用 <span class="term-explainer source-excerpt" data-term-key="source-rawfolds-indictment">“began to demolish and pull down” the mill</span>。不同材料层必须分别标明，不能把控方叙事、判决结果和历史事实压成一句话。
 
 来源：Joseph Gurney，*Report of Proceedings…York*，1813，pp. 144, 165–166。
 
@@ -1518,19 +1516,19 @@ AI 系统仍可能依赖劳动者：
 
 **1812 年同期新闻**
 
-> Booth 与 Hartley “without making any confession of their accomplices”。
+> Booth 与 Hartley <span class="term-explainer source-excerpt" data-term-key="source-booth-news">“without making any confession of their accomplices”</span>。
 
 这能支持两人没有供出同伴，不能支持后来完整的临终对白。
 
 **1812 年被截获的私人信**
 
-> 如果有人 “be obliged to leave”，写信人已经替他们找到一个 “seat of work”。
+> <span class="term-explainer source-excerpt" data-term-key="source-houghton-work-letter">如果有人 “be obliged to leave”，写信人已经替他们找到一个 “seat of work”。</span>
 
 这表明行动风险与谋生互助发生联系，不能证明存在成熟的逃亡网络。
 
 **1880 年地方叙事**
 
-> “Can you keep a secret?” — “So can I.”
+> <span class="term-explainer source-excerpt" data-term-key="source-booth-peel-memory">“Can you keep a secret?” — “So can I.”</span>
 
 这句话属于 Frank Peel 记录的晚出记忆，不是同期验尸或供词。它适合研究殉道者记忆怎样形成。
 
@@ -1548,11 +1546,11 @@ AI 系统仍可能依赖劳动者：
 
 **Horsfall**
 
-同期材料确认他在 1812 年 4 月 28 日遇袭、两天后死亡，并由验尸与法庭按谋杀处理。著名“骑进卢德派鲜血”豪言来自 1880 年地方史，不能当作同期原话。
+同期材料确认他在 1812 年 4 月 28 日遇袭、两天后死亡，并由验尸与法庭按谋杀处理。<span class="term-explainer source-excerpt" data-term-key="source-horsfall-peel-memory">著名“骑进卢德派鲜血”豪言来自 1880 年地方史</span>，不能当作同期原话。
 
 **Mellor**
 
-被截获的候审信一边要求亲属坚持此前证词，一边要求把一串名字加入议会改革请愿。它涉及证词协调，不能写成纯粹英雄文本。
+<span class="term-explainer source-excerpt" data-term-key="source-mellor-york-letter">被截获的候审信一边要求亲属坚持此前证词，一边要求把一串名字加入议会改革请愿。</span>它涉及证词协调，不能写成纯粹英雄文本。
 
 两份材料合起来能证明：工业冲突已连接厂主的地方军事角色、致命人身暴力、亲属网络、司法防御和议会改革。它们不能证明统一革命纲领或单一刺杀动机。
 
@@ -1603,7 +1601,7 @@ AI 系统仍可能依赖劳动者：
 - 1812 年 4 月 24 日，织造厂、仓库和织机作坊被焚；
 - 5 月 26 日，14 名男女和少年受审；
 - 四人被判死刑，十人无罪；
-- 控罪使用 “wilfully and maliciously set on fire and burnt…” 的纵火语言。
+- 控罪使用 <span class="term-explainer source-excerpt" data-term-key="source-westhoughton-indictment">“wilfully and maliciously set on fire and burnt…”</span> 的纵火语言。
 
 **不宜继续使用的戏剧细节**
 
@@ -1630,16 +1628,16 @@ AI 系统仍可能依赖劳动者：
 
 **男性就业与女性劳动**
 
-> 匿名纺纱工信件把女性就业与孩子缺少面包相连，以 “Reform or Death” 结尾。
+> 匿名纺纱工信件把女性就业与孩子缺少面包相连，以 <span class="term-explainer source-excerpt" data-term-key="source-reform-or-death">“Reform or Death”</span> 结尾。
 
 **廉价商品与总体就业**
 
-> “What right has any man to prevent thousands from buying their goods cheap?”  
+> <span class="term-explainer source-excerpt" data-term-key="source-fellow-weavers">“What right has any man to prevent thousands from buying their goods cheap?”</span>  
 > ——《Fellow Weavers!》，署名 “An Old Weaver”
 
 **群众参与与资本罪**
 
-> Westhoughton 控罪：“wilfully and maliciously set on fire and burnt a Weaving Mill, Warehouse and Loom Shop”。
+> Westhoughton 控罪：<span class="term-explainer source-excerpt" data-term-key="source-westhoughton-indictment">“wilfully and maliciously set on fire and burnt a Weaving Mill, Warehouse and Loom Shop”</span>。
 
 三项材料分别从家庭供养、消费者利益和司法责任定义公共问题。共同处境没有自动产生共同技术立场，传统规范也没有自动产生平等共同体。
 
@@ -1657,11 +1655,11 @@ AI 系统仍可能依赖劳动者：
 
 S. Simpson 从诺丁汉写给 Dumfries 同行的信，把工价冲突和组织扩展写在一起：
 
-> 约 **300 名 plain-silk hands** · 停工六周以上 · 每双加价 **2d**
+> <span class="term-explainer source-excerpt" data-term-key="source-dumfries-letter">约 <strong>300 名 plain-silk hands</strong> · 停工六周以上 · 每双加价 <strong>2d</strong></span>
 >
-> **“Hosiers have formed a powerful Combination against us.”**
+> **<span class="term-explainer source-excerpt" data-term-key="source-dumfries-letter">“Hosiers have formed a powerful Combination against us.”</span>**
 >
-> **4 Articles** · **60 Diplomas** · 邀请建立分会
+> <span class="term-explainer source-excerpt" data-term-key="source-dumfries-letter"><strong>4 Articles</strong> · <strong>60 Diplomas</strong> · 邀请建立分会</span>
 
 这封信没有使用 Ludd 署名，也没有命令毁机。它证明停工、章程、凭状和跨地区互助正在发展；不能证明卢德组织完整延续。
 
@@ -1800,3 +1798,11 @@ S. Simpson 从诺丁汉写给 Dumfries 同行的信，把工价冲突和组织�
 - [Pierre Bourdieu：La délégation et le fétichisme politique](https://www.persee.fr/doc/arss_0335-5322_1984_num_52_1_3331)
 
 <!-- 工作区：[[卢德主义专题文献]]；[[阶级形成理论谱系_从马克思到当代]]；[[理论资源08_皮文克洛沃德_破坏性力量与组织化张力]] -->
+
+
+
+
+
+
+
+

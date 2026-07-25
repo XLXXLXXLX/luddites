@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>砸机器之后：观众版逐页内容</title>
+  <title>砸机器之后：观众版逐页内容 v6</title>
   <link rel="stylesheet" href="/static/revealjs/reset.css">
   <link rel="stylesheet" href="/static/revealjs/reveal.css">
   <link rel="stylesheet" href="/static/revealjs/theme/white.css" id="theme">
@@ -138,10 +138,28 @@
       opacity: 0.55;
       pointer-events: none;
     }
+    .reveal .slide-region-label {
+      position: absolute;
+      top: 18px;
+      right: 80px;
+      z-index: 2;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.08em;
+      color: #000;
+      opacity: 0.62;
+      pointer-events: none;
+    }
     @media screen and (max-width: 435px) {
       .reveal .slide-page-number {
         bottom: 10px;
         font-size: 26px;
+      }
+      .reveal .slide-region-label {
+        top: 12px;
+        right: 36px;
+        font-size: 24px;
       }
     }
     .reveal .source-line {
@@ -421,7 +439,7 @@
   <div class="reveal">
     <div class="slides">
       <section
-        data-markdown="/static/slides/after-the-machines-plain-v5.md?v=20260723-5"
+        data-markdown="/static/slides/after-the-machines-plain-v6.md?v=20260725-3"
         data-separator="^---\r?$"
         data-separator-vertical="^--\r?$"
         data-charset="utf-8"
@@ -448,16 +466,23 @@
       plugins: [RevealMarkdown, RevealNotes]
     }).then(() => {
       const slides = Array.from(document.querySelectorAll(".reveal .slides section"));
-      const roomyPages = new Set([1, 2, 7, 17, 26, 31, 33, 54, 56, 57, 61, 73, 74, 75, 76, 77]);
-      const densePages = new Set([13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 34, 35, 36, 38, 39, 40, 41, 42, 43, 46, 48, 49, 50, 51, 52, 53, 55, 59, 60, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72]);
-      const compactPages = new Set([20, 21, 23, 24, 30, 42, 52, 60, 66, 67, 71, 72]);
+      const roomyPages = new Set([1, 2, 3, 7, 15, 22, 28, 31, 33, 37, 42, 46, 50, 51, 53, 55, 56, 68, 69]);
+      const densePages = new Set([4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26, 27, 29, 30, 32, 34, 35, 36, 38, 39, 40, 41, 43, 44, 45, 47, 48, 49, 52, 54, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 70]);
+      const compactPages = new Set([5, 10, 12, 14, 18, 20, 27, 29, 37, 41, 45, 49, 50, 52, 53, 57, 59, 61, 63, 65]);
+      const regionForPage = (page) => {
+        if (page >= 8 && page <= 15) return "诺丁汉与东米德兰";
+        if (page >= 16 && page <= 22) return "约克郡西区";
+        if (page >= 23 && page <= 28) return "兰开夏与西北";
+        if (page >= 29 && page <= 31) return "三地比较";
+        return "";
+      };
       slides.forEach((slide, index) => {
         const page = index + 1;
         slide.classList.add('page-' + page);
         if (roomyPages.has(page)) slide.classList.add("size-roomy");
         if (densePages.has(page)) slide.classList.add("size-dense");
         if (compactPages.has(page)) slide.classList.add("size-compact");
-        if (page === 1 || page === 61) slide.classList.add("title-slide");
+        if (page === 1 || page === 56) slide.classList.add("title-slide");
         const heading = slide.querySelector(":scope > h1, :scope > h2");
         if (!heading) return;
         const body = document.createElement("div");
@@ -466,6 +491,14 @@
           if (node !== heading && !(node.nodeType === 1 && node.matches("aside.notes"))) body.appendChild(node);
         });
         slide.appendChild(body);
+        const regionName = regionForPage(page);
+        if (regionName) {
+          const regionLabel = document.createElement("span");
+          regionLabel.className = "slide-region-label";
+          regionLabel.textContent = regionName;
+          regionLabel.setAttribute("aria-label", "地区：" + regionName);
+          slide.appendChild(regionLabel);
+        }
         const staticVisual = body.querySelector(":scope > .visual-stack");
         if (staticVisual) {
           const copy = document.createElement("div");
@@ -575,6 +608,70 @@
           image: "/static/slides/assets/after-machines-plain/maps/place-dumfries.webp?v=20260723-2",
           imageAlt: "Dumfries 定位地图"
         },
+        "thinker-thompson": {
+          title: "E. P. 汤普森",
+          text: "E. P. 汤普森（1924—1993）是英国马克思主义历史学家，以研究英国工人阶级形成和道德经济著称。他强调阶级不是由结构自动产生的实体，而是在共同经验、冲突、文化和组织中形成的历史关系。"
+        },
+        "thinker-hobsbawm": {
+          title: "埃里克·霍布斯鲍姆",
+          text: "埃里克·霍布斯鲍姆（1917—2012）是英国马克思主义历史学家，研究资本主义、工人运动与现代世界史。他把早期毁机理解为可能具有谈判功能的“以骚乱进行集体谈判”，因而强调行动的策略性。"
+        },
+        "thinker-marx": {
+          title: "卡尔·马克思",
+          text: "卡尔·马克思（1818—1883）是德国哲学家、政治经济学家和革命社会主义者，对资本主义生产关系作出系统批判。他区分机器本身与机器的资本主义使用，关注技术怎样改变劳动控制、剩余分配和工人联合的条件。"
+        },
+        "thinker-braverman": {
+          title: "哈里·布雷弗曼",
+          text: "哈里·布雷弗曼（1920—1976）是美国马克思主义者和劳动过程研究者，以《劳动与垄断资本》著称。他认为管理与技术常把构思权从劳动者手中分离出来，以分解任务、强化控制并制造去技能化。"
+        },
+        "thinker-kautsky": {
+          title: "卡尔·考茨基",
+          text: "卡尔·考茨基（1854—1938）是德国社会民主主义理论家和第二国际的重要马克思主义者。他认为资本主义会创造共同处境和集中化条件，但劳动者仍需借助工会、报刊与政党把这些条件组织成政治力量。"
+        },
+        "thinker-weber": {
+          title: "马克斯·韦伯",
+          text: "马克斯·韦伯（1864—1920）是德国社会学家、历史学家和政治经济学家，研究权力、支配与现代组织。他提醒我们，共同市场处境不会自动生成共同体，身份、声望、组织和政党联盟也会决定集体行动。"
+        },
+        "thinker-lukacs": {
+          title: "格奥尔格·卢卡奇",
+          text: "格奥尔格·卢卡奇（1885—1971）是匈牙利马克思主义哲学家和文学批评家，以物化与阶级意识理论著称。他认为局部劳动经验只有同资本主义总体关系连接起来，才可能形成超越即时利益的阶级意识。"
+        },
+        "thinker-lenin": {
+          title: "弗拉基米尔·列宁",
+          text: "弗拉基米尔·列宁（1870—1924）是俄国马克思主义理论家、革命家和苏维埃国家的主要创建者。他强调组织把分散的经济斗争连接为政治战略，同时也留下组织如何代表并接受劳动者问责的问题。"
+        },
+        "thinker-gramsci": {
+          title: "安东尼奥·葛兰西",
+          text: "安东尼奥·葛兰西（1891—1937）是意大利马克思主义理论家、政治家和意大利共产党的创建者之一。他以霸权和常识概念说明政治主体需要经过持续的文化与组织工作形成，而不是从经济位置自然长出。"
+        },
+        "thinker-polanyi": {
+          title: "卡尔·波兰尼",
+          text: "卡尔·波兰尼（1886—1964）是匈牙利裔经济史家和社会理论家，以《大转型》著称。他把劳动视为“虚构商品”，说明市场化会激起社会保护，同时提醒保护措施本身也可能排除弱势群体。"
+        },
+        "thinker-tilly": {
+          title: "查尔斯·蒂利",
+          text: "查尔斯·蒂利（1929—2008）是美国历史社会学家，以研究集体行动、社会运动与国家形成著称。他强调共同类别只有接上持续网络、行动手段和资源，才可能成为能够协调行动的政治主体。"
+        },
+        "thinker-przeworski": {
+          title: "亚当·普热沃斯基",
+          text: "亚当·普热沃斯基（1940—）是波兰裔美国政治学家，研究民主、资本主义与社会民主主义。他认为阶级会被政党、工会和联盟不断组织、解组与重组，所谓工人利益也由这些制度过程塑造。"
+        },
+        "thinker-bourdieu": {
+          title: "皮埃尔·布尔迪厄",
+          text: "皮埃尔·布尔迪厄（1930—2002）是法国社会学家和公共知识分子，研究资本、场域、惯习与象征权力。他的“委托悖论”说明发言人使分散群体获得公共存在，也可能反过来替群体划定成员和利益。"
+        },
+        "thinker-scott": {
+          title: "詹姆斯·C. 斯科特",
+          text: "詹姆斯·C. 斯科特（1936—2024）是美国政治学家和人类学家，以研究日常抵抗、国家治理与弱者政治著称。他说明拖延、规避和隐蔽不合作可以保存自主性，但未必能形成公开、持久且可问责的共同组织。"
+        },
+        "thinker-burawoy": {
+          title: "迈克尔·布洛维",
+          text: "迈克尔·布洛维（1947—2025）是英国出生的美国社会学家，以劳动过程民族志和公共社会学著称。他研究车间游戏怎样同时产生工人主动性、同意和竞争，说明劳动者的能动性也可能帮助管理秩序再生产。"
+        },
+        "thinker-piven": {
+          title: "弗朗西丝·福克斯·皮文",
+          text: "弗朗西丝·福克斯·皮文（1932—）是美国政治学家和社会学家，研究贫困者运动、福利政治与扰乱性权力。她强调弱势群体可通过打断依赖日常合作的制度取得杠杆，而正式组织既能保存成果，也可能约束扰乱。"
+        },
         "general-ludd": {
           title: "General Ludd",
           text: "General Ludd（卢德将军）是十九世纪初英国卢德运动中使用的虚构领袖和集体署名，常见于威胁信、公告与歌曲。现无证据表明它对应一位真实人物或统一的全国指挥者。",
@@ -610,6 +707,42 @@
         "moral-economy": {
           title: "道德经济",
           text: "道德经济是历史学家 E. P. 汤普森系统阐述的概念，指民众依据公平价格、习惯权利和共同体义务判断经济行为是否正当。它最初用于解释十八世纪英格兰的粮食骚动，后来也用于研究市场冲突与群众行动。"
+        },
+        "source-eight-pence": {
+          mode: "source",
+          title: "1812 年 1 月，平丝针织工的八便士计算",
+          text: "公开信的计算是：较细丝线使袜子偏小，工人需要把机架加宽四或八个 jacks；加宽八个只多付 2d。作者用 Women’s 24 Work 与 Women’s 26 Work 比较，认为相同丝线、质量和尺寸本应多付 10d，于是每双少 8d。\n\n这是作者提出的行业规格与工资比较，不是独立审计或全行业平均数。jacks 的准确机械对应仍待核实。\n\n来源：Nottingham Review，10 January 1812；Binfield，M12，pp. 93–95。",
+          maxLength: 560
+        },
+        "source-balfour-girls": {
+          mode: "source",
+          title: "1812 年 Balfour 信中的发活关系",
+          text: "匿名信称，一位名为 Haywood 的女性从 Trentham 的仓库取出 chevening 工作，并让“her girls”做活；作者声称她们一天 chevin six pair of Hose、工作很长时间、每周只得半克朗（2s.6d.），并要求给这些人 equitable Price。\n\n工资、产量和工时都来自匿名作者，尚无工资账簿互证；Haywood 的身份、chevening 的动作和信件与后续袭击的关系也未核清。\n\n来源：TNA HO 42/120；Binfield，M30，pp. 124–126。",
+          maxLength: 560
+        },
+        "source-rowbottom-full-price": {
+          mode: "source",
+          title: "1812 年 General Lud 致 Rowbottom 信",
+          text: "核心原文：‘full price, full fashion and proper size’；‘if you bring or give any more work out’ 而不符合这些条件，收件人将 ‘work this frame with a rope around your neck’。文末把绞架画成一台 frame，并说 ‘this frame works all full price and fashion’。\n\n它把工价、成型、尺寸与明确的人身威胁结合起来；不能据此假定所有工人同意，或 Rowbottom 的职业身份和实际行为已经查明。\n\n来源：TNA HO 42/122；Binfield，M23，pp. 113–114。",
+          maxLength: 560
+        },
+        "source-george-ball-full-price": {
+          mode: "source",
+          title: "1812 年 George Ball 毁架案悬赏海报",
+          text: "1812 年 1 月 25 日的 ‘Frame-Breaking. £200 Reward.’ 海报称 George Ball 工场五台框架被毁。海报除列出由国王公告、Nottingham Corporation Committee 与 Francis Braithwaite 组成的 £200 悬赏，还强调机器在 FULL PRICE 下运作，列出部分 gauge、品种、每打价格及三名工人的声明。\n\n这是袭击后的警务与工资答辩文书，不能独立证明全行业认可其价格或工人声明没有压力。\n\n来源：TNA HO 42/119, f.135；The National Archives, Why did the Luddites protest?, Source 2。",
+          maxLength: 560
+        },
+        "source-holywell": {
+          mode: "source",
+          title: "1812 年 Holywell 三件文书",
+          text: "匿名信要求全体加薪，把低工资和高粮价写成 ‘starving by inches’，劝厂主接受 moderate profit，否则焚厂；另一封信以 ‘blood or bread’ 收束。Chapel Street 墙贴又把贫困归咎于地方地主加租。\n\nManchester 警务官 William Robert Hay 将三件副本判断为同一笔迹；这不是本轮独立笔迹鉴定。文中的三千人和跨地支援属于威胁性声称，不是人数统计。\n\n来源：TNA HO 40/1/1；Binfield，N10—N12，pp. 181–184。",
+          maxLength: 560
+        },
+        "source-mcconnel-kennedy": {
+          mode: "source",
+          title: "1812 年致 McConnel, Kennedy and Company 信",
+          text: "信件先称厂主一向以 civility and kindness 对待棉纺工，随后要求解雇女性、重新雇用男性，并把孩子哭着要面包写成男性供养者的危机。末尾以 ‘Your truly devoted Servants thousands / Up on, thousands’ 署名。\n\n‘thousands upon thousands’ 是匿名集体声音的修辞，不是签名人数；现有材料也不能证明企业执行了要求或威胁计划已经实施。\n\n来源：McConnel, Kennedy and Company Papers 2/1/18/1；Binfield，N4，pp. 172–174。",
+          maxLength: 560
         },
         "source-ned-lud-letter": {
           mode: "source",
@@ -786,6 +919,8 @@
         };
 
         const openTermCard = (trigger) => {
+          const triggerSlide = trigger.closest(".reveal .slides section");
+          if (!triggerSlide || !triggerSlide.classList.contains("present")) return;
           if (termCloseTimer) window.clearTimeout(termCloseTimer);
           if (activeTermTrigger && activeTermTrigger !== trigger) {
             activeTermTrigger.setAttribute("aria-expanded", "false");
@@ -905,8 +1040,8 @@
         body.replaceChildren(grid);
         if (tail.childNodes.length) body.appendChild(tail);
       }
-      [8, 35, 50, 78].forEach((page) => makeThreeColumnPairs(page));
-      const imageBody = slides[29]?.querySelector(":scope > .slide-body");
+      [].forEach((page) => makeThreeColumnPairs(page));
+      const imageBody = null;
       if (imageBody) {
         const nodes = Array.from(imageBody.children);
         if (nodes.length >= 6) {
@@ -927,6 +1062,9 @@
   </script>
 </body>
 </html>
+
+
+
 
 
 
