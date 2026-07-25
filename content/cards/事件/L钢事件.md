@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 aliases:
 - L钢改制事件
 - L钢罢工

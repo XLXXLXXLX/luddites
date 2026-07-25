@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 author: E.P. Thompson
 language: zh
 related_cards:

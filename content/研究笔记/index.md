@@ -1,4 +1,5 @@
 ---
+publish: true
 title: 研究笔记
 ---
 

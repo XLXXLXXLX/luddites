@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # Alienating labour workers.pdf
 
 - 来源：`~/Documents/antigravity/luddites-quartz/content/素材/Alienating labour workers.pdf`

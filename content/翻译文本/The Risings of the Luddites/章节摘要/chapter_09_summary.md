@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # 《卢德起义》第九章：准备行动（Detailed Chapter Summary）
 
 ## 故事线索/主要事件

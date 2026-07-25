@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 author: Malcolm I. Thomis
 language: zh
 related_cards:

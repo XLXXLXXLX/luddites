@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 Source: The Russian Worker Life and Labor Under the Tsarist Regime (Victoria E. Bonnell (editor)) (z-library.sk, 1lib.sk, z-lib.sk).pdf\nPDF pages: 233\n\n=== PDF Page 1 ===\n\n\n=== PDF Page 2 ===\nThe 
 RUSSIAN 
 WORKER\n\n=== PDF Page 3 ===\n\n\n=== PDF Page 4 ===\nThe 

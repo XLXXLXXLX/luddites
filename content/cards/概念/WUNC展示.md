@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 aliases:
 - WUNC Display
 - WUNC

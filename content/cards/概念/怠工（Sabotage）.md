@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 aliases:
 - sabotage
 - 摸鱼

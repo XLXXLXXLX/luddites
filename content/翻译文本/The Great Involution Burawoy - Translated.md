@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 author: Michael Burawoy
 language: zh
 related_cards:

@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 author: Frank Peel
 language: zh
 related_cards:

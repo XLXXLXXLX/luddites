@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # Emile Pouget- Sabotage.pdf
 
 - Source: `~/Documents/antigravity/luddites-quartz/content/素材/Emile Pouget- Sabotage.pdf`

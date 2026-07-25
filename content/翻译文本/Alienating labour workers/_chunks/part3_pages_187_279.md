@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 ## Page 187
 
 Workers in the Welfare Dictatorships                                           177

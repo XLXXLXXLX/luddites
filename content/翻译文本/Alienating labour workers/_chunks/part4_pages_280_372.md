@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 ## Page 280
 
 270                                                                    Alienating Labour

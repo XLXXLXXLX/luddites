@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 aliases:
 - Rough Music
 - 沙里瓦里

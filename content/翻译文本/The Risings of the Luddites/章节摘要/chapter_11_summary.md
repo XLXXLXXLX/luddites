@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # 《卢德起义》第十一章：罗伯特镇之星旅店里受伤的卢德分子（Detailed Chapter Summary）
 
 ## 故事线索/主要事件

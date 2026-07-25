@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # 《卢德起义》第十二章：两位逃兵（Detailed Chapter Summary）
 
 ## 故事线索/主要事件

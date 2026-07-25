@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 title: "The Poverty of Theory Or an Orrery of Errors"
 author: "E. P. Thompson"
 source: "PDF text extraction via PyMuPDF"

@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 title: 翻译文本
 ---
 

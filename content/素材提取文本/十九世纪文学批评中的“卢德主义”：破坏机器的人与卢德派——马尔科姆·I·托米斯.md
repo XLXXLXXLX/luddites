@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 In the following excerpt, Thomis discusses the social and political context of the Luddite Rebellion and attempts to define exactly who the Luddites were and what they sought to achieve. He also examines inconsistencies in depictions of Luddism in writings from the nineteenth and twentieth centuries.  
 在下面的摘录中，托米斯探讨了卢德派起义的社会与政治背景，试图明确界定卢德派究竟是谁，以及他们的目标是什么。他还分析了 19 世纪和 20 世纪的文献中关于卢德派的描述所存在的矛盾之处。
 

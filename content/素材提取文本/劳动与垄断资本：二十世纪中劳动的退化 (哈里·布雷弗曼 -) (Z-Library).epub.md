@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # 劳动与垄断资本：二十世纪中劳动的退化 (哈里·布雷弗曼 -) (Z-Library).epub
 
 - Source: `~/luddites-quartz/content/素材/劳动与垄断资本：二十世纪中劳动的退化 (哈里·布雷弗曼 -) (Z-Library).epub`

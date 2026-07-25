@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # 《Alienating Labour》分章节总结
 
 本目录包含：

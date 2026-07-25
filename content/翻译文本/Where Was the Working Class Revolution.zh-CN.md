@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 title: 工人阶级在哪里？东德的革命
 draft: false
 tags:

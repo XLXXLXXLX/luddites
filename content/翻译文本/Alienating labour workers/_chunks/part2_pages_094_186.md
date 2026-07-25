@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 ## Page 94
 
 84                                                                     Alienating Labour

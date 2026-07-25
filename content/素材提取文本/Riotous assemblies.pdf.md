@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # Riotous assemblies.pdf
 
 - Source: `~/luddites-quartz/content/素材/Riotous assemblies.pdf`

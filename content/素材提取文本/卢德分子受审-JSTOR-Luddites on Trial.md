@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 The icon indicates free access to the linked research on JSTOR.  
 该图标表示可免费访问 JSTOR 上的链接研究。
 

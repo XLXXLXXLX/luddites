@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # Alienating labour workers.pdf
 
 > 阅读整理版。保留页码锚点，正文已按自然段合并；书名页、目录、参考文献、索引保留分行结构。

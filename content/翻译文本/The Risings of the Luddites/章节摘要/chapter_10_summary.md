@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # 《卢德起义》第十章：袭击卡特赖特磨坊（Detailed Chapter Summary）
 
 ## 故事线索/主要事件

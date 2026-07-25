@@ -12,9 +12,31 @@ configuration:
     - private
     - templates
     - .obsidian
-    - content/ignored_source
+    - ignored_source
+    - ignored_source/**
     - tmp
     - tmp/**
+    - AGENT_NAVIGATION_INDEX.md
+    - 讲稿与大纲
+    - 讲稿与大纲/**
+    - assets
+    - assets/**
+    - revealjs-after-machines.md
+    - revealjs-demo.md
+    - slides/after-the-machines-plain-v2.html
+    - slides/after-the-machines-plain-v3.html
+    - slides/after-the-machines-plain-v4.html
+    - slides/after-the-machines-plain-v5.html
+    - slides/after-the-machines-plain-v5.md
+    - slides/after-the-machines-plain.html
+    - slides/after-the-machines.html
+    - slides/luddism-ai.html
+    - slides/template.html
+    - slides/after-the-machines-content.js
+    - slides/after-the-machines-theme.css
+    - slides/luddism-ai-theme.css
+    - slides/assets/after-machines/**
+    - slides/assets/luddism-ai/**
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
@@ -116,7 +138,7 @@ plugins:
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
-    enabled: false
+    enabled: true
   - source: github:quartz-community/unlisted-pages
     enabled: true
     options: {}

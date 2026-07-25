@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # 巨变 - 卡尔•波兰尼（Karl Polanyi）.pdf
 
 - Source: `~/luddites-quartz/content/素材/巨变 - 卡尔•波兰尼（Karl Polanyi）.pdf`

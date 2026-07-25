@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 ## Settlement  沉降
 
 ## Luddites in Marsden  马斯登的卢德分子

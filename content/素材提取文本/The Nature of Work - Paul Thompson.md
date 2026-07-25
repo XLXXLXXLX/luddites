@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 title: "The Nature of Work: An introduction to debates on the labour process"
 author: "Paul Thompson"
 source: "PDF text extraction via PyMuPDF"

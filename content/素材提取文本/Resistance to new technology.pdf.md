@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 # Resistance to new technology.pdf
 
 - Source: `~/Documents/antigravity/luddites-quartz/content/素材/Resistance to new technology.pdf`

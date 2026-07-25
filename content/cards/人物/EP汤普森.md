@@ -1,4 +1,5 @@
 ---
+publish: true
 aliases:
 - E.P. Thompson
 - 爱德华·汤普森

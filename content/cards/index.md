@@ -1,4 +1,8 @@
 ---
+publish: true
+---
+
+---
 title: 知识卡片库
 type: index
 tags: [index, moc]
