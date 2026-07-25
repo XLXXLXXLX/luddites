@@ -4,7 +4,7 @@
 
 ## 卢德运动的史实、争论与劳动政治
 
-1811—1813｜英格兰纺织区｜从毁机到生产决定权
+<p class="title-meta">1811—1813｜英格兰纺织区｜从毁机到生产决定权</p>
 
 <div class="visual-stack">
   <figure class="slide-figure">
@@ -124,13 +124,19 @@
 
 1812 年 1 月，平丝针织工没有先谈机器好坏，而是列出一项规格与工价计算：
 
-> <span class="term-explainer source-excerpt" data-term-key="source-eight-pence">机架加宽 8 个 jacks｜实际多付 2d｜按既有等级应多付 10d</span>
-
-**写信者所说的差额：每双 8d**
+<div class="ledger term-explainer term-block source-excerpt" data-term-key="source-eight-pence">
+<span class="ledger-item"><b>8 jacks</b><i>机架需要加宽</i></span>
+<span class="ledger-op">→</span>
+<span class="ledger-item"><b>2d</b><i>实际多付</i></span>
+<span class="ledger-op">／</span>
+<span class="ledger-item"><b>10d</b><i>按既有等级应多付</i></span>
+<span class="ledger-op">＝</span>
+<span class="ledger-item is-total"><b>8d</b><i>写信者所说的每双差额</i></span>
+</div>
 
 较细丝线会让成品偏小；为了维持尺寸，工人需要改变机架规格。争议发生在丝线、尺寸、产品等级与计件价格的连接处。
 
-`jacks` 是原文使用的技术单位，准确机械对应仍待核实；8d 是作者的行业比较，不是全行业工资统计。
+证据性质：`jacks` 是原文使用的技术单位，准确机械对应仍待核实；8d 是作者的行业比较，不是全行业工资统计。
 
 来源：*Nottingham Review*, 10 January 1812；Binfield，M12，pp. 93–95。
 
@@ -510,15 +516,17 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 
 三个地区都积累了地方知识、正当性语言、关系网络和扰乱能力。
 
-它们仍需要完成：
+它们仍需要完成的五项转换，恰好也是它们反复断裂的位置：
 
-**地方知识 → 可共享调查**  
-**受损经验 → 包容性共同要求**  
-**共同名称 → 获得授权的代表**  
-**短期扰乱 → 可保存的组织力量**  
-**行业冲突 → 可执行且可纠正的公共规则**
+<div class="breaks">
+<div class="break-row"><span class="break-from">地方知识</span><span class="break-gap"></span><span class="break-to">可共享调查</span></div>
+<div class="break-row"><span class="break-from">受损经验</span><span class="break-gap"></span><span class="break-to">包容性共同要求</span></div>
+<div class="break-row"><span class="break-from">共同名称</span><span class="break-gap"></span><span class="break-to">获得授权的代表</span></div>
+<div class="break-row"><span class="break-from">短期扰乱</span><span class="break-gap"></span><span class="break-to">可保存的组织力量</span></div>
+<div class="break-row"><span class="break-from">行业冲突</span><span class="break-gap"></span><span class="break-to">可执行且可纠正的公共规则</span></div>
+</div>
 
-这些断裂把我们带到理论部分：不同理论并不争夺唯一解释权，而是分别说明这条转换链在哪一环最容易断开。
+这些斗争已经是政治：它们争夺生产规则、共同利益、代表关系，并直接面对国家强制。理论需要解释的是，这些地方能力为什么没有扩大、保存并接受问责。
 
 ---
 
@@ -541,7 +549,7 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 3. **组织代表**：名称怎样获得网络、代表和问责？
 4. **持久权力**：短期扰乱怎样转成可保存、可纠正的制度力量？
 
-每组理论都回答同一个对象：三地已经出现的能力，为什么没有稳定完成转换。
+这些不是理论家标签，而是彼此竞争的解释；三地材料将检验它们各自的解释力与盲点。
 
 ---
 
@@ -635,6 +643,8 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 **<span class="term-explainer" data-term-key="thinker-thompson">汤普森</span>—<span class="term-explainer" data-term-key="thinker-gramsci">葛兰西</span>提出的警告**
 
 如果理论家或组织预先拥有正确答案，真实劳动者的犹豫、保守愿望和内部差异就会被降格为“虚假意识”。
+
+组织连接分散经验，也可能以总体判断替代成员判断。
 
 政治工作既不是统计多数意见，也不是从外部宣布历史利益，而是建立一种让冲突公开、解释接受检验、承担代价者真正发言的过程。
 
@@ -767,13 +777,14 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 
 # 不同组织形式分别解决力量、尺度、授权和制度接口
 
-| 形式 | 提供的能力 | 必须继续回答的风险 |
-|---|---|---|
-| 行业组织 | 会费、救济、劳动知识、谈判连续性 | 职业封闭与只保护稳定会员 |
-| 群众行动 | 新主体在冲突中学习与施压 | 高潮怎样保存、成本由谁承担 |
-| 群众政党 | 教育、财政、跨地区协调和国家通道 | 选举联盟重写成员利益 |
-| 先锋组织 | 高压下的保密、分工和战略连续 | 信息垄断、组织替代与纠错困难 |
-| 联盟与国家制度 | 把行业诉求转成普遍规则 | 收编、行政分类与刑事化 |
+<div class="formcards">
+<div class="formcards-head"><span>形式</span><span>提供的能力</span><span>必须继续回答的风险</span></div>
+<div class="formcard"><div class="formcard-name">行业组织</div><div class="formcard-can"><span>能力</span>会费、救济、劳动知识、谈判连续性</div><div class="formcard-risk"><span>风险</span>职业封闭与只保护稳定会员</div></div>
+<div class="formcard"><div class="formcard-name">群众行动（卢森堡）</div><div class="formcard-can"><span>能力</span>新主体在冲突中学习与施压</div><div class="formcard-risk"><span>风险</span>高潮怎样保存、成本由谁承担</div></div>
+<div class="formcard"><div class="formcard-name">群众政党（<span class="term-explainer" data-term-key="thinker-kautsky">考茨基</span>）</div><div class="formcard-can"><span>能力</span>教育、财政、跨地区协调和国家通道</div><div class="formcard-risk"><span>风险</span>选举联盟重写成员利益</div></div>
+<div class="formcard"><div class="formcard-name">先锋组织（<span class="term-explainer" data-term-key="thinker-lenin">列宁</span>）</div><div class="formcard-can"><span>能力</span>高压下的保密、分工和战略连续</div><div class="formcard-risk"><span>风险</span>信息垄断、组织替代与纠错困难</div></div>
+<div class="formcard"><div class="formcard-name">联盟与国家制度（<span class="term-explainer" data-term-key="thinker-gramsci">葛兰西</span>／国家理论）</div><div class="formcard-can"><span>能力</span>把行业诉求转成普遍规则</div><div class="formcard-risk"><span>风险</span>收编、行政分类与刑事化</div></div>
+</div>
 
 没有一种形式能够自动同时解决力量、尺度、授权和基层控制。
 
@@ -781,15 +792,18 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 
 # 本讲分析框架：五种力量转换必须能够循环
 
-| 已有能力 | 需要完成的转换 | 卢德材料暴露的断点 |
-|---|---|---|
-| 劳动过程知识 | 地方经验 → 可共享调查 | 行业知识具体，难以形成共同对象 |
-| 正当生产观念 | 受损叙事 → 包容性纲领 | 资格与男性供养者诉求排除他人 |
-| 名称与地方网络 | 象征统一 → 授权代表 | “Ludd”不能决定财政、纲领和问责 |
-| 扰乱与秘密纪律 | 短期成本 → 可保存力量 | 行动难保存协议并承受国家镇压 |
-| 改革语言与群众危机 | 行业政治 → 可执行规则 | 缺少稳定的跨地区战略与执行权 |
+<div class="cycle-wrap">
+<div class="cycle-head"><span></span><span>已有能力</span><span>需要完成的转换</span><span>卢德材料暴露的断点</span></div>
+<ol class="cycle">
+<li><span class="cycle-have">劳动过程知识</span><span class="cycle-move">地方经验 → 可共享调查</span><span class="cycle-break">行业知识具体，难以形成共同对象</span></li>
+<li><span class="cycle-have">正当生产观念</span><span class="cycle-move">受损叙事 → 包容性纲领</span><span class="cycle-break">资格与男性供养者诉求排除他人</span></li>
+<li><span class="cycle-have">名称与地方网络</span><span class="cycle-move">象征统一 → 授权代表</span><span class="cycle-break">“Ludd”不能决定财政、纲领和问责</span></li>
+<li><span class="cycle-have">扰乱与秘密纪律</span><span class="cycle-move">短期成本 → 可保存力量</span><span class="cycle-break">行动难保存协议并承受国家镇压</span></li>
+<li><span class="cycle-have">改革语言与群众危机</span><span class="cycle-move">行业政治 → 可执行规则</span><span class="cycle-break">缺少稳定的跨地区战略与执行权</span></li>
+</ol>
+</div>
 
-**第四组比较结论：** 这不是在诊断他们缺少某一种正确组织，而是在检验调查、纲领、网络、行动、制度和基层纠错能否形成循环。
+<p class="conclusion"><b>第四组比较结论：</b>文化自主和共同名称不能代替政治建设；需要检验调查、纲领、网络、行动、制度和基层纠错能否形成循环。</p>
 
 ---
 
@@ -799,12 +813,16 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 
 AI 与针织架拥有不同技术结构、产业链和国家制度。把两者直接类比，会遮蔽当代模型、数据、供应商、采购合同和管理指标。
 
+<p class="scenario"><span class="scenario-tag">一个具体部署场景</span>同一套生成式 AI 同时生成初稿、分派任务、评价绩效并影响人员调整，但数据、责任、岗位变化和收益分配都未经过共同决定。</p>
+
 历史能够提供的是一种进入顺序：
 
-1. 先调查任务、知识、责任和收益怎样变化；
-2. 再辨认不同劳动位置的共同点和冲突；
-3. 找到系统仍依赖哪些人的实际配合；
-4. 把局部让步写成能够复议和纠正的规则。
+<ol class="steps">
+<li>先调查任务、知识、责任和收益怎样变化；</li>
+<li>再辨认不同劳动位置的共同点和冲突；</li>
+<li>找到系统仍依赖哪些人的实际配合；</li>
+<li>把局部让步写成能够复议和纠正的规则。</li>
+</ol>
 
 以下三页属于本讲提出的应用框架，不是卢德史实的延伸结论。
 
@@ -869,13 +887,15 @@ AI 与针织架拥有不同技术结构、产业链和国家制度。把两者�
 
 它留下的是一套辨认技术政治的方法：
 
-**看见劳动过程，而不是只看机器物件。**  
-**追踪收益和成本，而不是只问总体效率。**  
-**检验共同利益中的排除，而不是预设统一主体。**  
-**寻找现实依赖和组织能力，而不是迷信行动外形。**  
-**把胜利写成可执行、可复议、可纠正的公共规则。**
+<div class="closing-method">
+<span>看见劳动过程，而不是只看机器物件。</span>
+<span>追踪收益和成本，而不是只问总体效率。</span>
+<span>检验共同利益中的排除，而不是预设统一主体。</span>
+<span>寻找现实依赖和组织能力，而不是迷信行动外形。</span>
+<span>把胜利写成可执行、可复议、可纠正的公共规则。</span>
+</div>
 
-机器破坏属于过去；围绕生产决定权的政治没有结束。
+<p class="closing-final">机器破坏属于过去；围绕生产决定权的政治没有结束。</p>
 
 ---
 
