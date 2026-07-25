@@ -846,15 +846,24 @@ export async function handlePluginInstallUnified({
                 `→ ${name}: cloning ${entry.resolved}@${entry.commit.slice(0, 7)}...`,
               ),
             )
-            const branchArg = entry.ref ? ` --branch ${entry.ref}` : ""
-            await execAsync(`git clone --depth 1${branchArg} "${entry.resolved}" "${pluginDir}"`)
-            await execAsync(`git checkout ${entry.commit}`, { cwd: pluginDir })
+            // `git clone --depth 1` only fetches the tip of the default branch, so a
+            // later `git checkout <pinned commit>` fails with "reference is not a tree"
+            // as soon as upstream moves past the commit recorded in the lockfile.
+            // Fetch the pinned commit directly instead — still one commit deep.
+            fs.mkdirSync(pluginDir, { recursive: true })
+            await execAsync(`git init -q "${pluginDir}"`)
+            await execAsync(`git remote add origin "${entry.resolved}"`, { cwd: pluginDir })
+            await execAsync(`git fetch --depth 1 -q origin ${entry.commit}`, { cwd: pluginDir })
+            await execAsync(`git checkout -q FETCH_HEAD`, { cwd: pluginDir })
           }
           console.log(styleText("green", `✓ ${name} restored`))
           restoredPlugins.push({ name, pluginDir })
           installed++
-        } catch {
-          console.log(styleText("red", `✗ ${name}: failed to restore`))
+        } catch (error) {
+          const message = error instanceof Error ? error.message : String(error)
+          console.log(styleText("red", `✗ ${name}: failed to restore: ${message}`))
+          // A half-written directory would be skipped as "already exists" on retry
+          fs.rmSync(pluginDir, { recursive: true, force: true })
           failed++
         }
       })
