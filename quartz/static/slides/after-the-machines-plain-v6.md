@@ -65,17 +65,15 @@
 
 ---
 
-# 运动在三个纺织区展开，并在两年内迅速升级
+# 三个地区面对的不是同一种机器，也不是同一种劳动关系
 
-| 时间 | 地点与事件 | 变化 |
+| 地区 | 主要劳动世界 | 冲突首先围绕 |
 |---|---|---|
-| 1811 年春 | <span class="term-explainer" data-term-key="place-nottinghamshire">诺丁汉郡</span>出现集中毁架 | 工价、产品规格和行业资格成为冲突对象 |
-| 1811 年秋冬 | “Ludd”名义扩散 | 共享署名与威慑出现，但没有已证实的全国总部 |
-| 1812 年春 | <span class="term-explainer" data-term-key="place-yorkshire">约克郡</span> Rawfolds、<span class="term-explainer" data-term-key="place-lancashire">兰开夏</span> Westhoughton 等冲突 | 行动延伸到武装攻厂、纵火和城市生计危机 |
-| 1812 年中后期 | 驻军、间谍、悬赏和死刑立法加强 | 工业冲突被更强的军事与司法体系包围 |
-| 1813 年 | <span class="term-explainer" data-term-key="place-york">约克</span>特别巡回法庭 | 共同危机被拆成谋杀、盗窃、暴动等个体案件 |
+| <span class="term-explainer" data-term-key="place-nottinghamshire">诺丁汉郡</span> | 丝袜生产与家庭框架针织 | 工价、尺寸、成型方式和行业资格 |
+| <span class="term-explainer" data-term-key="place-yorkshire">约克郡西区</span> | 毛布整理、熟练剪绒与集中磨坊 | 工序控制、整理机器和设防生产空间 |
+| <span class="term-explainer" data-term-key="place-lancashire">兰开夏</span> | 手织劳动与动力工厂并存 | 工资、岗位、面包和群众危机 |
 
-集中行动随后衰退，工价、组织和政治代表问题却没有消失。
+三个地区共享“Ludd”这一名称，却依靠不同劳动知识、地方网络和行动手段。
 
 ---
 
@@ -104,65 +102,64 @@
 
 ---
 
-# 从三种地方劳动政治进入四个理论问题
+# 1811—1813：毁架、攻厂与国家镇压在两年内集中升级
 
-**历史部分**
+| 时间 | 大事 |
+|---|---|
+| **1811 年春** | <span class="term-explainer" data-term-key="place-nottinghamshire">诺丁汉郡</span> Arnold 一带出现集中毁坏针织架 |
+| **1811 年秋冬** | “Ludd”名义扩散；威胁、工价让步和公开请愿同时出现 |
+| **1812 年 3 月** | 毁坏针织架的死刑法获御准，驻军、间谍和悬赏继续加强 |
+| **1812 年 4 月** | Rawfolds 攻厂、Westhoughton 纵火、Horsfall 遇刺先后发生 |
+| **1812 年下半年** | 逮捕、告密和司法追诉把地区冲突拆成个人案件 |
+| **1813 年 1 月** | <span class="term-explainer" data-term-key="place-york">约克</span>特别巡回法庭集中审判；十七人被处决 |
 
-诺丁汉的工价与规格｜约克郡的熟练劳动与设防磨坊｜兰开夏的岗位、面包与群众危机
-
-**理论部分**
-
-主体怎样形成｜损失怎样成为公共不义｜名称怎样获得网络与代表｜扰乱怎样成为持久权力
-
-**当代尾声**
-
-不把 AI 当作十九世纪织机的重演，只把历史问题转译成调查、规则和问责。
+集中行动随后衰退，工价、组织和政治代表问题没有消失。
 
 ---
 
-# 一双袜子的争议，藏在八便士里
+# 先看清一双丝袜怎样被生产和结算
 
-1812 年 1 月，平丝针织工没有先谈机器好坏，而是列出一项规格与工价计算：
+诺丁汉织袜业尚未由大型工厂统一。常见关系是：
+
+| 谁或什么 | 在生产关系中的位置 |
+|---|---|
+| **袜商与仓库** | 控制丝线、订单、产品规格、收货和市场 |
+| **框架针织工** | 在家庭或小作坊操作自有或租用的针织架 |
+| **一双丝袜** | 按材料、尺寸、成型方式和产品等级计价 |
+
+因此，更细的丝线或更宽的机架不只是技术细节。它们会改变一双袜子需要的劳动，也会改变它应按哪一档付款。
+
+---
+
+# 规格一变，工价就要重算
+
+1812 年 1 月，一封平丝针织工公开信把规格变化换算成一双袜子的价格：
 
 <div class="ledger term-explainer term-block source-excerpt" data-term-key="source-eight-pence">
-<span class="ledger-item"><b>8 jacks</b><i>机架需要加宽</i></span>
+<span class="ledger-item"><b>更细丝线</b><i>成品容易偏小</i></span>
 <span class="ledger-op">→</span>
-<span class="ledger-item"><b>2d</b><i>实际多付</i></span>
-<span class="ledger-op">／</span>
-<span class="ledger-item"><b>10d</b><i>按既有等级应多付</i></span>
+<span class="ledger-item"><b>加宽机架</b><i>维持成品尺寸</i></span>
+<span class="ledger-op">→</span>
+<span class="ledger-item"><b>实际加 2｜主张加 10</b><i>单位：便士</i></span>
 <span class="ledger-op">＝</span>
-<span class="ledger-item is-total"><b>8d</b><i>写信者所说的每双差额</i></span>
+<span class="ledger-item is-total"><b>差 8 便士</b><i>每双</i></span>
 </div>
 
-较细丝线会让成品偏小；为了维持尺寸，工人需要改变机架规格。争议发生在丝线、尺寸、产品等级与计件价格的连接处。
+争议不是抽象的“工资高低”，而是谁有权把丝线、尺寸和机架规格换算成产品等级与计件价格。
 
-证据性质：`jacks` 是原文使用的技术单位，准确机械对应仍待核实；8d 是作者的行业比较，不是全行业工资统计。
+这是写信者的行业比较，不是全行业工资统计。完整原文和技术单位见 hover。
 
 来源：*Nottingham Review*, 10 January 1812；Binfield，M12，pp. 93–95。
 
 ---
 
-# 工作从仓库发出，低工资落在“她的女孩们”身上
-
-一封 1812 年匿名信提供了短而具体的关系链：
-
-> <span class="term-explainer source-excerpt" data-term-key="source-balfour-girls">Trentham 的仓库 → Haywood 取出 chevening 工作 → “her girls”做活 → 据称每周 2s.6d.</span>
-
-这段材料让仓库、取活者和做活者同时出现。它没有说明 Haywood 的确切身份，也没有让我们知道 chevening 的具体动作。
-
-可以确认的是：匿名作者把女孩的低工资、仓库责任、“公平价格”和财产威胁写进了同一封信。
-
-来源：HO 42/120；Binfield，M30，pp. 124–126。
-
----
-
-# “FULL PRICE”同时出现在威胁信和缉凶海报上
+# “足价（FULL PRICE）”同时出现在威胁信和缉凶海报上
 
 **写给 Rowbottom 的匿名信**
 
 > <span class="term-explainer source-excerpt" data-term-key="source-rowbottom-full-price">“full price, full fashion and proper size”</span>
 
-作者还把绞架画成一台 `frame`，以人身威胁执行工价、成型和尺寸规则。
+作者还把绞架画成一台针织架，以人身威胁执行工价、成型和尺寸规则。
 
 **George Ball 的五台机架被毁后**
 
@@ -235,19 +232,13 @@
 
 # 公开规制把毁机背后的判断写成了可争论的规则
 
-联合委员会要求工价与可以检查的生产单位相连：
+联合委员会提出：<strong><span class="term-explainer source-excerpt" data-term-key="source-joint-committee">工价应按可以检查的生产单位计算</span></strong>。
 
-> <strong><span class="term-explainer source-excerpt" data-term-key="source-joint-committee">“by the Rack, or Count”</span></strong>
+方案还涉及产品标识、裁剪件、低质货、机架规格和实物工资。它把调查、代表、谈判和请愿写成一套准监管语言，却没有法定治理权。
 
-方案还涉及产品标识、裁剪件、低质货、机架规格和实物工资。
+而且，“公平价格”未必覆盖工作分配下游。另一封匿名信称，仓库经由 Haywood 把工作交给<span class="term-explainer source-excerpt" data-term-key="source-balfour-girls">“她的女孩们”</span>，作者指责她们所得工资过低。
 
-**它提供了什么**
-
-调查、代表、谈判、请愿和一套准监管语言。
-
-**它没有解决什么**
-
-委员会没有法定治理权；技能、学徒和质量规范也可能排除新人、女性及处在工作分配下游的人。
+争议因此不只是谁制定规则，还包括谁被规则算进去。
 
 来源：TNA HO 42/120；框架针织工联合委员会决议，1812。
 
@@ -456,7 +447,7 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 | 材料 | 它要求保护谁 | 它把风险放给谁 |
 |---|---|---|
 | McConnel／Kennedy 信 | 男性岗位与家庭面包 | 要求女性退出有薪劳动 |
-| Balfour 信 | 据称每周只得 2s.6d. 的女孩 | 把责任追向发活链与仓库 |
+| Balfour 信 | 据称每周只得 2 先令 6 便士的女孩 | 把责任追向发活链与仓库 |
 | 《Fellow Weavers!》 | 消费者、市场与总体就业 | 将具体转型损失视为局部代价 |
 
 三份材料来自不同地点和关系链；并读它们，是为了看见同一危机怎样产生彼此冲突的保护方案。
@@ -1154,4 +1145,3 @@ AI 系统仍可能依赖劳动者：
 - Antonio Gramsci，*Prison Notebooks*
 - Adam Przeworski，*Capitalism and Social Democracy*
 - Pierre Bourdieu，“Delegation and Political Fetishism”
-

@@ -987,7 +987,12 @@
     .reveal.doc-mode table,
     .reveal.doc-mode tbody,
     .reveal.doc-mode tr,
-    .reveal.doc-mode td { display: block; width: 100%; }
+    .reveal.doc-mode td {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
     .reveal.doc-mode thead { display: none; }
     .reveal.doc-mode table {
       margin: 0.8em 0;
@@ -1002,6 +1007,7 @@
       padding: 0.12em 0 !important;
       border: 0 !important;
       text-align: left !important;
+      overflow-wrap: anywhere;
     }
     .reveal.doc-mode td[data-col]::before {
       content: attr(data-col);
@@ -1075,7 +1081,7 @@
   <div class="reveal">
     <div class="slides">
       <section
-        data-markdown="/static/slides/after-the-machines-plain-v6.md?v=20260725-5"
+        data-markdown="/static/slides/after-the-machines-plain-v6.md?v=20260726-1"
         data-separator="^---\r?$"
         data-separator-vertical="^--\r?$"
         data-charset="utf-8"
@@ -1388,19 +1394,19 @@
         "source-eight-pence": {
           mode: "source",
           title: "1812 年 1 月，平丝针织工的八便士计算",
-          text: "公开信的计算是：较细丝线使袜子偏小，工人需要把机架加宽四或八个 jacks；加宽八个只多付 2d。作者用 Women’s 24 Work 与 Women’s 26 Work 比较，认为相同丝线、质量和尺寸本应多付 10d，于是每双少 8d。\n\n这是作者提出的行业规格与工资比较，不是独立审计或全行业平均数。jacks 的准确机械对应仍待核实。\n\n来源：Nottingham Review，10 January 1812；Binfield，M12，pp. 93–95。",
+          text: "公开信的计算是：较细丝线使袜子偏小，工人需要把机架加宽四或八个 jacks；加宽八个只多付 2 便士。作者用 Women’s 24 Work 与 Women’s 26 Work 比较，认为相同丝线、质量和尺寸本应多付 10 便士，于是每双少 8 便士。\n\n原文用 jacks 描述机架加宽幅度，准确机械对应仍待核实；旧币缩写 d 表示便士。这是作者提出的行业规格与工资比较，不是独立审计或全行业平均数。\n\n来源：Nottingham Review，10 January 1812；Binfield，M12，pp. 93–95。",
           maxLength: 560
         },
         "source-balfour-girls": {
           mode: "source",
           title: "1812 年 Balfour 信中的发活关系",
-          text: "匿名信称，一位名为 Haywood 的女性从 Trentham 的仓库取出 chevening 工作，并让“her girls”做活；作者声称她们一天 chevin six pair of Hose、工作很长时间、每周只得半克朗（2s.6d.），并要求给这些人 equitable Price。\n\n工资、产量和工时都来自匿名作者，尚无工资账簿互证；Haywood 的身份、chevening 的动作和信件与后续袭击的关系也未核清。\n\n来源：TNA HO 42/120；Binfield，M30，pp. 124–126。",
+          text: "匿名信称，一位名为 Haywood 的女性从 Trentham 的仓库取出 chevening 工作，并让“her girls”做活；作者声称她们一天 chevin six pair of Hose、工作很长时间、每周只得半克朗，也就是 2 先令 6 便士，并要求给这些人 equitable Price。\n\n原文旧币缩写为 2s.6d.；1 先令等于 12 便士。工资、产量和工时都来自匿名作者，尚无工资账簿互证；Haywood 的身份、chevening 的动作和信件与后续袭击的关系也未核清。\n\n来源：TNA HO 42/120；Binfield，M30，pp. 124–126。",
           maxLength: 560
         },
         "source-rowbottom-full-price": {
           mode: "source",
           title: "1812 年 General Lud 致 Rowbottom 信",
-          text: "核心原文：‘full price, full fashion and proper size’；‘if you bring or give any more work out’ 而不符合这些条件，收件人将 ‘work this frame with a rope around your neck’。文末把绞架画成一台 frame，并说 ‘this frame works all full price and fashion’。\n\n它把工价、成型、尺寸与明确的人身威胁结合起来；不能据此假定所有工人同意，或 Rowbottom 的职业身份和实际行为已经查明。\n\n来源：TNA HO 42/122；Binfield，M23，pp. 113–114。",
+          text: "核心原文：‘full price, full fashion and proper size’；‘if you bring or give any more work out’ 而不符合这些条件，收件人将 ‘work this frame with a rope around your neck’。这里的 frame 指针织架；文末把绞架画成一台针织架，并说 ‘this frame works all full price and fashion’。\n\n它把工价、成型、尺寸与明确的人身威胁结合起来；不能据此假定所有工人同意，或 Rowbottom 的职业身份和实际行为已经查明。\n\n来源：TNA HO 42/122；Binfield，M23，pp. 113–114。",
           maxLength: 560
         },
         "source-george-ball-full-price": {
@@ -1448,7 +1454,7 @@
         "source-joint-committee": {
           mode: "source",
           title: "1812 年 2 月 17 日，框架针织工联合委员会决议",
-          text: "核心原文：工价应按 ‘by the Rack, or Count’ 这类可检查的生产单位计算。\n\n同一组决议还讨论产品规格和标识、裁剪件与低质产品、以货物代替现金支付，以及向议会寻求行业规制。它是一套公开的生产规制方案；委员会没有法定治理权，也不能据此假定所有劳动者都被平等代表。\n\n来源：TNA HO 42/120；Nottingham Review，21 February 1812；Binfield，M20，pp. 108–110。",
+          text: "核心原文：工价应按 ‘by the Rack, or Count’ 这类可以检查的生产单位计算。Rack 和 Count 是原文使用的行业计量词；这里不要求观众掌握其精确机械对应，重要的是委员会试图把工价同公开、可核验的单位连接起来。\n\n同一组决议还讨论产品规格和标识、裁剪件与低质产品、以货物代替现金支付，以及向议会寻求行业规制。它是一套公开的生产规制方案；委员会没有法定治理权，也不能据此假定所有劳动者都被平等代表。\n\n来源：TNA HO 42/120；Nottingham Review，21 February 1812；Binfield，M20，pp. 108–110。",
           maxLength: 560
         },
         "source-hobsbawm-machine-breakers": {
@@ -1789,9 +1795,6 @@
   </script>
 </body>
 </html>
-
-
-
 
 
 
