@@ -102,22 +102,24 @@
 
 ---
 
-# 1811—1813：毁架、攻厂与国家镇压在两年内集中升级
+# 卢德运动发生在战争经济、工业转型与国家镇压交叠的时期
 
 | 时间 | 大事 |
 |---|---|
-| **1811 年春** | <span class="term-explainer" data-term-key="place-nottinghamshire">诺丁汉郡</span> Arnold 一带出现集中毁坏针织架 |
-| **1811 年秋冬** | “Ludd”名义扩散；威胁、工价让步和公开请愿同时出现 |
-| **1812 年 3 月** | 毁坏针织架的死刑法获御准，驻军、间谍和悬赏继续加强 |
-| **1812 年 4 月** | Rawfolds 攻厂、Westhoughton 纵火、Horsfall 遇刺先后发生 |
-| **1812 年下半年** | 逮捕、告密和司法追诉把地区冲突拆成个人案件 |
-| **1813 年 1 月** | <span class="term-explainer" data-term-key="place-york">约克</span>特别巡回法庭集中审判；十七人被处决 |
+| **1799—1800 年** | 反结社立法使围绕工资、工时和雇佣条件的联合行动面临更高法律风险 |
+| **1803—1815 年** | 英国参与拿破仑战争；贸易受阻、市场波动和粮价压力加重工业区的经济困境 |
+| **1811 年** | 毁坏针织架的行动首先集中于<span class="term-explainer" data-term-key="place-nottinghamshire">诺丁汉郡</span>，随后扩展到邻近的中部郡县 |
+| **1812 年初** | 运动扩展到约克郡西区和兰开夏；参与者来自不同纺织行业，目标和诉求因地区而异 |
+| **1812 年 3 月** | 议会把毁坏针织架定为可判死刑的重罪；驻军、悬赏、告密和治安措施继续加强 |
+| **1812 年末—1813 年** | 大规模逮捕、特别审判、处决和流放削弱了公开行动，卢德运动的集中阶段逐渐结束 |
 
-集中行动随后衰退，工价、组织和政治代表问题没有消失。
+来源：英国国家档案馆；英国议会 1812 年相关辩论与调查报告；Malcolm Thomis，*The Luddites*。
 
 ---
 
 # 先看清一双丝袜怎样被生产和结算
+
+**1811 年，卢德运动首先在诺丁汉郡形成。** 战争时期的贸易与粮价压力，同织袜业的市场收缩、失业和压低工价相互叠加。
 
 诺丁汉织袜业尚未由大型工厂统一。常见关系是：
 
@@ -133,7 +135,7 @@
 
 # 规格一变，工价就要重算
 
-1812 年 1 月，一封平丝针织工公开信把规格变化换算成一双袜子的价格：
+1812 年 1 月，诺丁汉毁架已经持续数月，工价和行业规制也进入公开报刊。一封平丝针织工公开信把规格变化换算成一双袜子的价格：
 
 <div class="ledger term-explainer term-block source-excerpt" data-term-key="source-eight-pence">
 <span class="ledger-item"><b>更细丝线</b><i>成品容易偏小</i></span>
@@ -263,6 +265,8 @@ Randall 则强调冲突还涉及产品规格、行业准入、支付方式和谁
 
 # 凌晨的住宅里同时出现家人、蜡烛、剪具和机器
 
+**1812 年初，运动扩展到约克郡西区。** 这里的冲突集中于毛布整理机器、熟练剪绒劳动和逐渐设防的磨坊空间。
+
 1812 年 3 月 6 日，<span class="term-explainer" data-term-key="place-linthwaite">Linthwaite</span> 的 John Sykes 宣誓称：凌晨一至二点，一群人进入 William Cotton 的住宅，询问枪支、弹药和主人去向，控制家人并取走约一磅蜡烛。
 
 随后被毁的是：
@@ -303,7 +307,7 @@ Randall 则强调冲突还涉及产品规格、行业准入、支付方式和谁
 
 # Rawfolds 把生产冲突变成两种空间能力的正面碰撞
 
-1812 年 4 月 11 日夜，行动者袭击 William Cartwright 的 <span class="term-explainer" data-term-key="place-rawfolds">Rawfolds Mill</span>。厂主此前已在磨坊留宿数周，准备火枪、弹药和轮班守卫。
+1812 年 4 月 11 日夜，在毁坏针织架已可判死刑、军警应对加强且部分磨坊开始设防的背景下，行动者袭击 William Cartwright 的 <span class="term-explainer" data-term-key="place-rawfolds">Rawfolds Mill</span>。厂主此前已在磨坊留宿数周，准备火枪、弹药和轮班守卫。
 
 | 攻击者需要的能力 | 磨坊提供的防卫能力 |
 |---|---|
@@ -384,6 +388,8 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 
 # 工资离开工场以后，变成面包、房租和缓慢饥饿
 
+**1812 年春，兰开夏进入工业冲突、粮食抗议和政治动员交叠的高峰。** 这里的群众行动不能全部归于同一组织，也不能只用机器问题解释。
+
 1812 年 Holywell 的三件文书把通常分开讲的问题写在一起：
 
 > <span class="term-explainer source-excerpt" data-term-key="source-holywell">低工资＋高粮价＋厂主利润＋地租｜“starving by inches”｜“blood or bread”</span>
@@ -398,7 +404,7 @@ Thomis 等研究则提醒：共享名称、激进口号和地方网络，并不�
 
 # Westhoughton 的纵火案被拆成十四份个人责任
 
-1812 年 4 月 24 日，<span class="term-explainer" data-term-key="place-westhoughton">Westhoughton</span> 的织造厂、仓库和织机作坊被焚。
+1812 年 4 月 24 日，在兰开夏粮价危机、工资冲突和群众骚乱相互交叠的背景下，<span class="term-explainer" data-term-key="place-westhoughton">Westhoughton</span> 的织造厂、仓库和织机作坊被焚。
 
 5 月 26 日，14 名男女和少年受审：
 
